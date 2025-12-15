@@ -1,0 +1,16 @@
+[
+  {
+    "region": "Sudamérica",
+    "proyectos": [
+      {
+        "id": "SA-001",
+        "titulo": "Proyecto Demo",
+        "pais": "México",
+        "categoria": "Educación",
+        "estado": "Activo",
+        "progreso": 60,
+        "imagen": "https://via.placeholder.com/80"
+      }
+    ]
+  }
+]
