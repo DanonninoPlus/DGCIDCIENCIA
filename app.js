@@ -40,27 +40,37 @@ function renderizar(data) {
   });
 
   Object.entries(estructura).forEach(([continente, paises]) => {
-    const bloqueContinente = document.createElement("div");
-    bloqueContinente.className = "bg-white dark:bg-slate-800 rounded-xl shadow-sm p-4";
+
+    // 🔹 CONTINENTE (colapsable)
+    const bloqueContinente = document.createElement("details");
+    bloqueContinente.className =
+      "bg-white dark:bg-slate-800 rounded-xl shadow-sm p-4";
 
     bloqueContinente.innerHTML = `
-      <h4 class="font-bold text-lg mb-3">${continente}</h4>
+      <summary class="cursor-pointer font-bold text-lg mb-3">
+        ${continente}
+      </summary>
     `;
 
     Object.entries(paises).forEach(([pais, proyectos]) => {
-      const bloquePais = document.createElement("div");
-      bloquePais.className = "mb-4";
+
+      // 🔹 PAÍS (colapsable)
+      const bloquePais = document.createElement("details");
+      bloquePais.className = "ml-4 mb-3";
 
       bloquePais.innerHTML = `
-        <h5 class="font-semibold text-sm mb-2 text-primary">${pais}</h5>
+        <summary class="cursor-pointer font-semibold text-sm text-primary mb-2">
+          ${pais}
+        </summary>
       `;
 
       proyectos.forEach(proy => {
         contador++;
 
+        // 🔹 PROYECTO (colapsable)
         const card = document.createElement("details");
         card.className =
-          "mb-2 rounded-lg border bg-background-light dark:bg-slate-900 p-3";
+          "ml-4 mb-2 rounded-lg border bg-background-light dark:bg-slate-900 p-3";
 
         card.innerHTML = `
           <summary class="cursor-pointer font-medium text-sm flex justify-between">
@@ -89,3 +99,4 @@ function renderizar(data) {
 }
 
 document.addEventListener("DOMContentLoaded", cargarDatos);
+
