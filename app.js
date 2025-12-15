@@ -3,144 +3,89 @@
 // Render dinámico desde JSON
 // ==============================
 
-const contenedorRegiones = document.getElementById("contenedor-regiones");
-const totalProyectosSpan = document.getElementById("total-proyectos");
-const buscador = document.getElementById("buscador");
 
-let datosGlobales = [];
-let proyectosPlanos = [];
+const contenedor = document.getElementById("contenedor-regiones");
+const totalProyectos = document.getElementById("total-proyectos");
 
-// ==============================
-// CARGA DE DATOS
-// ==============================
 async function cargarDatos() {
   try {
-    const response = await fetch("proyectos.json");
-    if (!response.ok) throw new Error("No se pudo cargar el JSON");
-
-    datosGlobales = await response.json();
-    prepararProyectosPlanos(datosGlobales);
-    renderizar(datosGlobales);
-  } catch (error) {
-    console.error("Error cargando datos:", error);
-    contenedorRegiones.innerHTML = `
-      <div class="text-sm text-red-500">
-        Error al cargar los proyectos.
-      </div>
-    `;
+    const res = await fetch("proyectos.json");
+    if (!res.ok) throw new Error("No se pudo cargar el JSON");
+    const data = await res.json();
+    renderizar(data);
+  } catch (err) {
+    contenedor.innerHTML = `
+      <div class="p-4 rounded-xl bg-red-50 text-red-600 text-sm">
+        No se pudieron cargar los proyectos.
+      </div>`;
+    console.error(err);
   }
 }
 
-// ==============================
-// APLANAR PROYECTOS (para búsqueda)
-// ==============================
-function prepararProyectosPlanos(data) {
-  proyectosPlanos = [];
-
-  data.forEach(region => {
-    region.proyectos.forEach(p => {
-      proyectosPlanos.push({
-        ...p,
-        region: region.region
-      });
-    });
-  });
-
-  totalProyectosSpan.textContent = `${proyectosPlanos.length} Totales`;
-}
-
-// ==============================
-// RENDER PRINCIPAL
-// ==============================
 function renderizar(data) {
-  contenedorRegiones.innerHTML = "";
+  contenedor.innerHTML = "";
+  let contador = 0;
 
-  data.forEach(region => {
-    const regionHTML = document.createElement("details");
-    regionHTML.className =
-      "bg-white dark:bg-slate-800 rounded-xl border shadow-sm overflow-hidden";
+  // Agrupar por continente → país
+  const estructura = {};
 
-    regionHTML.innerHTML = `
-      <summary class="flex justify-between items-center px-4 py-3 cursor-pointer">
-        <span class="font-bold">${region.region}</span>
-        <span class="text-xs text-slate-500">${region.proyectos.length} proyectos</span>
-      </summary>
+  data.forEach(item => {
+    if (!estructura[item.continente]) {
+      estructura[item.continente] = {};
+    }
+    if (!estructura[item.continente][item.pais]) {
+      estructura[item.continente][item.pais] = [];
+    }
+    estructura[item.continente][item.pais].push(...item.proyectos);
+  });
 
-      <div class="flex flex-col gap-3 px-4 pb-4">
-        ${region.proyectos.map(proyecto => tarjetaProyecto(proyecto)).join("")}
-      </div>
+  Object.entries(estructura).forEach(([continente, paises]) => {
+    const bloqueContinente = document.createElement("div");
+    bloqueContinente.className = "bg-white dark:bg-slate-800 rounded-xl shadow-sm p-4";
+
+    bloqueContinente.innerHTML = `
+      <h4 class="font-bold text-lg mb-3">${continente}</h4>
     `;
 
-    contenedorRegiones.appendChild(regionHTML);
-  });
-}
+    Object.entries(paises).forEach(([pais, proyectos]) => {
+      const bloquePais = document.createElement("div");
+      bloquePais.className = "mb-4";
 
-// ==============================
-// TARJETA DE PROYECTO
-// ==============================
-function tarjetaProyecto(p) {
-  return `
-    <div class="flex gap-3 items-center bg-background-light dark:bg-slate-900 rounded-xl p-3 border">
-      
-      <img src="${p.imagen || "https://via.placeholder.com/80"}"
-           alt="${p.titulo}"
-           class="size-16 rounded-lg object-cover border"/>
+      bloquePais.innerHTML = `
+        <h5 class="font-semibold text-sm mb-2 text-primary">${pais}</h5>
+      `;
 
-      <div class="flex-1">
-        <h4 class="font-bold text-sm">${p.titulo}</h4>
-        <p class="text-xs text-slate-500">${p.pais} · ${p.categoria}</p>
+      proyectos.forEach(proy => {
+        contador++;
 
-        <div class="mt-2 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
-          <div class="h-full bg-primary"
-               style="width:${p.progreso || 0}%"></div>
-        </div>
-      </div>
+        const card = document.createElement("details");
+        card.className =
+          "mb-2 rounded-lg border bg-background-light dark:bg-slate-900 p-3";
 
-      <span class="text-xs font-bold text-primary">${p.estado}</span>
-    </div>
-  `;
-}
+        card.innerHTML = `
+          <summary class="cursor-pointer font-medium text-sm flex justify-between">
+            <span>${proy.nombre}</span>
+            <span class="text-xs text-slate-500">${proy.estado}</span>
+          </summary>
 
-// ==============================
-// BUSCADOR
-// ==============================
-buscador.addEventListener("input", e => {
-  const texto = e.target.value.toLowerCase();
+          <div class="mt-2 text-xs text-slate-600 dark:text-slate-300 space-y-1">
+            <p><strong>Sector:</strong> ${proy.sector}</p>
+            <p><strong>Fecha:</strong> ${proy.fecha}</p>
+            <p><strong>Objetivo:</strong> ${proy.objetivo}</p>
+            <p><strong>Notas:</strong> ${proy.notas}</p>
+          </div>
+        `;
 
-  if (!texto) {
-    renderizar(datosGlobales);
-    return;
-  }
+        bloquePais.appendChild(card);
+      });
 
-  const filtrados = proyectosPlanos.filter(p =>
-    p.titulo.toLowerCase().includes(texto) ||
-    p.pais.toLowerCase().includes(texto) ||
-    p.id.toLowerCase().includes(texto)
-  );
+      bloqueContinente.appendChild(bloquePais);
+    });
 
-  reconstruirDesdeBusqueda(filtrados);
-});
-
-// ==============================
-// RECONSTRUIR POR REGIÓN
-// ==============================
-function reconstruirDesdeBusqueda(lista) {
-  const mapa = {};
-
-  lista.forEach(p => {
-    if (!mapa[p.region]) mapa[p.region] = [];
-    mapa[p.region].push(p);
+    contenedor.appendChild(bloqueContinente);
   });
 
-  const nuevoFormato = Object.keys(mapa).map(region => ({
-    region,
-    proyectos: mapa[region]
-  }));
-
-  renderizar(nuevoFormato);
+  totalProyectos.textContent = `${contador} Totales`;
 }
 
-// ==============================
-// INIT
-// ==============================
 document.addEventListener("DOMContentLoaded", cargarDatos);
