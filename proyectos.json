@@ -1,16 +1,18 @@
 [
   {
-    "region": "Sudamérica",
+    "continente": "América del Norte",
+    "pais": "Canadá",
     "proyectos": [
       {
-        "id": "SA-001",
-        "titulo": "Proyecto Demo",
-        "pais": "México",
-        "categoria": "Educación",
-        "estado": "Activo",
-        "progreso": 60,
-        "imagen": "https://via.placeholder.com/80"
+        "id": "AN-CA-001",
+        "nombre": "Proyecto de Cooperación Educativa",
+        "sector": "Educación",
+        "fecha": "2024",
+        "estado": "Ejecución",
+        "objetivo": "Fortalecer capacidades educativas.",
+        "notas": "Proyecto financiado por cooperación bilateral."
       }
     ]
   }
 ]
+
