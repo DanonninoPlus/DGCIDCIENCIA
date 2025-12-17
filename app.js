@@ -3,100 +3,130 @@
 // Render dinámico desde JSON
 // ==============================
 
+document.addEventListener("DOMContentLoaded", () => {
+  renderRegiones(dataMock);
+});
 
-const contenedor = document.getElementById("contenedor-regiones");
-const totalProyectos = document.getElementById("total-proyectos");
+/* ===============================
+   🔹 DATOS TEMPORALES (mock)
+   Luego esto vendrá de JSON
+================================ */
 
-async function cargarDatos() {
-  try {
-    const res = await fetch("proyectos.json");
-    if (!res.ok) throw new Error("No se pudo cargar el JSON");
-    const data = await res.json();
-    renderizar(data);
-  } catch (err) {
-    contenedor.innerHTML = `
-      <div class="p-4 rounded-xl bg-red-50 text-red-600 text-sm">
-        No se pudieron cargar los proyectos.
-      </div>`;
-    console.error(err);
+const dataMock = [
+  {
+    region: "Sudamérica",
+    proyectos: [
+      {
+        titulo: "Iniciativa Agua Limpia",
+        pais: "Perú",
+        categoria: "Infraestructura",
+        estado: "Activo",
+        progreso: 75,
+        imagen: "https://via.placeholder.com/80"
+      },
+      {
+        titulo: "Educación Digital Rural",
+        pais: "Bolivia",
+        categoria: "Educación",
+        estado: "Planeación",
+        progreso: 40,
+        imagen: "https://via.placeholder.com/80"
+      }
+    ]
+  },
+  {
+    region: "África Subsahariana",
+    proyectos: [
+      {
+        titulo: "Salud Comunitaria",
+        pais: "Kenia",
+        categoria: "Salud",
+        estado: "Activo",
+        progreso: 60,
+        imagen: "https://via.placeholder.com/80"
+      }
+    ]
   }
-}
+];
 
-function renderizar(data) {
+/* ===============================
+   🔹 RENDER GENERAL
+================================ */
+
+function renderRegiones(regiones) {
+  const contenedor = document.getElementById("contenedor-regiones");
+  const totalSpan = document.getElementById("total-proyectos");
+
   contenedor.innerHTML = "";
-  let contador = 0;
+  let totalProyectos = 0;
 
-  // Agrupar por continente → país
-  const estructura = {};
-
-  data.forEach(item => {
-    if (!estructura[item.continente]) {
-      estructura[item.continente] = {};
-    }
-    if (!estructura[item.continente][item.pais]) {
-      estructura[item.continente][item.pais] = [];
-    }
-    estructura[item.continente][item.pais].push(...item.proyectos);
+  regiones.forEach(region => {
+    totalProyectos += region.proyectos.length;
+    contenedor.insertAdjacentHTML("beforeend", crearRegion(region));
   });
 
-  Object.entries(estructura).forEach(([continente, paises]) => {
-
-    // 🔹 CONTINENTE (colapsable)
-    const bloqueContinente = document.createElement("details");
-    bloqueContinente.className =
-      "bg-white dark:bg-slate-800 rounded-xl shadow-sm p-4";
-
-    bloqueContinente.innerHTML = `
-      <summary class="cursor-pointer font-bold text-lg mb-3">
-        ${continente}
-      </summary>
-    `;
-
-    Object.entries(paises).forEach(([pais, proyectos]) => {
-
-      // 🔹 PAÍS (colapsable)
-      const bloquePais = document.createElement("details");
-      bloquePais.className = "ml-4 mb-3";
-
-      bloquePais.innerHTML = `
-        <summary class="cursor-pointer font-semibold text-sm text-primary mb-2">
-          ${pais}
-        </summary>
-      `;
-
-      proyectos.forEach(proy => {
-        contador++;
-
-        // 🔹 PROYECTO (colapsable)
-        const card = document.createElement("details");
-        card.className =
-          "ml-4 mb-2 rounded-lg border bg-background-light dark:bg-slate-900 p-3";
-
-        card.innerHTML = `
-          <summary class="cursor-pointer font-medium text-sm flex justify-between">
-            <span>${proy.nombre}</span>
-            <span class="text-xs text-slate-500">${proy.estado}</span>
-          </summary>
-
-          <div class="mt-2 text-xs text-slate-600 dark:text-slate-300 space-y-1">
-            <p><strong>Sector:</strong> ${proy.sector}</p>
-            <p><strong>Fecha:</strong> ${proy.fecha}</p>
-            <p><strong>Objetivo:</strong> ${proy.objetivo}</p>
-            <p><strong>Notas:</strong> ${proy.notas}</p>
-          </div>
-        `;
-
-        bloquePais.appendChild(card);
-      });
-
-      bloqueContinente.appendChild(bloquePais);
-    });
-
-    contenedor.appendChild(bloqueContinente);
-  });
-
-  totalProyectos.textContent = `${contador} Totales`;
+  totalSpan.textContent = `${totalProyectos} Totales`;
 }
 
-document.addEventListener("DOMContentLoaded", cargarDatos);
+/* ===============================
+   🔹 TEMPLATE REGIÓN
+================================ */
+
+function crearRegion(region) {
+  return `
+    <details class="group bg-white dark:bg-slate-800 rounded-2xl border shadow-sm overflow-hidden">
+      <summary class="flex items-center justify-between p-4 cursor-pointer">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">public</span>
+          <span class="font-bold">${region.region}</span>
+        </div>
+        <span class="text-xs text-slate-500">
+          ${region.proyectos.length} proyectos
+        </span>
+      </summary>
+
+      <div class="flex flex-col gap-3 px-4 pb-4">
+        ${region.proyectos.map(crearProyecto).join("")}
+      </div>
+    </details>
+  `;
+}
+
+/* ===============================
+   🔹 TEMPLATE PROYECTO (CARD)
+================================ */
+
+function crearProyecto(p) {
+  return `
+    <div class="flex gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border">
+      
+      <img
+        src="${p.imagen}"
+        alt="${p.titulo}"
+        class="size-16 rounded-lg object-cover"
+      />
+
+      <div class="flex-1 flex flex-col gap-1">
+        <h4 class="font-bold text-sm">${p.titulo}</h4>
+        <span class="text-xs text-slate-500">${p.pais} · ${p.categoria}</span>
+
+        <div class="flex items-center gap-2 mt-1">
+          <div class="flex-1 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+            <div
+              class="h-full bg-primary"
+              style="width: ${p.progreso}%"
+            ></div>
+          </div>
+          <span class="text-xs font-medium">${p.progreso}%</span>
+        </div>
+
+        <span class="text-[11px] mt-1 text-slate-500">
+          Estado: <strong>${p.estado}</strong>
+        </span>
+      </div>
+    </div>
+  `;
+}
+
+
 
