@@ -125,7 +125,10 @@ function crearProyecto(p) {
   details.innerHTML = `
     <summary class="cursor-pointer flex justify-between items-center mb-2">
       <span class="font-medium text-sm">${p.titulo}</span>
-      <span class="text-[11px] text-slate-500">${p.estado}</span>
+      <span class="text-[11px] font-semibold ${claseEstado(p.estado)}">
+  ${p.estado}
+</span>
+
     </summary>
 
     <!-- CONTENIDO -->
@@ -229,6 +232,7 @@ function mostrarError(msg) {
     </div>
   `;
 }
+
 
 
 
