@@ -132,7 +132,7 @@ function crearProyecto(p) {
     </summary>
 
     <!-- CONTENIDO -->
-    <div class="flex gap-3">
+    <div class="flex items-center gap-3">
       
       <!-- IMAGEN -->
       <img
@@ -232,6 +232,7 @@ function mostrarError(msg) {
     </div>
   `;
 }
+
 
 
 
