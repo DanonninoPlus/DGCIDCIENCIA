@@ -171,6 +171,20 @@ function agruparPorPais(proyectos) {
   }, {});
 }
 
+function claseEstado(estado) {
+  switch (estado) {
+    case "Finalizado":
+      return "text-red-500";
+    case "Planeación":
+      return "text-blue-500";
+    case "En ejecución":
+      return "text-green-500";
+    default:
+      return "text-slate-500";
+  }
+}
+
+
 /* ===============================
    BUSCADOR
 ================================ */
@@ -215,5 +229,6 @@ function mostrarError(msg) {
     </div>
   `;
 }
+
 
 
