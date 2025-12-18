@@ -1,182 +1,196 @@
 /* =========================================================
    app.js
-   Proyecto 2.0 — Gestión de Proyectos de Cooperación
-   Arquitectura: HTML + JS + JSON (GitHub Pages friendly)
+   Proyecto 2.1 — Gestión de Proyectos de Cooperación
+   HTML + JS + JSON (GitHub Pages friendly)
 ========================================================= */
 
-/* ===============================
-   🔹 CONFIGURACIÓN
-================================ */
-
-// ⚠️ Cambia esta URL por la RAW de tu JSON cuando lo tengas
 const DATA_URL = "proyectos.json";
 
-/* ===============================
-   🔹 ESTADO GLOBAL
-================================ */
-
-let dataOriginal = [];   // datos completos
-let dataFiltrada = [];   // datos filtrados (buscador, etc.)
+let dataOriginal = [];
+let dataFiltrada = [];
 
 /* ===============================
-   🔹 INIT
+   INIT
 ================================ */
-
 document.addEventListener("DOMContentLoaded", () => {
   cargarDatos();
   configurarBuscador();
 });
 
 /* ===============================
-   🔹 CARGA DE DATOS
+   CARGA DE DATOS
 ================================ */
-
 async function cargarDatos() {
   try {
-    const response = await fetch(DATA_URL);
-    if (!response.ok) throw new Error("Error al cargar el JSON");
+    const res = await fetch(DATA_URL);
+    if (!res.ok) throw new Error("Error al cargar JSON");
 
-    const data = await response.json();
-
+    const data = await res.json();
     dataOriginal = data;
     dataFiltrada = data;
 
-    renderRegiones(dataFiltrada);
-  } catch (error) {
-    console.error("Error:", error);
+    renderizar(dataFiltrada);
+  } catch (err) {
+    console.error(err);
     mostrarError("No se pudieron cargar los proyectos.");
   }
 }
 
 /* ===============================
-   🔹 RENDER PRINCIPAL
+   RENDER GENERAL
 ================================ */
-
-function renderRegiones(regiones) {
+function renderizar(regiones) {
   const contenedor = document.getElementById("contenedor-regiones");
   const totalSpan = document.getElementById("total-proyectos");
 
   contenedor.innerHTML = "";
-  let totalProyectos = 0;
+  let totalGlobal = 0;
 
   regiones.forEach(region => {
-    totalProyectos += region.proyectos.length;
-    contenedor.insertAdjacentHTML("beforeend", crearRegion(region));
+    totalGlobal += region.proyectos.length;
+    contenedor.appendChild(crearContinente(region));
   });
 
-  totalSpan.textContent = `${totalProyectos} Totales`;
+  totalSpan.textContent = `${totalGlobal} Totales`;
 }
 
 /* ===============================
-   🔹 TEMPLATE REGIÓN
+   CONTINENTE
 ================================ */
+function crearContinente(region) {
+  const proyectosPorPais = agruparPorPais(region.proyectos);
 
-function crearRegion(region) {
-  return `
-    <details class="group bg-white dark:bg-slate-800 rounded-2xl border shadow-sm overflow-hidden">
-      <summary class="flex items-center justify-between p-4 cursor-pointer">
-        <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-primary">public</span>
-          <span class="font-bold">${region.region}</span>
-        </div>
-        <span class="text-xs text-slate-500">
-          ${region.proyectos.length} proyectos
-        </span>
-      </summary>
+  const details = document.createElement("details");
+  details.className =
+    "bg-white dark:bg-slate-800 rounded-2xl border shadow-sm overflow-hidden";
 
-      <div class="flex flex-col gap-3 px-4 pb-4">
-        ${region.proyectos.map(crearProyecto).join("")}
+  details.innerHTML = `
+    <summary class="flex items-center justify-between p-4 cursor-pointer">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">public</span>
+        <span class="font-bold">${region.region}</span>
       </div>
-    </details>
+      <span class="text-xs text-slate-500">
+        ${region.proyectos.length} proyectos
+      </span>
+    </summary>
   `;
+
+  const contenedorPaises = document.createElement("div");
+  contenedorPaises.className = "flex flex-col gap-3 px-4 pb-4";
+
+  Object.entries(proyectosPorPais).forEach(([pais, proyectos]) => {
+    contenedorPaises.appendChild(crearPais(pais, proyectos));
+  });
+
+  details.appendChild(contenedorPaises);
+  return details;
 }
 
 /* ===============================
-   🔹 TEMPLATE PROYECTO
+   PAÍS
 ================================ */
+function crearPais(pais, proyectos) {
+  const details = document.createElement("details");
+  details.className = "ml-2 rounded-xl border bg-slate-50 dark:bg-slate-900";
 
+  details.innerHTML = `
+    <summary class="flex justify-between items-center p-3 cursor-pointer">
+      <span class="font-semibold text-sm">${pais}</span>
+      <span class="text-xs text-slate-500">
+        ${proyectos.length}
+      </span>
+    </summary>
+  `;
+
+  const contenedorProyectos = document.createElement("div");
+  contenedorProyectos.className = "flex flex-col gap-2 px-3 pb-3";
+
+  proyectos.forEach(p => {
+    contenedorProyectos.appendChild(crearProyecto(p));
+  });
+
+  details.appendChild(contenedorProyectos);
+  return details;
+}
+
+/* ===============================
+   PROYECTO
+================================ */
 function crearProyecto(p) {
-  return `
-    <div class="flex gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border">
-      
-      <img
-        src="${p.imagen || "https://via.placeholder.com/80"}"
-        alt="${p.titulo}"
-        class="size-16 rounded-lg object-cover"
-      />
+  const details = document.createElement("details");
+  details.className =
+    "ml-2 rounded-lg border bg-white dark:bg-slate-800 p-3";
 
-      <div class="flex-1 flex flex-col gap-1">
-        <h4 class="font-bold text-sm">${p.titulo}</h4>
-        <span class="text-xs text-slate-500">
-          ${p.pais} · ${p.categoria}
-        </span>
+  details.innerHTML = `
+    <summary class="cursor-pointer flex justify-between items-center">
+      <span class="font-medium text-sm">${p.titulo}</span>
+      <span class="text-[11px] text-slate-500">${p.estado}</span>
+    </summary>
 
-        <div class="flex items-center gap-2 mt-1">
-          <div class="flex-1 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
-            <div
-              class="h-full bg-primary"
-              style="width: ${p.progreso}%"
-            ></div>
-          </div>
-          <span class="text-xs font-medium">${p.progreso}%</span>
-        </div>
-
-        <span class="text-[11px] mt-1 text-slate-500">
-          Estado: <strong>${p.estado}</strong>
-        </span>
-      </div>
+    <div class="mt-2 text-xs text-slate-600 dark:text-slate-300 space-y-1">
+      <p><strong>Sector:</strong> ${p.sector}</p>
+      <p><strong>Fecha:</strong> ${p.fecha}</p>
+      <p><strong>Objetivo:</strong> ${p.objetivo}</p>
+      <p><strong>Notas:</strong> ${p.notas}</p>
     </div>
   `;
+
+  return details;
 }
 
 /* ===============================
-   🔹 BUSCADOR
+   UTILIDADES
 ================================ */
+function agruparPorPais(proyectos) {
+  return proyectos.reduce((acc, p) => {
+    if (!acc[p.pais]) acc[p.pais] = [];
+    acc[p.pais].push(p);
+    return acc;
+  }, {});
+}
 
+/* ===============================
+   BUSCADOR
+================================ */
 function configurarBuscador() {
   const input = document.getElementById("buscador");
   if (!input) return;
 
   input.addEventListener("input", e => {
     const texto = e.target.value.toLowerCase().trim();
-    filtrarProyectos(texto);
+    filtrar(texto);
   });
 }
 
-function filtrarProyectos(texto) {
+function filtrar(texto) {
   if (!texto) {
     dataFiltrada = dataOriginal;
-    renderRegiones(dataFiltrada);
+    renderizar(dataFiltrada);
     return;
   }
 
   dataFiltrada = dataOriginal
     .map(region => {
-      const proyectosFiltrados = region.proyectos.filter(p =>
+      const proyectos = region.proyectos.filter(p =>
         p.titulo.toLowerCase().includes(texto) ||
         p.pais.toLowerCase().includes(texto) ||
         (p.id && p.id.toLowerCase().includes(texto))
       );
-
-      return {
-        ...region,
-        proyectos: proyectosFiltrados
-      };
+      return { ...region, proyectos };
     })
     .filter(region => region.proyectos.length > 0);
 
-  renderRegiones(dataFiltrada);
+  renderizar(dataFiltrada);
 }
 
 /* ===============================
-   🔹 MANEJO DE ERRORES
+   ERRORES
 ================================ */
-
-function mostrarError(mensaje) {
-  const contenedor = document.getElementById("contenedor-regiones");
-  contenedor.innerHTML = `
+function mostrarError(msg) {
+  document.getElementById("contenedor-regiones").innerHTML = `
     <div class="p-4 rounded-xl bg-red-50 text-red-600 text-sm">
-      ${mensaje}
+      ${msg}
     </div>
   `;
 }
