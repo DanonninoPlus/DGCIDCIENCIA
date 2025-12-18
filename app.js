@@ -123,28 +123,38 @@ function crearProyecto(p) {
     "ml-2 rounded-lg border bg-white dark:bg-slate-800 p-3";
 
   details.innerHTML = `
-    <summary class="cursor-pointer flex justify-between items-center">
+    <summary class="cursor-pointer flex justify-between items-center mb-2">
       <span class="font-medium text-sm">${p.titulo}</span>
       <span class="text-[11px] text-slate-500">${p.estado}</span>
     </summary>
 
-    <div class="mt-2 text-xs text-slate-600 dark:text-slate-300 space-y-1">
-      <p><strong>Sector:</strong> ${p.sector}</p>
-      <p><strong>Fecha:</strong> ${p.fecha}</p>
-      <p><strong>Objetivo:</strong> ${p.objetivo}</p>
-      <p><strong>Notas:</strong> ${p.notas}</p>
+    <!-- CONTENIDO -->
+    <div class="flex gap-3">
+      
+      <!-- IMAGEN -->
+      <img
+        src="${p.imagen || "https://via.placeholder.com/80"}"
+        alt="${p.titulo}"
+        class="size-16 rounded-lg object-cover flex-shrink-0"
+      />
+
+      <!-- INFO -->
+      <div class="flex-1 text-xs text-slate-600 dark:text-slate-300 space-y-1">
+        <p><strong>Sector:</strong> ${p.sector}</p>
+        <p><strong>Fecha:</strong> ${p.fecha}</p>
+        <p><strong>Objetivo:</strong> ${p.objetivo}</p>
+        <p><strong>Notas:</strong> ${p.notas}</p>
+
+        <p class="mt-1"><strong>Avance:</strong> ${p.progreso}%</p>
+
+        <div class="h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+          <div
+            class="h-full bg-primary transition-all"
+            style="width: ${p.progreso}%"
+          ></div>
+        </div>
+      </div>
     </div>
-
-<p class="text-xs">
-  <strong>Avance:</strong> ${p.progreso}%
-</p>
-
-<div class="h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
-  <div
-    class="h-full bg-primary transition-all"
-    style="width: ${p.progreso}%"
-  ></div>
-</div>    
   `;
 
   return details;
@@ -205,4 +215,5 @@ function mostrarError(msg) {
     </div>
   `;
 }
+
 
