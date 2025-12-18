@@ -138,7 +138,7 @@ function crearProyecto(p) {
       <img
         src="${p.imagen || "https://via.placeholder.com/80"}"
         alt="${p.titulo}"
-        class="size-16 rounded-lg object-cover flex-shrink-0"
+        class="size-18 rounded-lg object-cover flex-shrink-0"
       />
 
       <!-- INFO -->
@@ -232,6 +232,7 @@ function mostrarError(msg) {
     </div>
   `;
 }
+
 
 
 
