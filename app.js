@@ -134,6 +134,17 @@ function crearProyecto(p) {
       <p><strong>Objetivo:</strong> ${p.objetivo}</p>
       <p><strong>Notas:</strong> ${p.notas}</p>
     </div>
+
+<p class="text-xs">
+  <strong>Avance:</strong> ${p.progreso}%
+</p>
+
+<div class="h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+  <div
+    class="h-full bg-primary transition-all"
+    style="width: ${p.progreso}%"
+  ></div>
+</div>    
   `;
 
   return details;
@@ -194,3 +205,4 @@ function mostrarError(msg) {
     </div>
   `;
 }
+
