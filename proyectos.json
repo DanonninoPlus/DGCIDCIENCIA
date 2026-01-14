@@ -1,20 +1,1773 @@
 [
   {
-    "region": "Sudamérica",
-    "proyectos": [
-      {
-        "id": "SA-001",
-        "titulo": "Proyecto Demo",
-        "pais": "México",
-        "sector": "Educación",
-        "fecha": "2024-03",
-        "estado": "En ejecución",
-        "objetivo": "Texto descriptivo del objetivo",
-        "notas": "Notas internas o comentarios",
-        "progreso": 60,
-        "imagen": "https://lh3.googleusercontent.com/aida-public/AB6AXuCuzn4Hy4QyK1mPXx8toaYHaAv4gH1hfCeGs_AzaWFpOsUDjKSdldo3dz672-6qLFVMY-aimWV5HNVxfwaXf9M1uYa2oUrlQVd2gTLwB39MdvBzkfrrNLF4MW9G0Vu_pEV53MEnqtYd5dECW7YnacUYl0jI6qYtztSM3wey-8YzyP5pzw6rFVcfbVAMZ2wqjarGKhz31AZCKw5D6GQEDVcPg6ZrBneZTiEDNLGcRul48djUXDodXOYX2YOghzqkRX_qyWt029CGVVQ"
-      }
-    ]
-  }
-]
+    "id": "p1_Argentina",
+    "Nombredelproyecto": "Fortalecimiento de las capacidades para la implementación del Acuerdo de Escazú en ambos países",
+    "Continente": "Sudamérica",
+    "Pais": "Argentina",
+    "Sector": "Protección Ambiental",
+    "Fechadeinicio": "2001",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
 
+    {
+    "id": "p2_Argentina",
+    "Nombredelproyecto": "Desarrollo de un Sistema Solar Fotovoltaico-Hidrógeno",
+    "Sector": "Combustibles y Energía, Ciencia Tecnología e Innovación",
+    "Pais": "Argentina",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+    {
+    "id": "p3_Argentina",
+    "Nombredelproyecto": "Desarrollo de Capacidades de Argentina y México en el manejo del riesgo de sequías en la gestión integral de los recursos hídricos",
+    "Sector": "Protección Ambiental",
+    "Pais": "Argentina",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p4_Argentina",
+    "Nombredelproyecto": "Fortalecimiento de capacidades en mediciones industriales y metrología legal",
+    "Sector": "Combustibles y Energía, Ciencia Tecnología e Innovación",
+    "Pais": "Argentina",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p5_Argentina",
+    "Nombredelproyecto": "Economía circular: Biocombustibles Sólidos para aplicaciones industriales y residenciales",
+    "Sector": "Combustibles y Energía, Ciencia Tecnología e Innovación",
+    "Pais": "Argentina",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p6_Argentina",
+    "Nombredelproyecto": "Intercambio de habilidades biotecnológicas para la conservación a mediano y largo plazo de papa y ajo",
+    "Sector": "Agropecuario, Silvicultura, Pesca y Caza",
+    "Pais": "Argentina",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2001",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p1_Bolivia",
+    "Nombredelproyecto": "Fortalecimiento de capacidades técnicas en los análisis y procesos de tratamiento de aguas residuales y lodos generados",
+    "Sector": "Protección Ambiental",
+    "Pais": "Bolivia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p2_Bolivia",
+    "Nombredelproyecto": "Fortalecimiento de capacidades técnicas para el manejo de estrategias que promueven la inocuidad en la protección primaria de agroalimentos en productores comunitarios de Bolivia",
+    "Sector": "Agropecuario",
+    "Pais": "Bolivia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p3_Bolivia",
+    "Nombredelproyecto": "Intercambio de experiencias y buenas prácticas para la producción y exportación de banano, café y piña en Bolivia",
+    "Sector": "Agropecuario",
+    "Pais": "Bolivia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p4_Bolivia",
+    "Nombredelproyecto": "Transferencia de tecnología para el desarrollo de capacidades y alternativas en arroz",
+    "Sector": "Agropecuario",
+    "Pais": "Bolivia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p5_Bolivia",
+    "Nombredelproyecto": "Intercambio técnico y operativo sobre Medicina Tradicional y complementaria, interculturalidad y atención a la salud de los pueblos indígenas con Bolivia",
+    "Sector": "Salud",
+    "Pais": "Bolivia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p6_Bolivia",
+    "Nombredelproyecto": "Transferencia de tecnología para el desarrollo de capacidades y alternativas de producción de maíz",
+    "Sector": "Agropecuario",
+    "Pais": "Bolivia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p7_Bolivia",
+    "Nombredelproyecto": "Aprovechamiento sostenible del Litio: Fortalecimiento de la competitividad y el desarrollo energético",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Pais": "Bolivia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p8_Bolivia",
+    "Nombredelproyecto": "Implementación de Horizonte de Vida de Vivir Bien en Bolivia y México desde las políticas públicas",
+    "Sector": "Protección social, Pueblos Indígenas",
+    "Pais": "Bolivia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p1_Brasil",
+    "Nombredelproyecto": "Gestión del Programa de Mosaca de la Fruta en el Estado de Río Grande del Norte y Vale de San Francisco",
+    "Sector": "Agropecuario",
+    "Pais": "Brasil",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p2_Brasil",
+    "Nombredelproyecto": "Investigación y transferencia de tecnología para la producción sostenible de Higuerilla (Ricinus communis L.)",
+    "Sector": "Agropecuario",
+    "Pais": "Brasil",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p3_Brasil",
+    "Nombredelproyecto": "Inclusión digital en poblaciones vulnerables",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Pais": "Brasil",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p4_Brasil",
+    "Nombredelproyecto": "Promoción de igualdad de género desde los cuidados y combate a la violencia",
+    "Sector": "Género",
+    "Pais": "Brasil",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p5_Brasil",
+    "Nombredelproyecto": "Emergencias en productos peligrosos y búsqueda y rescate en estructuras colapsadas",
+    "Sector": "Otros Servicios Generales de Gobierno",
+    "Pais": "Brasil",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+{
+    "id": "p6_Brasil",
+    "Nombredelproyecto": "Intercambio de experiencia en el ámbito del programa Artemis",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Pais": "Brasil",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p1_Colombia",
+    "Nombredelproyecto": "Nuevos Enfoques y Estrategias en materia de Acuicultura e Impulso Sociocultural hacia el Turismo Sostenible",
+    "Sector": "Acuacultura, Turismo",
+    "Pais": "Colombia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+    {
+    "id": "p2_Colombia",
+    "Nombredelproyecto": "Fortalecimiento técnico e institucional para el acceso a agua potable y saneamiento básico entre el Ministerio de Vivienda, Ciudad y Territorio y el Instituto Mexicano de Tecnología del Agua",
+    "Sector": "Protección Ambiental",
+    "Pais": "Colombia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+      {
+    "id": "p3_Colombia",
+    "Nombredelproyecto": "Uso de secuenciación de genoma completo y análisis bioinformático como herramientas para la vigilancia de Campylobacter SPP en la cadena de producción de animales de abasto, impacto en la Salud Pública y el comercio en América Latina",
+    "Sector": "Agropecuario, Sanidad",
+    "Pais": "Colombia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p4_Colombia",
+    "Nombredelproyecto": "Desarrollo de un sistema binacional para el cálculo de valores genómicos en Ganado Holstein Colombiano y Mexicano",
+    "Sector": "Agropecuario",
+    "Pais": "Colombia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+    {
+    "id": "p5_Colombia",
+    "Nombredelproyecto": "Fortalecimiento de capacidades en implementación de procesos de rematriación para comunidades diferenciales en Colombia: Lecciones Lideradas por CIMMYT e INIFAP",
+    "Sector": "Agropecuario",
+    "Pais": "Colombia",
+    "Continente": "Sudamérica",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+  
+    {
+    "id": "p1_Chile",
+    "Nombredelproyecto": "Restauración y Conservación del Mural Tupahue",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Recreación, Cultura, Otras Manifestaciones",
+    "Fechadeinicio": "2018",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p2_Chile",
+    "Nombredelproyecto": "Estrategia para promover e incentivar la compra y consumo de frutas y verduras en población vulnerable de Chile y México: Estudio piloto",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Salud, Protección social",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p3_Chile",
+    "Nombredelproyecto": "Valorización de los ecosistemas estuarinos de Chile y México a través de infraestructura habilitante y recursos educativos: una vía para el desarrollo local sostenible y resiliente al cambio climático.",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Protección Ambiental",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p4_Chile",
+    "Nombredelproyecto": "Impulso de los derechos y participación de las mujeres, con especial énfasis en una perspectiva feminista de la cooperación",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Protección social, Género, Política de Gobierno",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p5_Chile",
+    "Nombredelproyecto": "25 aniversario de la suscripción del TDLC Chile - México",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Asuntos Económicos, Comerciales y Laborales, Política de Gobierno, Género",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p6_Chile",
+    "Nombredelproyecto": "Manejo integrado de mosquitos vectores de arbovirosis a través de la vigilancia entomo-virológica en México y Chile, un abordaje comunitario, con perspectiva de género y pertinencia cultural",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Salud, Protección social",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p7_Chile",
+    "Nombredelproyecto": "Fortalecimiento de la vigilancia genómica de Acinetobacter baumannii en Latinoamérica a través del establecimiento de un eje de colaboración Chile-México",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Salud, Protección social",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p8_Chile",
+    "Nombredelproyecto": "Modelamiento matemático de procesos epidémicos incorporando estructura poblacional, regional y grupos de riesgo",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Salud, Protección social",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p9_Chile",
+    "Nombredelproyecto": "Liderazgo y participación política de mujeres, jóvenes y niñas indígenas para la construcción de paz",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Protección social, Género",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p10_Chile",
+    "Nombredelproyecto": "Desarrollo de una plataforma tecnológica de código abierto orientada a la integración de diversas fuentes de información para mejorar el aprovechamiento de los productos de las oficinas de estadística",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Ciencia Tecnología e Innovación, Política de Gobierno, Otros Servicios Generales de Gobierno",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p11_Chile",
+    "Nombredelproyecto": "Estrategia de formación de recursos humanos en migración y salud, México - Chile: del diseño a la implementación de políticas y prácticas de salud en migración",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Protección social, Migración",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p12_Chile",
+    "Nombredelproyecto": "Plan de acción y colaboración Chile-México, para abordar el decenio internacional de las Lenguas Indígenas 2022-2032. Sistematización de experiencias territoriales de presentación y revitalización de lenguas indígenas",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Educación",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p13_Chile",
+    "Nombredelproyecto": "Fortalecimiento e innovación de los sistemas de compra pública de Nuevo León, Puebla y Chile",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Asuntos Económicos, Comerciales y Laborales",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p14_Chile",
+    "Nombredelproyecto": "Modelo de desarrollo para fortalecer las capacidades sociales y políticas de las mujeres en zonas rurales y semiurbanas en Chile y México",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Política de Gobierno",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p15_Chile",
+    "Nombredelproyecto": "Alianza estratégica para el fortalecimiento de las capacidades de vigilancia de micotoxinas en Chile y México: Una mirada hacia la salud pública y seguridad alimentaria",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p16_Chile",
+    "Nombredelproyecto": "Tecnologías nucleares y biotecnológicas para mejorar la sustentabilidad de ecosistemas forestales afectados por el cambio climático en México y Chile",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p17_Chile",
+    "Nombredelproyecto": "Intercambio de tecnología para el control de vectores y nematodos gastrointestinales",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p18_Chile",
+    "Nombredelproyecto": "Salud, embarazo y género. Avanzando hacia servicios de salud amigables para adolescentes en el marco de la implementación del Plan Estratégico para la Prevención del Embarazo en Adolescentes de Centroamérica y República Dominicana",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Salud, Protección social",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p19_Chile",
+    "Nombredelproyecto": "El Fondo que Queremos: Fortalecimiento Fondo México - Chile",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Política de Gobierno",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p20_Chile",
+    "Nombredelproyecto": "Preparación, Respuestas y Aprendizajes Frente a la Pandemia: Una Mirada Comparada Chile-México a Través de las Experiencias Territoriales",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Salud, Protección social",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p21_Chile",
+    "Nombredelproyecto": "Optimizando la atención, protección y reintegración de poblaciones en movilidad humana en El Salvador, Guatemala y Honduras",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Protección social",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p22_Chile",
+    "Nombredelproyecto": "Fortalecimiento de capacidades para el co-manejo pesquero y acuícola en pesquerías de pequeña escala como un aporte a las políticas públicas de México y Chile",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Protección Ambiental, Agropecuario, Silvicultura, Pesca",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p23_Chile",
+    "Nombredelproyecto": "Apoyar al empoderamiento de grupos de mujeres de la Agricultura Familiar Campesina (AFC), apicultura, pesca artesanal y procesamiento primario de alimentos en la implementación de estándares de inocuidad alimentaria como un factor en su desarrollo económico y social",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Protección Ambiental, Agropecuario, Silvicultura, Pesca",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p24_Chile",
+    "Nombredelproyecto": "Efectos del Cambio Climático en los caudales de ríos y su impacto en los ecosistemas costeros y en la socioeconomía de las comunidades de pescadores de la costa de Nayarit-México y la región del Bío Bío-Chile",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "En ejecución",
+    "Sector": "Protección Ambiental, Agropecuario, Silvicultura, Pesca",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p25_Chile_1",
+    "Nombredelproyecto": "Entornos Escolares Seguros",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Reducir significativamente las muertes y lesiones graves en entornos escolares de Chile y México mediante la implementación conjunta de soluciones tecnológicas, urbanas, participativas y replicables en seguridad vial.",
+    "notas": "18 meses."
+  },
+
+{
+    "id": "p26_Chile_2",
+    "Nombredelproyecto": "Fortalecimiento de Capacidades y Transferencia de Conocimientos para la Detección y Monitoreo de Toxinas Marinas en México y Chile: Una Alianza entre Investigadores, Instituciones Públicas y Pescadores Artesanales.",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Fortalecer las capacidades técnicas y científicas en detección y monitoreo de toxinas marinas en México y Chile, mediante procesos de mejoramiento técnico y de gestión a personas funcionarias públicas, personas dedicadas a la investigación y personas pescadoras artesanales.",
+    "notas": "24 meses."
+  },
+
+{
+    "id": "p27_Chile_3",
+    "Nombredelproyecto": "Fortalecimiento de la gobernanza ambiental local a través de la educación ambiental, con la participación ciudadana, desde un enfoque de derechos humanos, territorial y pertinencia socioambiental, para enfrentar la actual crisis",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Derechos Humanos",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Contribuir al fortalecimiento de una ciudadanía ambiental activa, informada y corresponsable en Chile y México, mediante el impulso de modelos participativos de gobernanza socioambiental y procesos educativos con enfoque de derechos humanos, equidad de género, pertinencia cultural y sostenibilidad, que promuevan la justicia ambiental, la inclusión social y la participación efectiva.",
+    "notas": "24 meses."
+  },
+
+{
+    "id": "p28_Chile_4",
+    "Nombredelproyecto": "Plan integrado de protección de derechos de niñas, niños y adolescentes frente a riesgos en ambientes digitales",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Derechos Humanos",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Garantizar el ejercicio pleno de los derechos de las niñas, niños y adolescentes en entornos digitales, fortaleciendo las capacidades de los gobiernos locales para prevenir y responder ante situaciones de ciberviolencias.",
+    "notas": "24 meses."
+  },
+
+{
+    "id": "p29_Chile_5",
+    "Nombredelproyecto": "Autonomía y dignidad en la vejez: Cooperación Chile-México por cuidados, participación y acceso a la justicia con enfoque de derechos humanos",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Derechos Humanos",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Favorecer el ejercicio de los derechos humanos de las personas mayores en Chile y México, a través de políticas públicas inclusivas, de cuidados, participación y  acceso a la justicia.",
+    "notas": "24 meses."
+  },
+
+{
+    "id": "p30_Chile_6",
+    "Nombredelproyecto": "Educa Social-Mente: avanzando juntos en el cuidado y bienestar de nuestras niñas, niños y adolescentes.",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Derechos Humanos",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Contribuir al bienestar y salud mental de niñas, niños y adolescentes, mediante un modelo basado en la alfabetización en salud mental de los agentes educativos, reproducible y escalable",
+    "notas": "24 meses."
+  },
+
+{
+    "id": "p31_Chile_7",
+    "Nombredelproyecto": "Robustecimiento de las estadísticas sobre uso del tiempo y el trabajo no remunerado para la visibilización de las mujeres rurales en México y Chile.",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Género",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Robustecimiento de las estadísticas sobre uso del tiempo y el trabajo no remunerado de las mujeres en las zonas rurales de México y Chile.",
+    "notas": "24 meses."
+  },
+
+{
+    "id": "p32_Chile_8",
+    "Nombredelproyecto": "ChatBot para la gestión de casos y atención a víctimas con medidas de protección a través del Plan de Atención Victimal con enfoque de género",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Género",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Reforzar los canales de comunicación entre las instituciones, víctimas con medidas de protección, optimizando el proceso de canalización de casos y disminuyendo la revictimización.",
+    "notas": "15 meses."
+  },
+
+{
+    "id": "p33_Chile_9",
+    "Nombredelproyecto": "Tejiendo Economías para la Igualdad. Laboratorio Intercultural de Proyectos de Economía Social Solidaria (ESS).",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Género",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Contribuir al fortalecimiento de la economía social solidaria en contextos interculturales mediante el desarrollo de capacidades comunitarias para la autogestión de iniciativas económicas sostenibles, inclusivas y con perspectiva de género en México y Chile.",
+    "notas": "24 meses."
+  },
+
+{
+    "id": "p34_Chile_10",
+    "Nombredelproyecto": "Alianza estratégica para el intercambio de experiencias y buenas prácticas en materia de modernización, digitalización e implementación de inteligencia artificial en procesos internos, que incidan en una mejora de la experiencia usuaria: codiseño de piloto escalable.",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Gobierno Digital",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Diseñar un piloto de implementación en el cual se identifiquen procesos y espacios de oportunidad específica para mejorar la eficiencia, eficacia y efectividad de los procesos internos, mediante lógicas de modernización, digitalización e inteligencia artificial que mejoren la atención a las y los usuarios de los servicios a la ciudadanía.",
+    "notas": "18 meses."
+  },
+
+{
+    "id": "p35_Chile_11",
+    "Nombredelproyecto": "Fortalecimiento de la acuicultura sostenible de moluscos bivalvos mediante la cooperación Chile-México en la Región de Los Lagos y Baja California",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Medio Ambiente",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Contribuir al fortalecimiento sostenible y equitativo de la acuicultura de pequeña escala mediante la mejora tecnológica, organizativa y social del cultivo de Magallana gigas, con enfoque de género, en la Región de Los Lagos (Chile) y San Quintín, Baja California (México).",
+    "notas": "24 meses."
+  },
+
+{
+    "id": "p36_Chile_12",
+    "Nombredelproyecto": "Fortalecimiento de capacidades para la cuantificación, mitigación y seguimiento de las emisiones de Carbono Negro, en apoyo al cumplimiento de los compromisos internacionales de reducción de este forzante climático, en el marco de las NDC 2025 de Chile y de México.",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Medio Ambiente",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Contribuir al fortalecimiento de las capacidades institucionales a nivel nacional y regional, incluyendo organismos públicos, instituciones académicas y organizaciones de la sociedad civil, para mejorar la gestión de acciones orientadas al cumplimiento de las metas de mitigación del Carbono Negro establecidas en las metas nacionales de Chile y de México.",
+    "notas": "24 meses."
+  },
+
+{
+    "id": "p37_Chile_13",
+    "Nombredelproyecto": "Estudio y saneamiento de efluentes de agua hospitalarios mediante la transformación de contaminantes emergentes: uso de bio-nanocatalizadores auto-ensamblables.",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Convocatoria 2025",
+    "Sector": "Medio Ambiente",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Desarrollar un modelo integral para el estudio, tratamiento y saneamiento de efluentes hospitalarios, mediante la identificación y transformación de contaminantes emergentes a través del uso de bio-nanocatalizadores autoensamblables, con el fin de reducir su impacto ambiental.",
+    "notas": "24 meses."
+  },
+
+  {
+    "id": "p38_Chile_AD_1",
+    "Nombredelproyecto": "Cooperación técnica para la transferencia de conocimientos en edición universitaria con enfoque de género y los derechos humanos",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Asignación Directa",
+    "Sector": "Educación, Derechos Humanos",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Ejecución",
+    "Objetivo": "Promover el intercambio de conocimientos, buenas prácticas y acciones entre la Universidad de Chile (U Chile) y la Universidad Nacional Autónoma de México (UNAM) que permitan fortalecer el acceso abierto y democrático a los derechos humanos, la cultura de paz, el enfoque de género y la publicación de textos que aborden estas temáticas.",
+    "notas": "Instituciones: la Universidad de Chile (U Chile) y la Universidad Nacional Autónoma de México (UNAM)"
+  },
+
+    {
+    "id": "p38_Chile_AD_2",
+    "Nombredelproyecto": "Intercambio de buenas prácticas para prevenir y combatir la explotación sexual de niñas, niños y adolescentes de Chile y México",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Asignación Directa",
+    "Sector": "Derechos Humanos",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Fortalecer las capacidades institucionales y de protección de derechos de niñas, niños y adolescentes, al evaluar el Programa Estatal para la Prevención, Combate y Sanción de los Delitos en Materia de Trata de Personas y el Plan de Acción en contra de la Explotación Sexual y Comercial de Niñas, Niños y Adolescentes desarrollados en el Estado de Quintana Roo, así como las acciones y programas implementados en el Estado de Tlaxcala para la restitución de derechos y la atención especializada de niñas, niños y adolescentes, en coordinación con la Procuraduría Estatal y las 60 Procuradurías Municipales de Protección.",
+    "notas": "Instituciones: Sistema Nacional de Protección Integral de los Derechos de Niñas, Niños y Adolescentes (SIPINNA), Gobierno del Estado de Quintana Roo y DIF Tlaxcala "
+  },
+
+      {
+    "id": "p38_Chile_AD_3",
+    "Nombredelproyecto": "Fortalecimiento de Capacidades en Maricultura de peces y bivalvos en la costa Pacífica de Costa Rica para un Desarrollo Sostenible con base a Economía Circular y con Equidad de Género",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Asignación Directa - Triangular",
+    "Sector": "Desarrollo productivo, Medio Ambiente, Género",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "México en alianza con Chile, apoyará a Costa Rica en sus esquemas de fortalecimiento de capacidades técnicas, productivas y organizativas en el ámbito de la maricultura artesanal sostenible (siembra de peces y moluscos marinos), con énfasis en cinco comunidades de su costa del Pacífico.",
+    "notas": "Instituciones: Universidad Autónoma de Baja California (UABC) por México, la Universidad Católica del Norte de Chile y con la coordinación nacional del Parque Marino del Pacífico (PMP), de la Universidad Nacional (UNA) y del Ministerio de Medio Ambiente y Energía (MINAE) de Costa Rica."
+  },
+  
+  {
+    "id": "p1_Paraguay",
+    "Nombredelproyecto": "Cultivo de Nopal para la integración de los pueblos y alternativa para el desarrollo socio cultural y económico de la comunidad Ñu Guasu",
+    "Continente": "Sudamérica",
+    "Pais": "Paraguay",
+    "Sector": "Agropecuario, Silvicultura, Pesca y Caza",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2025",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p2_Paraguay",
+    "Nombredelproyecto": "Fortalecimiento de capacidades del INIFAP para mejorar la producción sostenible de soya en el trópico de México",
+    "Continente": "Sudamérica",
+    "Pais": "Paraguay",
+    "Sector": "Agropecuario, Silvicultura, Pesca y Caza",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p3_Paraguay",
+    "Nombredelproyecto": "Fortalecimiento de capacidades en Ingeniería de Sistemas Espaciales orientadas al diseño, construcción, prueba, lanzamiento y operación de un futuro Satélite Experimental, con la participación de la academia y sector privado del Paraguay y México",
+    "Continente": "Sudamérica",
+    "Pais": "Paraguay",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p4_Paraguay",
+    "Nombredelproyecto": "Cooperación en materia de acceso a la información y protección de datos personales entre México y Paraguay",
+    "Continente": "Sudamérica",
+    "Pais": "Paraguay",
+    "Sector": "Política de Gobierno",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p5_Paraguay",
+    "Nombredelproyecto": "Instalar y fortalecer capacidades institucionales, así como intercambiar conocimiento y experiencia para la identificación, construcción de compromisos ante los Planes de Acción Nacionales en el marco de la Alianza para el Gobierno Abierto (AGA) y su vinculación con los Objetivos de Desarrollo Sostenible",
+    "Continente": "Sudamérica",
+    "Pais": "Paraguay",
+    "Sector": "Política de Gobierno",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p6_Paraguay",
+    "Nombredelproyecto": "Desarrollo del Producto Turismo de Incentivos en Paraguay",
+    "Continente": "Sudamérica",
+    "Pais": "Paraguay",
+    "Sector": "Turismo",
+    "Fechadeinicio": "2021",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p1_Uruguay",
+    "Nombredelproyecto": "Cooperación bilateral para el desarrollo de modelos de toma de decisiones para el área agrícola",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Agropecuario, Silvicultura, Pesca y Caza",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2025",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p2_Uruguay",
+    "Nombredelproyecto": "Desarrollo de inoculantes microbianos basado en microorganismos promotores del crecimiento vegetal, como alternativa sustentable al uso de agroquimicos",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Agropecuario, Silvicultura, Pesca y Caza",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p3_Uruguay",
+    "Nombredelproyecto": "Fortalecimiento e intercambio de capaciudades para avanzar en la protección de enfermedades neurodegenerativas (COLABORACIÓN TRIANGULAR CON CHILE)",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2025",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p4_Uruguay",
+    "Nombredelproyecto": "Desarrollo sostenible del Enoturismo y cedanas de valor complementarias, mediantes sinergias e intercambios, conocieminto y buenas practicas entre Uruguay y México",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p5_Uruguay",
+    "Nombredelproyecto": "Sexualidad sin fakes, en accion por los derechos sexuales y reproductivos (SSyR)",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Protección social, Género",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p6_Uruguay",
+    "Nombredelproyecto": "Fortalecimiento de capacidades cientificas y tecnologicas en el sector espacial de Uruguay y México para el desarrollo de plataformas satelitales de Observación de la Tierra para el monitoreo de los efectos del cambio climatico en zonas forestales y agrícolas",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p7_Uruguay",
+    "Nombredelproyecto": "Intercambio de capacidades cientifico-tecnologicas para la mitigación del cambio climatico y el desarrollo de sistemas híbridos energéticos",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p8_Uruguay",
+    "Nombredelproyecto": "Generación de dinámicas ecosistémicas entre México y Uruguay para I+D+i y agregado de valor en cadenas productivas locales con énfasis en la problemática ambiental, economía circular y desarrollo sustentable",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p9_Uruguay",
+    "Nombredelproyecto": "Programa de atención a personas adultas mayores víctimas de violencia en América Latina",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Protección social, Género",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2025",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p10_Uruguay",
+    "Nombredelproyecto": "Bases para una gestión integrada de la seguridad vial",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Política de Gobierno",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2025",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p11_Uruguay",
+    "Nombredelproyecto": "Determinación de las concentraciones de flúor sistémico con el uso de biomarcadores de exposición a fluoruros (orina, uñas y cabello) en población mexicana y uruguaya en zonas geográficas de riesgo",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2024",
+    "status": "Finalizado",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+    {
+    "id": "p12_Uruguay_1",
+    "Nombredelproyecto": "Mejora de la sostenibilidad de la ganadería en México y Uruguay: un solo bienestar - una sola salud",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Agropecuario",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p13_Uruguay_2",
+    "Nombredelproyecto": "Red Latinoamericana de Neuroprotección y Nutrigenómica (REDLANN). Fase II: Fortalecimiento e intercambio de capacidades para avanzar en la protección de la salud cerebral y mental de la primera infancia (propuesta multilateral con Chile, Brasil y Ecuador)",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p14_Uruguay_3",
+    "Nombredelproyecto": "Modelo para Nodos para Bioimagenología en América Latina",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p15_Uruguay_4",
+    "Nombredelproyecto": "Ka’an–Río: Cooperación entre destinos con alma",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Comerciales, Industria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p16_Uruguay_5",
+    "Nombredelproyecto": "Rutas del Queso de Colonia y Cotija: Modelos de gestión colaborativa para el desarrollo regional a través de la innovación y la consolidación del valor local entre Colonia y Michoacán",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Comerciales, Industria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p17_Uruguay_6",
+    "Nombredelproyecto": "Saberes que conectan: producción, turismo e innovación",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Comerciales, Industria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p18_Uruguay_7",
+    "Nombredelproyecto": "Entramados: Fortalecimiento de las estrategias sociales de abordaje comunitario para la promoción de sociedades del cuidado en México y Uruguay.",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Desarrollo social",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p19_Uruguay_8",
+    "Nombredelproyecto": "Atención y prevención de delitos sexuales contra niñas, niños y adolescentes en el Estado Tlaxcala y Uruguay",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Desarrollo social",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p20_Uruguay_9",
+    "Nombredelproyecto": "Salud mental libre de violencia",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Gobernabilidad",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p21_Uruguay_10",
+    "Nombredelproyecto": "Fortalecimiento de capacidades científico-tecnológicas en energía eólica:México–Uruguay",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Medio Ambiente",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p22_Uruguay_11",
+    "Nombredelproyecto": "Adolescencia y Juventudes que cuidan: Red Binacional por la Salud Mental",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Salud",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p23_Uruguay_12",
+    "Nombredelproyecto": "Estimación ultrasónica de parámetros elásticos y acústicos en bio-estructuras laminares relacionados a etapas tempranas de estados patológicos.",
+    "Continente": "Sudamérica",
+    "Pais": "Uruguay",
+    "Sector": "Salud",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p1_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Comité de Contratación Pública (CCP): Acompañamiento Técnico a empresas con potencial de participación en los mercados de contratación pública de los países de la Alianza del Pacífico, con miras a aumentar sus posibilidades de éxito en la adjudicación de contratos públicos",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Gestión gubernamental",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "12 meses a partir del inicio de su implementación",
+    "status": "Ejecución",
+    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p2_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Comité de Contratación Pública (CCP): Acompañamiento Técnico a empresas con potencial de participación en los mercados de contratación pública de los países de la Alianza del Pacífico, con miras a aumentar sus posibilidades de éxito en la adjudicación de contratos públicos",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Educación",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "6 meses de ejecución, 9 meses vigencia convenio, a partir de la fecha de inicio de ejecución",
+    "status": "Ejecución",
+    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p3_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Grupo Técnico de Medio Ambiente y Crecimiento Verde (GTMACV): Implementación de las Líneas Directrices de la OCDE para Empresas Multinacionales en los países de la Alianza del Pacífico en materia ambiental y derechos humanos. Experiencias y mejores prácticas",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Medio Ambiente",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "status": "Ejecución",
+    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p4_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Grupo Técnico de Desarrollo e Inclusión Social (GTDIS): Lecciones aprendidas y recomendaciones sobre el uso del Índice de Pobreza Multidimensional (IMP) oficial en los países miembros de la Alianza del Pacífico (AP)",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Desarrollo social",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "status": "Ejecución",
+    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p5_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Grupo Técnico de Estrategia Comunicacional (GTEC): Campaña Digital Protocolo Comercial",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Comercio",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "05 meses a partir de la fecha de inicio de ejecución",
+    "status": "Ejecución",
+    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+
+  {
+    "id": "p6_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Grupo Técnico de Laboral (GTL): Portal de Virtual Formación Compartida de la Alianza del Pacífico",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Trabajo",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "status": "Ejecución",
+    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p7_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Programa de Voluntariado Juvenil de la Alianza del Pacífico, Proyecto México Voluntad Joven: Arte y Feminismos",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Cultura, Género",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p8_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Comités de Mejora Regulatoria / Obstáculos Técnicos al Comercio (CMR/OTC): Fortalecimiento de las capacidades para mejorar la calidad regulatoria de los países miembros de la Alianza del Pacífico (AP)",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Asuntos Económicos",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "10 meses a partir de la fecha de inicio de ejecución",
+    "status": "Ejecución",
+    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p9_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Grupo Técnico de Agencias de Promoción (GTAP): Contribución a la comercialización de los destinos turísticos de la Alianza del Pacífico a través de la VIII Macrorrueda de Turismo de la Alianza del Pacifico",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Turismo",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "10 meses a partir de la fecha de inicio de ejecución",
+    "status": "Ejecución",
+    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p10_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Grupo Técnico de Género (GTG): Elaboración de un manual para facilitar la participación de mujeres rurales e indígenas en mercados internacionales",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Género",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "8 meses a partir de la fecha de inicio de ejecución",
+    "status": "Planeación",
+    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p11_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Grupo Técnico de Pesca y Acuicultura (GTPA): Potenciar la comercialización de productos de la pesca y acuicultura artesanal de la Alianza del Pacífico, con énfasis en el empoderamiento económico de la mujer",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Pesca",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "status": "Planeación",
+    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p12_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Caminos de Saberes: Formación y Autonomía para Mujeres en ruralidad de los países de la Alianza del Pacífico, con énfasis en los oficios tradicionales y prácticas ancestrales",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Género",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "status": "Planeación",
+    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p13_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Estudio y propuesta para la implementación de un Sello Mujeres en la Alianza del Pacífico, y sesiones de capacitación dirigidas a ejecutivas/os de empresas de la AP",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Género",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "status": "Planeación",
+    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p14_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Implementación del Programa de Capacitación en Aprovechamiento y Circularidad de Residuos Sólidos Urbanos Orgánicos en Municipios de la Costa Pacífica",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Medio Ambiente",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "status": "Planeación",
+    "Objetivo": "Plan de Trabajo 2024 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p15_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Fortalecer las capacidades exportadoras de las micro, pequeñas y medianas empresas (Mipymes), lideradas por hombres y mujeres, de la Alianza del Pacífico (AP) a través del comercio electrónico transfronterizo entre los países miembros de la AP, con el apoyo de entidades gubernamentales competentes y colaboración del sector privado, en los respectivos países de la AP",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Asuntos Económicos",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "status": "Planeación",
+    "Objetivo": "Plan de Trabajo 2024 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p16_Alianza_del_Pacífico",
+    "Nombredelproyecto": "Contribuir a la visión integral de la realidad pesquera mediante la incorporación de la dimensión socioeconómica en el proceso de diagnóstico, manejo y toma de decisiones en el sector pesquero y acuícola en los países de la Alianza del Pacífico",
+    "Continente": "Sudamérica",
+    "Pais": "Alianza del Pacífico",
+    "Sector": "Pesca",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "status": "Planeación",
+    "Objetivo": "Plan de Trabajo 2024 del Fondo AP",
+    "notas": "Pendiente"
+  },
+
+    {
+    "id": "p1_Canada",
+     "Nombredelproyecto": "Producción de hidrolizados de proteína de frijol común con potencial hipoglucemiante por medio de tecnologías de membrana",
+    "Continente": "América del Norte",
+    "Pais": "Canadá",
+    "Sector": "Salud",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p2_Canada",
+     "Nombredelproyecto": "Prevenir los problemas de salud mental asociados al trabajo y al mejoramiento de la productividad",
+    "Continente": "América del Norte",
+    "Pais": "Canadá",
+    "Sector": "Salud",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p3_Canada",
+     "Nombredelproyecto": "Materiales Multifuncionales para Aplicación en Energía",
+    "Continente": "América del Norte",
+    "Pais": "Canadá",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p4_Canada",
+     "Nombredelproyecto": "Investigaciones Raman in situ para mejorar la resistencia a la fatiga de sistemas de almacenamiento de energía de iones de litio",
+    "Continente": "América del Norte",
+    "Pais": "Canadá",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p5_Canada",
+     "Nombredelproyecto": "Programa de creación de capacidades y transferencia tecnológica para la sostenibilidad",
+    "Continente": "América del Norte",
+    "Pais": "Canadá",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p6_Canada",
+     "Nombredelproyecto": "Modelado y simulación de un lecho fluidizado calentado por microondas para la síntesis de amoniaco",
+    "Continente": "América del Norte",
+    "Pais": "Canadá",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p7_Canada",
+     "Nombredelproyecto": "Amplificación de la Fluorescencia de los Puntos Cuánticos de Carbono mediante Resonancia Plasmónica",
+    "Continente": "América del Norte",
+    "Pais": "Canadá",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p8_Canada",
+     "Nombredelproyecto": "Funcionalización de tintas conductoras para electrónica impresa",
+    "Continente": "América del Norte",
+    "Pais": "Canadá",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2023",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p1_EUA",
+     "Nombredelproyecto": "Salvando el hábitat crítico de hibernación de la mariposa Monarca migratoria en el centro de México",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Tipo de proyecto": "Proyecto",
+    "Sector": "Protección Ambiental",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+    {
+    "id": "PI_1_EUA",
+     "Nombredelproyecto": "Integrando educación científica, divulgación y participación comunitaria estudiando el Golfo de California en la embarcación histórica Western Flyer.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Tipo de proyecto": "Permisos de Investigación",
+    "Sector": "-",
+    "Fechadeinicio": "27 de marzo 2025",
+    "Fechadetermino": "10 de junio 2025",
+    "status": "Ejecución",
+    "Objetivo": "Autorizaciones gestionadas en 2025 para investigaciones extranjeras en México",
+    "notas": "Instituciones: Western Flyer Foundation y Universidad Autónoma de Baja California Sur"
+  },
+
+      {
+    "id": "PI_2_EUA",
+     "Nombredelproyecto": "ESCUCHE GoMex - Investigaciones a largo plazo sobre las tendencias del paisaje sonoro, la ecología de los cetáceos y el ruido en el golfo de México.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Tipo de proyecto": "Permisos de Investigación",
+    "Sector": "-",
+    "Fechadeinicio": "10 de junio 2025",
+    "Fechadetermino": "15 de julio 2025",
+    "status": "Ejecución",
+    "Objetivo": "Autorizaciones gestionadas en 2025 para investigaciones extranjeras en México",
+    "notas": "Instituciones: Universidad de California en San Diego, Universidad Nacional Autónoma de México y Universidad de Veracruz."
+  },
+
+  {
+    "id": "PI_3_EUA",
+     "Nombredelproyecto": "Campaña de Carbono y Ecosistemas en el Golfo de México (Gulf of Mexico Ecosystems and Carbon Cruise, GOMECC-5) de 2025.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Tipo de proyecto": "Permisos de Investigación",
+    "Sector": "-",
+    "Fechadeinicio": "cancelada debido a un incendio en la sala de máquinas del buque - 10 de octubre 2025",
+    "Fechadetermino": "30 de noviembre 2025",
+    "status": "Ejecución",
+    "Objetivo": "Autorizaciones gestionadas en 2025 para investigaciones extranjeras en México",
+    "notas": "Instituciones: Laboratorio Oceanográfico y Meteorológico del Atlántico (AOML, por sus siglas en inglés) de la Administración Nacional Oceánica y Atmosférica (NOAA, por sus siglas en inglés) y la Universidad Autónoma de Baja California."
+  },
+
+  {
+    "id": "PI_4_EUA",
+     "Nombredelproyecto": "Cuantificación de los efectos térmicos de la circulación de fluidos en la corteza oceánica sobre las temperaturas en la zona de subducción del sur de México.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Tipo de proyecto": "Permisos de Investigación",
+    "Sector": "-",
+    "Fechadeinicio": "5 de noviembre 2025",
+    "Fechadetermino": "26 de diciembre 2025",
+    "status": "Ejecución",
+    "Objetivo": "Autorizaciones gestionadas en 2025 para investigaciones extranjeras en México",
+    "notas": "Instituciones: Instituto de Minería y Tecnología de Nuevo México y el Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)."
+  },
+
+  {
+    "id": "PI_5_EUA",
+     "Nombredelproyecto": "Evaluación del impacto humano del turismo en el mapache pigmeo (Procyon pygmaeus), especie en peligro crítico de extinción.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Tipo de proyecto": "Permisos de Investigación",
+    "Sector": "-",
+    "Fechadeinicio": "11 de enero 2026",
+    "Fechadetermino": "27 de febrero 2026",
+    "status": "Ejecución",
+    "Objetivo": "Autorizaciones gestionadas en 2025 para investigaciones extranjeras en México",
+    "notas": "Instituciones: Universidad de Miami y Fundación de Parques y Museos de Cozumel."
+  },
+
+    {
+    "id": "PI_6_EUA",
+     "Nombredelproyecto": "Investigación colaborativa: Barreras metabólicas del hábitat impuesta a los migrantes verticales diurnos tropicales.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Tipo de proyecto": "Permisos de Investigación",
+    "Sector": "-",
+    "Fechadeinicio": "13 de diciembre 2025",
+    "Fechadetermino": "31 de enero 2026",
+    "status": "Ejecución",
+    "Objetivo": "Autorizaciones gestionadas en 2025 para investigaciones extranjeras en México",
+    "notas": "Instituciones: Universidad del Sur de Florida, Universidad Estatal de Arizona, Universidad Rhode Island, Centro de Investigaciones Biológicas del Noroeste (CIBNOR) y Centro Interdisciplinario de Ciencias Marinas (CICIMAR)."
+  },
+  
+    {
+    "id": "p1_Japón",
+     "Nombredelproyecto": "Proyecto de Reducción de Riesgos de Desastres Compuestos Asociados a Grandes Terremotos y Tsunamis (SATREPS-Tsunamis)",
+    "Continente": "Asia",
+    "Pais": "Japón",
+    "Tipo de proyecto": "Bilateral",
+    "Sector": "Reducción de Riesgos de Desastres",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2029",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+    {
+    "id": "p2_Japón",
+     "Nombredelproyecto": "Proyecto para el Mejoramiento del Nivel de Servicio de Aguas en la Ciudad de México",
+    "Continente": "Asia",
+    "Pais": "Japón",
+    "Tipo de proyecto": "Bilateral",
+    "Sector": "Recursos Hídricos",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2028",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "p1_Japón_trilateral",
+     "Nombredelproyecto": "Diplomado internacional en agroecosistemas diversificados sustentables de frutales tropicales asociados con granos y hortalizas para productores a pequeña escala",
+    "Continente": "Asia",
+    "Pais": "Japón",
+    "Tipo de proyecto": "Trilateral - JMPP2030",
+    "Sector": "Agricultura",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+    {
+    "id": "p2_Japón_trilateral",
+     "Nombredelproyecto": "Asesoría técnica en materia de agricultura tropical",
+    "Continente": "Asia",
+    "Pais": "Japón",
+    "Tipo de proyecto": "Trilateral - JMPP2030",
+    "Sector": "Agricultura",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+      {
+    "id": "p3_Japón_trilateral",
+     "Nombredelproyecto": "Seminario Latinoamericano de Criopreservación",
+    "Continente": "Asia",
+    "Pais": "Japón",
+    "Tipo de proyecto": "Trilateral - JMPP2030",
+    "Sector": "Ciencia Tecnología e Innovación",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+        {
+    "id": "p4_Japón_trilateral",
+     "Nombredelproyecto": "Seminario Internacional sobre gestión de riesgos con CENAPRED",
+    "Continente": "Asia",
+    "Pais": "Japón",
+    "Tipo de proyecto": "Trilateral - JMPP2030",
+    "Sector": "Reducción de Riesgos de Desastres",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
+  },
+
+  {
+    "id": "PI_1_Noruega",
+     "Nombredelproyecto": "Expedición Un Océano II (One Ocean Expedition II)",
+    "Continente": "Europa",
+    "Pais": "Noruega",
+    "Tipo de proyecto": "Permisos de Investigación",
+    "Sector": "-",
+    "Fechadeinicio": "10 de noviembre 2025",
+    "Fechadetermino": "9 de diciembre 2025",
+    "status": "Ejecución",
+    "Objetivo": "Autorizaciones gestionadas en 2025 para investigaciones extranjeras en México",
+    "notas": "Instituciones: Fundación Statsraad Lehmkuhl y Universidad Autónoma de Baja California Sur."
+  }
+   
+]
