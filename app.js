@@ -112,6 +112,7 @@ function renderList() {
   const sectorFilter = filterResponsible.value;
   const statusFilter = filterStatus.value;
 
+  // 1. Primero filtras los proyectos
   let filtered = proyectos.filter(p => {
     const matchQ = !q || (p.Nombredelproyecto + " " + p.status + " " + p.Pais + " " + p.Continente).toLowerCase().includes(q);
     const matchSector = !sectorFilter || (p.Sector && p.Sector.toUpperCase().includes(sectorFilter.toUpperCase()));
@@ -119,6 +120,13 @@ function renderList() {
     return matchQ && matchSector && matchStatus;
   });
 
+   // 2. ACTUALIZAS EL CONTADOR (Esto es lo que hace la magia)
+  const counterEl = document.getElementById("projectCounter");
+  if (counterEl) {
+      counterEl.innerHTML = `${filtered.length} Proyectos encontrados`;
+  }
+
+  // 3. Sigues con el resto del renderizado
   const grupos = {};
   if (filtered.length === 0) {
     projectList.innerHTML = `<div class="p-8 text-center bg-white rounded-2xl border-2 border-dashed border-slate-200 text-slate-400 font-medium">No se encontraron proyectos</div>`;
@@ -463,7 +471,6 @@ function populateResponsibles() {
     filterResponsible.appendChild(opt);
   });
 }
-
 
 
 
