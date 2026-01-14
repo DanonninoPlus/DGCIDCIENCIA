@@ -41,7 +41,7 @@ const CAMPO_SUBTIPO = "Tipo de proyecto";
    ============================================================*/
 async function loadFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dg/main/proyectos.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/proyectos.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar el JSON externo");
     const data = await res.json();
@@ -54,7 +54,7 @@ async function loadFromJsonUrl() {
 
 async function loadnormatecaFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dg/main/normateca.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/normateca.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar normateca.json");
     const data = await res.json();
@@ -463,6 +463,7 @@ function populateResponsibles() {
     filterResponsible.appendChild(opt);
   });
 }
+
 
 
 
