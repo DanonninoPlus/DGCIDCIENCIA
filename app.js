@@ -1,236 +1,467 @@
-/* =========================================================
-   app.js
-   Proyecto 2.1 — Gestión de Proyectos de Cooperación
-   HTML + JS + JSON (GitHub Pages friendly)
-========================================================= */
+// app.js - Versión UI Mejorada (DG Cooperación)
 
-const DATA_URL = "proyectos.json";
+const LS_KEY = "dg_proyectos_v2";
 
-let dataOriginal = [];
-let dataFiltrada = [];
+// DOM Elements
+const projectList = document.getElementById("projectList");
+const searchInput = document.getElementById("searchInput");
+const filterResponsible = document.getElementById("filterResponsible");
+const filterStatus = document.getElementById("filterStatus");
+const btnAddProject = document.getElementById("btnAddProject");
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modalTitle");
+const projectForm = document.getElementById("projectForm");
+const btnCancel = document.getElementById("btnCancel");
 
-/* ===============================
-   INIT
-================================ */
-document.addEventListener("DOMContentLoaded", () => {
-  cargarDatos();
-  configurarBuscador();
-});
+const btnExportPDF = document.getElementById("btnExportPDF");
+const btnExportXLS = document.getElementById("btnExportXLS");
+const btnImportJSON = document.getElementById("btnImportJSON");
+const printArea = document.getElementById("printArea");
 
-/* ===============================
-   CARGA DE DATOS
-================================ */
-async function cargarDatos() {
+// Form fields
+const projId = document.getElementById("projId");
+const projNombredelproyecto = document.getElementById("projNombredelproyecto");
+const projSector = document.getElementById("projSector");
+const projPais = document.getElementById("projPais");
+const projContinente = document.getElementById("projContinente");
+const projFechadeinicio = document.getElementById("projFechadeinicio");
+const projFechadetermino = document.getElementById("projFechadetermino");
+const projStatus = document.getElementById("projStatus");
+const projObjetivo = document.getElementById("projObjetivo");
+const projNotas = document.getElementById("projNotas");
+
+let proyectos = [];
+let normatecaDocs = [];
+
+const PAISES_CON_SUBTIPO = ["Japón", "Chile", "Estados Unidos", "Noruega"];
+const CAMPO_SUBTIPO = "Tipo de proyecto";
+
+/* ============================================================
+   🔵 1. CARGA DE DATOS
+   ============================================================*/
+async function loadFromJsonUrl() {
   try {
-    const res = await fetch(DATA_URL);
-    if (!res.ok) throw new Error("Error al cargar JSON");
-
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dg/main/proyectos.json";
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("No se pudo cargar el JSON externo");
     const data = await res.json();
-    dataOriginal = data;
-    dataFiltrada = data;
-
-    renderizar(dataFiltrada);
+    return Array.isArray(data) ? data : [];
   } catch (err) {
-    console.error(err);
-    mostrarError("No se pudieron cargar los proyectos.");
+    console.warn("Error cargando proyectos:", err);
+    return [];
   }
 }
 
-/* ===============================
-   RENDER GENERAL
-================================ */
-function renderizar(regiones) {
-  const contenedor = document.getElementById("contenedor-regiones");
-  const totalSpan = document.getElementById("total-proyectos");
-
-  contenedor.innerHTML = "";
-  let totalGlobal = 0;
-
-  regiones.forEach(region => {
-    totalGlobal += region.proyectos.length;
-    contenedor.appendChild(crearContinente(region));
-  });
-
-  totalSpan.textContent = `${totalGlobal} Totales`;
-}
-
-/* ===============================
-   CONTINENTE
-================================ */
-function crearContinente(region) {
-  const proyectosPorPais = agruparPorPais(region.proyectos);
-
-  const details = document.createElement("details");
-  details.className =
-    "bg-white dark:bg-slate-800 rounded-2xl border shadow-sm overflow-hidden";
-
-  details.innerHTML = `
-    <summary class="flex items-center justify-between p-4 cursor-pointer">
-      <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined text-primary">public</span>
-        <span class="font-bold">${region.region}</span>
-      </div>
-      <span class="text-xs text-slate-500">
-        ${region.proyectos.length} proyectos
-      </span>
-    </summary>
-  `;
-
-  const contenedorPaises = document.createElement("div");
-  contenedorPaises.className = "flex flex-col gap-3 px-4 pb-4";
-
-  Object.entries(proyectosPorPais).forEach(([pais, proyectos]) => {
-    contenedorPaises.appendChild(crearPais(pais, proyectos));
-  });
-
-  details.appendChild(contenedorPaises);
-  return details;
-}
-
-/* ===============================
-   PAÍS
-================================ */
-function crearPais(pais, proyectos) {
-  const details = document.createElement("details");
-  details.className = "ml-2 rounded-xl border bg-slate-50 dark:bg-slate-900";
-
-  details.innerHTML = `
-    <summary class="flex justify-between items-center p-3 cursor-pointer">
-      <span class="font-semibold text-sm">${pais}</span>
-      <span class="text-xs text-slate-500">
-        ${proyectos.length}
-      </span>
-    </summary>
-  `;
-
-  const contenedorProyectos = document.createElement("div");
-  contenedorProyectos.className = "flex flex-col gap-2 px-3 pb-3";
-
-  proyectos.forEach(p => {
-    contenedorProyectos.appendChild(crearProyecto(p));
-  });
-
-  details.appendChild(contenedorProyectos);
-  return details;
-}
-
-/* ===============================
-   PROYECTO
-================================ */
-function crearProyecto(p) {
-  const details = document.createElement("details");
-  details.className =
-    "ml-2 rounded-lg border bg-white dark:bg-slate-800 p-3";
-
-  details.innerHTML = `
-    <summary class="cursor-pointer flex justify-between items-center mb-2">
-      <span class="font-medium text-sm">${p.titulo}</span>
-      <span class="text-[11px] font-semibold ${claseEstado(p.estado)}">
-  ${p.estado}
-</span>
-
-    </summary>
-
-    <!-- CONTENIDO -->
-    <div class="flex items-center gap-3">
-      
-      <!-- IMAGEN -->
-      <img
-        src="${p.imagen || "https://via.placeholder.com/80"}"
-        alt="${p.titulo}"
-        class="size-16 rounded-lg object-cover flex-shrink-0"
-      />
-
-      <!-- INFO -->
-      <div class="flex-1 text-xs text-slate-600 dark:text-slate-300 space-y-1">
-        <p><strong>Sector:</strong> ${p.sector}</p>
-        <p><strong>Fecha:</strong> ${p.fecha}</p>
-        <p><strong>Objetivo:</strong> ${p.objetivo}</p>
-        <p><strong>Notas:</strong> ${p.notas}</p>
-
-        <p class="mt-1"><strong>Avance:</strong> ${p.progreso}%</p>
-
-        <div class="h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
-          <div
-            class="h-full bg-primary transition-all"
-            style="width: ${p.progreso}%"
-          ></div>
-        </div>
-      </div>
-    </div>
-  `;
-
-  return details;
-}
-
-/* ===============================
-   UTILIDADES
-================================ */
-function agruparPorPais(proyectos) {
-  return proyectos.reduce((acc, p) => {
-    if (!acc[p.pais]) acc[p.pais] = [];
-    acc[p.pais].push(p);
-    return acc;
-  }, {});
-}
-
-function claseEstado(estado) {
-  switch (estado) {
-    case "Finalizado":
-      return "text-red-500";
-    case "Planeación":
-      return "text-blue-500";
-    case "En ejecución":
-      return "text-green-500";
-    default:
-      return "text-slate-500";
+async function loadnormatecaFromJsonUrl() {
+  try {
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dg/main/normateca.json";
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("No se pudo cargar normateca.json");
+    const data = await res.json();
+    return Array.isArray(data) ? data : [];
+  } catch (err) {
+    console.warn("Error cargando Normateca:", err);
+    return [];
   }
 }
 
-
-/* ===============================
-   BUSCADOR
-================================ */
-function configurarBuscador() {
-  const input = document.getElementById("buscador");
-  if (!input) return;
-
-  input.addEventListener("input", e => {
-    const texto = e.target.value.toLowerCase().trim();
-    filtrar(texto);
-  });
+function loadFromStorage() {
+  const raw = localStorage.getItem(LS_KEY);
+  return raw ? JSON.parse(raw) : [];
 }
 
-function filtrar(texto) {
-  if (!texto) {
-    dataFiltrada = dataOriginal;
-    renderizar(dataFiltrada);
+function saveToStorage() {
+  localStorage.setItem(LS_KEY, JSON.stringify(proyectos));
+  populateResponsibles();
+}
+
+/* ============================================================
+   🔵 2. INICIALIZACIÓN
+   ============================================================*/
+async function init() {
+  const proyectosGithub = await loadFromJsonUrl();
+  if (proyectosGithub.length > 0) {
+    proyectos = proyectosGithub;
+    saveToStorage();
+  } else {
+    proyectos = loadFromStorage();
+  }
+  normatecaDocs = await loadnormatecaFromJsonUrl();
+
+  renderList();
+  populateResponsibles();
+  attachEvents();
+}
+
+init();
+
+/* ============================================================
+   🔵 3. HELPERS
+   ============================================================*/
+function cryptoRandomId() { return Math.random().toString(36).slice(2, 9); }
+function escapeHtml(text) {
+  if (!text) return "";
+  return text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+}
+
+/* ============================================================
+   🔵 4. RENDER LISTA (DISEÑO MEJORADO)
+   ============================================================*/
+function renderList() {
+  const q = searchInput.value.trim().toLowerCase();
+  const sectorFilter = filterResponsible.value;
+  const statusFilter = filterStatus.value;
+
+  let filtered = proyectos.filter(p => {
+    const matchQ = !q || (p.Nombredelproyecto + " " + p.status + " " + p.Pais + " " + p.Continente).toLowerCase().includes(q);
+    const matchSector = !sectorFilter || (p.Sector && p.Sector.toUpperCase().includes(sectorFilter.toUpperCase()));
+    const matchStatus = !statusFilter || p.status === statusFilter;
+    return matchQ && matchSector && matchStatus;
+  });
+
+  const grupos = {};
+  if (filtered.length === 0) {
+    projectList.innerHTML = `<div class="p-8 text-center bg-white rounded-2xl border-2 border-dashed border-slate-200 text-slate-400 font-medium">No se encontraron proyectos</div>`;
     return;
   }
 
-  dataFiltrada = dataOriginal
-    .map(region => {
-      const proyectos = region.proyectos.filter(p =>
-        p.titulo.toLowerCase().includes(texto) ||
-        p.pais.toLowerCase().includes(texto) ||
-        (p.id && p.id.toLowerCase().includes(texto))
-      );
-      return { ...region, proyectos };
-    })
-    .filter(region => region.proyectos.length > 0);
+  filtered.forEach(p => {
+    const c = p.Continente || "Sin Continente";
+    const pais = p.Pais || "Sin País";
+    if (!grupos[c]) grupos[c] = {};
+    if (PAISES_CON_SUBTIPO.includes(pais)) {
+      const subtipo = p[CAMPO_SUBTIPO] || "General";
+      if (!grupos[c][pais]) grupos[c][pais] = {};
+      if (!grupos[c][pais][subtipo]) grupos[c][pais][subtipo] = [];
+      grupos[c][pais][subtipo].push(p);
+    } else {
+      if (!grupos[c][pais]) grupos[c][pais] = [];
+      grupos[c][pais].push(p);
+    }
+  });
 
-  renderizar(dataFiltrada);
+  projectList.innerHTML = "";
+
+  Object.keys(grupos).sort().forEach(continente => {
+    const contDiv = document.createElement("div");
+    contDiv.className = "mb-4";
+    contDiv.innerHTML = `
+      <button class="w-full flex items-center justify-between bg-white px-5 py-4 rounded-2xl shadow-sm border border-slate-100 hover:border-indigo-200 transition-all acordeon-btn">
+        <div class="flex items-center gap-3">
+            <span class="text-xl">🌍</span>
+            <span class="font-bold text-slate-800 uppercase tracking-tight">${continente}</span>
+        </div>
+        <i class="fas fa-chevron-down text-slate-300 transition-transform"></i>
+      </button>
+      <div class="panel hidden mt-2 space-y-3 pl-2 border-l-2 border-indigo-100 ml-4 py-2"></div>
+    `;
+    const contContent = contDiv.querySelector(".panel");
+
+    Object.keys(grupos[continente]).sort().forEach(pais => {
+      const paisDiv = document.createElement("div");
+      paisDiv.className = "mb-2";
+      paisDiv.innerHTML = `
+        <button class="w-full flex items-center gap-2 px-3 py-2 text-indigo-600 font-bold text-sm hover:bg-indigo-50 rounded-lg transition-colors acordeon-btn">
+          <i class="fas fa-map-marker-alt text-[10px]"></i> ${pais.toUpperCase()}
+        </button>
+        <div class="panel hidden mt-2 space-y-2 pl-3"></div>
+      `;
+      const paisContent = paisDiv.querySelector(".panel");
+
+      const dataPais = grupos[continente][pais];
+      
+      const renderCard = (p) => {
+        const statusColors = {
+            'Planeación': 'bg-indigo-100 text-indigo-700',
+            'Ejecución': 'bg-emerald-100 text-emerald-700',
+            'Finalizado': 'bg-slate-100 text-slate-700'
+        };
+        const colorClass = statusColors[p.status] || 'bg-slate-100 text-slate-700';
+        
+        const card = document.createElement("div");
+        card.className = "bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden";
+        card.innerHTML = `
+          <button class="w-full text-left px-4 py-4 acordeon-btn group">
+            <div class="flex justify-between items-start gap-3">
+                <div class="flex-1">
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1 leading-none">${p.Sector || 'Sin Sector'}</div>
+                    <div class="font-bold text-slate-800 leading-tight group-hover:text-indigo-600 transition-colors">${escapeHtml(p.Nombredelproyecto)}</div>
+                </div>
+                <span class="px-2 py-1 rounded text-[9px] font-black uppercase ${colorClass}">${p.status}</span>
+            </div>
+          </button>
+          <div class="panel hidden px-4 pb-5 border-t border-slate-50 pt-4 bg-slate-50/50">
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div class="bg-white p-2 rounded-lg border border-slate-100 text-center">
+                    <div class="text-[8px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Inicio</div>
+                    <div class="text-xs font-bold text-slate-700"><i class="far fa-calendar-alt mr-1"></i> ${p.Fechadeinicio || '---'}</div>
+                </div>
+                <div class="bg-white p-2 rounded-lg border border-slate-100 text-center">
+                    <div class="text-[8px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Término</div>
+                    <div class="text-xs font-bold text-slate-700"><i class="fas fa-hourglass-end mr-1"></i> ${p.Fechadetermino || '---'}</div>
+                </div>
+            </div>
+            <div class="space-y-3">
+                <div>
+                    <h4 class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1">Objetivo Estratégico</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">${escapeHtml(p.Objetivo || "Sin objetivo definido.")}</p>
+                </div>
+                ${p.notas ? `
+                <div class="bg-amber-50/50 p-3 rounded-xl border border-amber-100 italic">
+                    <h4 class="text-[9px] font-bold text-amber-600 uppercase tracking-widest mb-1">Observaciones</h4>
+                    <p class="text-xs text-amber-800">${escapeHtml(p.notas)}</p>
+                </div>` : ''}
+            </div>
+            <div class="mt-5 flex gap-2">
+              <button data-id="${p.id}" class="btn-edit flex-1 py-2 bg-indigo-50 text-indigo-600 rounded-lg text-[10px] font-bold uppercase tracking-wider hover:bg-indigo-600 hover:text-white transition-all">Editar</button>
+              <button data-id="${p.id}" class="btn-delete flex-1 py-2 bg-white border border-red-100 text-red-500 rounded-lg text-[10px] font-bold uppercase tracking-wider hover:bg-red-500 hover:text-white transition-all">Eliminar</button>
+            </div>
+          </div>
+        `;
+        return card;
+      };
+
+      if (PAISES_CON_SUBTIPO.includes(pais) && !Array.isArray(dataPais)) {
+        Object.keys(dataPais).sort().forEach(sub => {
+          const subDiv = document.createElement("div");
+          subDiv.className = "mb-2 ml-2";
+          subDiv.innerHTML = `
+            <button class="w-full text-left font-bold text-[11px] text-emerald-600 mb-2 px-2 flex items-center gap-1">
+                <i class="fas fa-tag text-[8px]"></i> ${sub.toUpperCase()}
+            </button>
+            <div class="space-y-2"></div>
+          `;
+          const subContent = subDiv.querySelector("div");
+          dataPais[sub].forEach(p => subContent.appendChild(renderCard(p)));
+          paisContent.appendChild(subDiv);
+        });
+      } else {
+        dataPais.forEach(p => paisContent.appendChild(renderCard(p)));
+      }
+      contContent.appendChild(paisDiv);
+    });
+    projectList.appendChild(contDiv);
+  });
+
+  attachAccordionEvents();
+  attachEditDeleteEvents();
 }
 
-/* ===============================
-   ERRORES
-================================ */
-function mostrarError(msg) {
-  document.getElementById("contenedor-regiones").innerHTML = `
-    <div class="p-4 rounded-xl bg-red-50 text-red-600 text-sm">
-      ${msg}
-    </div>
-  `;
+/* ============================================================
+   🔵 5. NORMATECA & REPORTES
+   ============================================================*/
+function renderNormateca() {
+  const contenedor = document.getElementById("normatecaList");
+  contenedor.innerHTML = "";
+  if (!normatecaDocs.length) {
+    contenedor.innerHTML = `<div class="p-8 text-center text-slate-400 italic text-sm">No hay documentos cargados.</div>`;
+    return;
+  }
+  normatecaDocs.forEach(doc => {
+    const card = document.createElement("div");
+    card.className = "bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex justify-between items-start gap-4";
+    card.innerHTML = `
+      <div class="flex-1">
+        <div class="text-[9px] font-black text-indigo-500 uppercase tracking-[0.2em] mb-1">${escapeHtml(doc.tipo)}</div>
+        <h3 class="font-bold text-slate-800 text-sm mb-1">${escapeHtml(doc.titulo)}</h3>
+        <p class="text-xs text-slate-500 mb-3 leading-relaxed">${escapeHtml(doc.descripcion || "Sin descripción")}</p>
+        <div class="flex gap-4">
+            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter"><i class="far fa-clock"></i> ${doc.anio}</span>
+            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter"><i class="fas fa-map-marker-alt"></i> ${escapeHtml(doc.pais)}</span>
+        </div>
+      </div>
+      <a href="${doc.archivo}" target="_blank" class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center shrink-0 hover:bg-indigo-600 hover:text-white transition-colors">
+        <i class="fas fa-download"></i>
+      </a>
+    `;
+    contenedor.appendChild(card);
+  });
+}
+
+/* ============================================================
+   🔵 6. EVENTOS (UI & LOGIC)
+   ============================================================*/
+function attachAccordionEvents() {
+  document.querySelectorAll(".acordeon-btn").forEach(btn => {
+    btn.onclick = (e) => {
+        e.stopPropagation();
+        const panel = btn.nextElementSibling;
+        const icon = btn.querySelector(".fa-chevron-down");
+        panel.classList.toggle("hidden");
+        if(icon) icon.classList.toggle("rotate-180");
+    };
+  });
+}
+
+function attachEditDeleteEvents() {
+  document.querySelectorAll(".btn-edit").forEach(b => b.onclick = e => openEditModal(e.target.dataset.id));
+  document.querySelectorAll(".btn-delete").forEach(b => b.onclick = e => {
+    if (confirm("¿Eliminar este proyecto?")) {
+      proyectos = proyectos.filter(p => p.id !== e.target.dataset.id);
+      saveToStorage();
+      renderList();
+    }
+  });
+}
+
+function attachEvents() {
+  searchInput.addEventListener("input", renderList);
+  filterResponsible.addEventListener("change", renderList);
+  filterStatus.addEventListener("change", renderList);
+  btnAddProject.addEventListener("click", openModalForNew);
+  btnCancel.addEventListener("click", closeModal);
+  projectForm.addEventListener("submit", saveProject);
+  btnExportPDF.addEventListener("click", exportPDF);
+  btnExportXLS.addEventListener("click", exportXLS);
+  btnImportJSON.addEventListener("click", importJSON);
+
+  // Tabs Logic
+  const tabs = {
+    'tabProyectos': { section: 'projectList', filters: 'filterSection' },
+    'tabnormateca': { section: 'normatecaSection', filters: null },
+    'tabReportes': { section: 'reportsSection', filters: null }
+  };
+
+  Object.keys(tabs).forEach(tabId => {
+    document.getElementById(tabId).addEventListener("click", () => {
+        // Reset tabs
+        Object.keys(tabs).forEach(id => {
+            document.getElementById(id).classList.remove("active-tab", "text-indigo-600");
+            document.getElementById(id).classList.add("text-slate-400");
+            document.getElementById(tabs[id].section).classList.add("hidden");
+        });
+        
+        // Active clicked tab
+        const current = tabs[tabId];
+        document.getElementById(tabId).classList.add("active-tab", "text-indigo-600");
+        document.getElementById(tabId).classList.remove("text-slate-400");
+        document.getElementById(current.section).classList.remove("hidden");
+        
+        // Toggle filters visibility
+        const filters = document.getElementById("filterSection");
+        if (current.filters) filters.classList.remove("hidden");
+        else filters.classList.add("hidden");
+
+        if(tabId === 'tabnormateca') renderNormateca();
+    });
+  });
+}
+
+/* ============================================================
+   🔵 7. MODAL LOGIC
+   ============================================================*/
+function openModalForNew() {
+  modalTitle.textContent = "NUEVO PROYECTO";
+  projectForm.reset();
+  projId.value = "";
+  showModal();
+}
+
+function openEditModal(id) {
+  const p = proyectos.find(x => x.id === id);
+  if (!p) return;
+  modalTitle.textContent = "EDITAR PROYECTO";
+  projId.value = p.id;
+  projNombredelproyecto.value = p.Nombredelproyecto;
+  projSector.value = p.Sector;
+  projPais.value = p.Pais;
+  projContinente.value = p.Continente;
+  projFechadeinicio.value = p.Fechadeinicio;
+  projFechadetermino.value = p.Fechadetermino;
+  projStatus.value = p.status;
+  projObjetivo.value = p.Objetivo;
+  projNotas.value = p.notas;
+  showModal();
+}
+
+function showModal() { modal.classList.remove("hidden"); modal.style.display = "flex"; }
+function closeModal() { modal.classList.add("hidden"); modal.style.display = "none"; }
+
+function saveProject(ev) {
+  ev.preventDefault();
+  const id = projId.value;
+  const data = {
+    id: id || cryptoRandomId(),
+    Nombredelproyecto: projNombredelproyecto.value.trim(),
+    Sector: projSector.value.trim(),
+    Pais: projPais.value.trim(),
+    Continente: projContinente.value.trim(),
+    Fechadeinicio: projFechadeinicio.value.trim(),
+    Fechadetermino: projFechadetermino.value.trim(),
+    status: projStatus.value.trim(),
+    Objetivo: projObjetivo.value.trim(),
+    notas: projNotas.value.trim(),
+    createdAt: id ? proyectos.find(p => p.id === id).createdAt : new Date().toISOString()
+  };
+  if (id) proyectos = proyectos.map(p => p.id === id ? data : p);
+  else proyectos.unshift(data);
+  saveToStorage();
+  closeModal();
+  renderList();
+}
+
+/* ============================================================
+   🔵 8. EXPORTACIONES (Mantienen tu lógica original)
+   ============================================================*/
+function exportPDF() {
+  let html = `<div style="font-family: Arial; padding: 20px;">
+    <h1 style="text-align:center; color:#1e1b4b;">Listado de Proyectos — DG Cooperación</h1><hr>`;
+  proyectos.forEach(p => {
+    html += `<div style="margin-bottom:20px; border-bottom:1px solid #eee; padding-bottom:10px;">
+      <h2 style="color:#4f46e5; margin-bottom:5px;">${escapeHtml(p.Nombredelproyecto)}</h2>
+      <p style="font-size:12px;"><b>Ubicación:</b> ${p.Continente} / ${p.Pais} | <b>Estatus:</b> ${p.status}</p>
+      <p style="font-size:12px;"><b>Objetivo:</b> ${escapeHtml(p.Objetivo)}</p>
+    </div>`;
+  });
+  html += `</div>`;
+  printArea.innerHTML = html;
+  const opt = { margin: 0.5, filename: "Reporte_Proyectos_DG.pdf", html2canvas: { scale: 2 }, jsPDF: { unit: "in", format: "letter" } };
+  html2pdf().set(opt).from(printArea).save();
+}
+
+function exportXLS() {
+  const worksheet = XLSX.utils.json_to_sheet(proyectos);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Proyectos");
+  XLSX.writeFile(workbook, "Proyectos_DG.xlsx");
+}
+
+function importJSON() {
+  const fileInput = document.createElement("input");
+  fileInput.type = "file";
+  fileInput.accept = "application/json";
+  fileInput.onchange = e => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.onload = ev => {
+      const parsed = JSON.parse(ev.target.result);
+      if (Array.isArray(parsed)) {
+        proyectos = parsed;
+        saveToStorage();
+        renderList();
+        alert("¡Datos importados con éxito!");
+      }
+    };
+    reader.readAsText(file);
+  };
+  fileInput.click();
+}
+
+function populateResponsibles() {
+  const allSectors = [];
+  proyectos.forEach(p => {
+     if (p.Sector) {
+      const sectores = p.Sector.split(',').map(s => s.trim()).filter(s => s.length > 0);
+      allSectors.push(...sectores);
+    }
+  });
+  const uniqueSectores = Array.from(new Set(allSectors)).sort();
+  filterResponsible.innerHTML = `<option value="">Sector</option>`;
+  uniqueSectores.forEach(s => {
+    const opt = document.createElement("option");
+    opt.value = s; opt.textContent = s;
+    filterResponsible.appendChild(opt);
+  });
 }
 
 
