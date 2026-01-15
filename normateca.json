@@ -19,7 +19,31 @@
     "anio": "19/04/2018",
     "descripcion": "DECRETO - LEY DEL SERVICIO EXTERIOR MEXICANO",
     "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/2_Ley%20del%20Servicio%20Exterior.pdf"
+  },
+
+    {
+    "id": "NORM_003",
+    "titulo": "3_PRONTUARIO JURÍDICO BÁSICO AMEXCID",
+    "tipo": "Prontuario Jurídico",
+    "categoria": "Prontuario Jurídico",
+    "pais": "México",
+    "anio": "2025",
+    "descripcion": "Prontuario Jurídico Básico",
+    "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/3_PRONTUARIO%20JURÍDICO%20BÁSICO%20AMEXCID.pdf"
+  },
+
+      {
+    "id": "NORM_004",
+    "titulo": "4_ LEY DE COOPERACIÓN INTERNACIONAL PARA EL DESARROLLO,
+    "tipo": "Ley",
+    "categoria": "Última Reforma DOF 06-11-2020",
+    "pais": "México",
+    "anio": "06/11/2020",
+    "descripcion": "Ley de Cooperación Internacional para el Desarrollo",
+    "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/4_ LEY%20DE%20COOPERACIÓN%20INTERNACIONAL%20PARA%20EL%20DESARROLLO.pdf"
   }
+  
 ]
+
 
 
