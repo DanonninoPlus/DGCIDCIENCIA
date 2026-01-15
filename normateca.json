@@ -21,7 +21,7 @@
     "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/2_Ley%20del%20Servicio%20Exterior.pdf"
   },
 
-    {
+  {
     "id": "NORM_003",
     "titulo": "3_PRONTUARIO JURÍDICO BÁSICO AMEXCID",
     "tipo": "Prontuario Jurídico",
@@ -32,7 +32,7 @@
     "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/3_PRONTUARIO%20JURÍDICO%20BÁSICO%20AMEXCID.pdf"
   },
 
-      {
+  {
     "id": "NORM_004",
     "titulo": "4_ LEY DE COOPERACIÓN INTERNACIONAL PARA EL DESARROLLO",
     "tipo": "Ley",
@@ -41,9 +41,32 @@
     "anio": "06/11/2020",
     "descripcion": "Ley de Cooperación Internacional para el Desarrollo",
     "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/4_%20LEY%20DE%20COOPERACIÓN%20INTERNACIONAL%20PARA%20EL%20DESARROLLO.pdf"
+  },
+
+  {
+    "id": "NORM_005",
+    "titulo": "5_LEY ORGÁNICA DE LA ADMINISTRACIÓN PÚBLICA FEDERAL",
+    "tipo": "Ley",
+    "categoria": "Últimas Reformas DOF 16-07-2025",
+    "pais": "México",
+    "anio": "16/07/2025",
+    "descripcion": "Ley Orgánica de la Administración Pública Federal",
+    "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/5_LEY%20ORGÁNICA%20DE%20LA%20ADMINISTRACIÓN%20PÚBLICA%20FEDERAL.pdf"
+  },
+
+  {
+    "id": "NORM_006",
+    "titulo": "6_La Constitución Politica de los Estados Unidos Mexicanos",
+    "tipo": "Constitución",
+    "categoria": "Última Reforma DOF 15-10-2025",
+    "pais": "México",
+    "anio": "15/10/2025",
+    "descripcion": "Constitución Política de los Estados Unidos Mexicanos",
+    "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/6_La%20Constitución%20Politica%20de%20los%20Estados%20Unidos%20Mexicanos.pdf"
   }
   
 ]
+
 
 
 
