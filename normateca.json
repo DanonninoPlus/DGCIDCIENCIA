@@ -1,14 +1,15 @@
 [
   {
     "id": "NORM_001",
-    "titulo": "Acuerdo de Escazú",
-    "tipo": "Tratado Internacional",
-    "categoria": "Medio Ambiente",
+    "titulo": "1_Reglamento Interior de la Secretaría de Relaciones Exteriores",
+    "tipo": "Reglamento",
+    "categoria": "DOF - Diario Oficial de la Federación",
     "pais": "México",
-    "anio": "2018",
-    "descripcion": "Tratado regional sobre acceso a la información, participación pública y justicia ambiental.",
-    "archivo": "https://raw.githubusercontent.com/usuario/repositorio/normateca/escazu.pdf"
+    "anio": "2/10/25",
+    "descripcion": "DECRETO por el que se expide el Reglamento Interior de la Secretaría de Relaciones Exteriores.",
+    "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/1_Reglamento%20Interior%20de%20la%20Secretaría%20de%20Relaciones%20Exteriores.pdf"
   },
+  
   {
     "id": "NORM_002",
     "titulo": "Ley General de Cambio Climático",
@@ -20,3 +21,4 @@
     "archivo": "https://raw.githubusercontent.com/usuario/repositorio/normateca/lgcc.pdf"
   }
 ]
+
