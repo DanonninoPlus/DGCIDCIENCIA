@@ -128,14 +128,28 @@ function renderList() {
 
   // 3. Sigues con el resto del renderizado
   const grupos = {};
+  const conteoContinente = {};
+  const conteoPais = {};
+
   if (filtered.length === 0) {
     projectList.innerHTML = `<div class="p-8 text-center bg-white rounded-2xl border-2 border-dashed border-slate-200 text-slate-400 font-medium">No se encontraron proyectos</div>`;
     return;
   }
 
   filtered.forEach(p => {
-    const c = p.Continente || "Sin Continente";
-    const pais = p.Pais || "Sin País";
+    const c = (p.Continente || "Sin Continente").trim();
+    const pais = (p.Pais || "Sin País").trim();
+
+    
+    // 🔢 Conteo por continente
+conteoContinente[c] = (conteoContinente[c] || 0) + 1;
+
+// 🔢 Conteo por país (clave única continente|país)
+const clavePais = `${c}|${pais}`;
+conteoPais[clavePais] = (conteoPais[clavePais] || 0) + 1;
+
+
+
     if (!grupos[c]) grupos[c] = {};
     if (PAISES_CON_SUBTIPO.includes(pais)) {
       const subtipo = p[CAMPO_SUBTIPO] || "General";
@@ -157,7 +171,13 @@ function renderList() {
       <button class="w-full flex items-center justify-between bg-white px-5 py-4 rounded-2xl shadow-sm border border-slate-100 hover:border-indigo-200 transition-all acordeon-btn">
         <div class="flex items-center gap-3">
             <span class="text-xl">🌍</span>
-            <span class="font-bold text-slate-800 uppercase tracking-tight">${continente}</span>
+             <span class="font-bold text-slate-800 uppercase tracking-tight">
+            ${continente}
+            <span class="ml-2 text-[10px] font-black text-indigo-500">
+               (${conteoContinente[continente]})
+             </span>
+            </span>
+
         </div>
         <i class="fas fa-chevron-down text-slate-300 transition-transform"></i>
       </button>
@@ -170,7 +190,13 @@ function renderList() {
       paisDiv.className = "mb-2";
       paisDiv.innerHTML = `
         <button class="w-full flex items-center gap-2 px-3 py-2 text-indigo-600 font-bold text-sm hover:bg-indigo-50 rounded-lg transition-colors acordeon-btn">
-          <i class="fas fa-map-marker-alt text-[10px]"></i> ${pais.toUpperCase()}
+        <i class="fas fa-map-marker-alt text-[10px]"></i>
+        ${pais.toUpperCase()}
+        <span class="ml-2 text-[9px] font-black text-emerald-600">
+        (${conteoPais[`${continente}|${pais}`] || 0})
+        </span>
+
+
         </button>
         <div class="panel hidden mt-2 space-y-2 pl-3"></div>
       `;
@@ -393,7 +419,7 @@ function saveProject(ev) {
     Nombredelproyecto: projNombredelproyecto.value.trim(),
     Sector: projSector.value.trim(),
     Pais: projPais.value.trim(),
-    Continente: projContinente.value.trim(),
+    Continente: projContinente.value.trim().toUpperCase(),
     Fechadeinicio: projFechadeinicio.value.trim(),
     Fechadetermino: projFechadetermino.value.trim(),
     status: projStatus.value.trim(),
@@ -471,11 +497,3 @@ function populateResponsibles() {
     filterResponsible.appendChild(opt);
   });
 }
-
-
-
-
-
-
-
-
