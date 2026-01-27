@@ -32,9 +32,20 @@ const projNotas = document.getElementById("projNotas");
 
 let proyectos = [];
 let normatecaDocs = [];
+let investigaciones = [];
+
 
 const PAISES_CON_SUBTIPO = ["Japón", "Chile", "Estados Unidos", "Noruega"];
 const CAMPO_SUBTIPO = "Tipo de proyecto";
+
+
+// ===== GESTIÓN: TABS =====
+const tabFormacion = document.getElementById("tabFormacion");
+const tabInvestigacion = document.getElementById("tabInvestigacion");
+
+const gestionFormacion = document.getElementById("gestionFormacion");
+const gestionInvestigacion = document.getElementById("gestionInvestigacion");
+
 
 /* ============================================================
    🔵 1. CARGA DE DATOS
@@ -65,6 +76,23 @@ async function loadnormatecaFromJsonUrl() {
   }
 }
 
+
+async function loadInvestigacionFromJsonUrl() {
+  try {
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/investigacion.json";
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("No se pudo cargar investigacion.json");
+    const data = await res.json();
+    return Array.isArray(data) ? data : [];
+  } catch (err) {
+    console.warn("Error cargando Investigación:", err);
+    return [];
+  }
+}
+
+
+
+
 function loadFromStorage() {
   const raw = localStorage.getItem(LS_KEY);
   return raw ? JSON.parse(raw) : [];
@@ -87,6 +115,8 @@ async function init() {
     proyectos = loadFromStorage();
   }
   normatecaDocs = await loadnormatecaFromJsonUrl();
+  investigaciones = await loadInvestigacionFromJsonUrl();
+
 
   renderList();
   populateResponsibles();
@@ -353,6 +383,7 @@ function attachEvents() {
   const tabs = {
     'tabProyectos': { section: 'projectList', filters: 'filterSection' },
     'tabnormateca': { section: 'normatecaSection', filters: null },
+    'tabgestion': { section: 'gestionSection', filters: null }, // 👈 AQUÍ
     'tabReportes': { section: 'reportsSection', filters: null }
   };
 
@@ -377,8 +408,22 @@ function attachEvents() {
         else filters.classList.add("hidden");
 
         if(tabId === 'tabnormateca') renderNormateca();
+
+        if (tabId === 'tabgestion') {
+        mostrarFormacion();
+        renderInvestigacion();   
+        }
+
     });
   });
+
+  // ===== GESTIÓN: SUB-TABS =====
+  if (tabFormacion && tabInvestigacion) {
+    tabFormacion.addEventListener("click", mostrarFormacion);
+    tabInvestigacion.addEventListener("click", mostrarInvestigacion);
+  }
+
+
 }
 
 /* ============================================================
@@ -498,5 +543,109 @@ function populateResponsibles() {
   });
 }
 
+/* ============================================================
+   🔵 9. GESTIÓN - CAPACITACIONES & PERMISOS DE INVESTIGAIÓN
+   ============================================================*/
 
+function mostrarFormacion() {
+  gestionFormacion.classList.remove("hidden");
+  gestionInvestigacion.classList.add("hidden");
+
+  tabFormacion.classList.add("bg-white", "text-indigo-600", "shadow-sm");
+  tabFormacion.classList.remove("text-slate-400");
+
+  tabInvestigacion.classList.remove("bg-white", "text-indigo-600", "shadow-sm");
+  tabInvestigacion.classList.add("text-slate-400");
+}
+
+
+function mostrarInvestigacion() {
+  gestionInvestigacion.classList.remove("hidden");
+  gestionFormacion.classList.add("hidden");
+
+  tabInvestigacion.classList.add("bg-white", "text-indigo-600", "shadow-sm");
+  tabInvestigacion.classList.remove("text-slate-400");
+
+  tabFormacion.classList.remove("bg-white", "text-indigo-600", "shadow-sm");
+  tabFormacion.classList.add("text-slate-400");
+
+  renderInvestigacion();
+
+}
+
+/* ============================================================
+   🔵 9.1 GESTIÓN - PERMISOS DE INVESTIGAIÓN
+   ============================================================*/
+
+   function renderInvestigacion() {
+  gestionInvestigacion.innerHTML = "";
+
+  // 1️⃣ Agrupar proyectos por país
+  const porPais = {};
+  investigaciones.forEach(inv => {
+    if (!porPais[inv.pais]) porPais[inv.pais] = [];
+    porPais[inv.pais].push(inv);
+  });
+
+  // 2️⃣ Crear acordeón por país
+  Object.keys(porPais).forEach(pais => {
+    const contenedorPais = document.createElement("div");
+    contenedorPais.className = "bg-white rounded-3xl p-4 shadow-sm border border-slate-100";
+
+    contenedorPais.innerHTML = `
+      <button class="w-full flex items-center justify-between acordeon-btn">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center">
+            📍
+          </div>
+          <div class="text-left">
+            <div class="font-bold text-slate-800 uppercase">${pais}</div>
+            <div class="text-[10px] text-slate-400 font-bold uppercase">
+              ${porPais[pais].length} proyecto(s)
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-chevron-down text-slate-300 transition-transform"></i>
+      </button>
+
+      <div class="panel hidden mt-4 space-y-3"></div>
+    `;
+
+    const panelPais = contenedorPais.querySelector(".panel");
+
+    // 3️⃣ Cards de proyectos
+    porPais[pais].forEach(inv => {
+      const card = document.createElement("div");
+      card.className = "bg-indigo-600 rounded-2xl overflow-hidden text-white";
+
+      card.innerHTML = `
+        <button class="w-full text-left px-4 py-4 acordeon-btn">
+          <div class="font-bold text-sm">${inv.nombre}</div>
+        </button>
+
+        <div class="panel hidden bg-white text-slate-700 px-4 py-4 space-y-3">
+          <div class="text-xs">
+            <i class="far fa-calendar-alt mr-1 text-indigo-600"></i>
+            <b>Fecha de ejecución</b><br>
+            ${inv.fechaInicio} – ${inv.fechaFin}
+          </div>
+
+          <div class="text-xs">
+            <i class="fas fa-university mr-1 text-indigo-600"></i>
+            <b>Instituciones</b>
+            <ul class="list-disc pl-4 mt-1">
+              ${inv.instituciones.map(i => `<li>${i}</li>`).join("")}
+            </ul>
+          </div>
+        </div>
+      `;
+
+      panelPais.appendChild(card);
+    });
+
+    gestionInvestigacion.appendChild(contenedorPais);
+  });
+
+  attachAccordionEvents();
+}
 
