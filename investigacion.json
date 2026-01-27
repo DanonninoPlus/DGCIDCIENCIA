@@ -1,34 +1,36 @@
 [
   {
     "id": "inv1",
-    "pais": "España",
-    "nombre": "Estudio Microbioma Mediterráneo",
-    "fechaInicio": "Junio 2024",
-    "fechaFin": "Diciembre 2025",
+    "pais": "Estados Unidos",
+    "nombre": "Integrando educación científica, divulgación y participación comunitaria estudiando el Golfo de California en la embarcación histórica Western Flyer.",
+    "fechaInicio": "27 de marco 2025",
+    "fechaFin": "10 de junio 2025",
     "instituciones": [
-      "CSIC - Centro Superior de Investigaciones Científicas",
-      "Universidad Autónoma de Madrid"
+      "Western Flyer Foundation ",
+      "Universidad Autónoma de Baja California Sur"
     ]
   },
   {
     "id": "inv2",
-    "pais": "España",
-    "nombre": "Análisis Desalinización Sostenible",
-    "fechaInicio": "Enero 2023",
-    "fechaFin": "Junio 2024",
+    "pais": "Estados Unidos",
+    "nombre": "ESCUCHE GoMex - Investigaciones a largo plazo sobre las tendencias del paisaje sonoro, la ecología de los cetáceos y el ruido en el golfo de México",
+    "fechaInicio": "10 de junio 2025",
+    "fechaFin": "15 de julio 2025",
     "instituciones": [
-      "Universidad de Valencia"
+      "Universidad de California en San Diego",
+      "Universidad Nacional Autónoma de México",
+      "Universidad de Veracruz"
     ]
   },
   {
     "id": "inv3",
-    "pais": "México",
-    "nombre": "Biodiversidad y Cambio Climático",
-    "fechaInicio": "2024",
-    "fechaFin": "2026",
+    "pais": "Estados Unidos",
+    "nombre": "Campaña de Carbono y Ecosistemas en el Golfo de México (Gulf of Mexico Ecosystems and Carbon Cruise, GOMECC-5) de 2025.",
+    "fechaInicio": "Cancelada debido a un incendio en la sala de máquinas del buque - 10 de octubre 2025",
+    "fechaFin": "30 de noviembre 2025",
     "instituciones": [
-      "UNAM",
-      "CONACYT"
+      "Laboratorio Oceanográfico y Meteorológico del Atlántico (AOML, por sus siglas en inglés) de la Administración Nacional Oceánica y Atmosférica (NOAA, por sus siglas en inglés)",
+      "Universidad Autónoma de Baja California"
     ]
   }
 ]
