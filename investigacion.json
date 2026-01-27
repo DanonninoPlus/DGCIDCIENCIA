@@ -1,6 +1,6 @@
 [
   {
-    "id": "inv1",
+    "id": "inv1_EUA",
     "pais": "Estados Unidos",
     "nombre": "Integrando educación científica, divulgación y participación comunitaria estudiando el Golfo de California en la embarcación histórica Western Flyer.",
     "fechaInicio": "27 de marco 2025",
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "id": "inv2",
+    "id": "inv2_EUA",
     "pais": "Estados Unidos",
     "nombre": "ESCUCHE GoMex - Investigaciones a largo plazo sobre las tendencias del paisaje sonoro, la ecología de los cetáceos y el ruido en el golfo de México",
     "fechaInicio": "10 de junio 2025",
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "id": "inv3",
+    "id": "inv3_EUA",
     "pais": "Estados Unidos",
     "nombre": "Campaña de Carbono y Ecosistemas en el Golfo de México (Gulf of Mexico Ecosystems and Carbon Cruise, GOMECC-5) de 2025.",
     "fechaInicio": "Cancelada debido a un incendio en la sala de máquinas del buque - 10 de octubre 2025",
@@ -32,5 +32,54 @@
       "Laboratorio Oceanográfico y Meteorológico del Atlántico (AOML, por sus siglas en inglés) de la Administración Nacional Oceánica y Atmosférica (NOAA, por sus siglas en inglés)",
       "Universidad Autónoma de Baja California"
     ]
+  },
+  {
+    "id": "inv4_EUA",
+    "pais": "Estados Unidos",
+    "nombre": "Cuantificación de los efectos térmicos de la circulación de fluidos en la corteza oceánica sobre las temperaturas en la zona de subducción del sur de México.",
+    "fechaInicio": "5 de noviembre 2025",
+    "fechaFin": "26 de diciembre 2025",
+    "instituciones": [
+      "Instituto de Minería y Tecnología de Nuevo México",
+      "Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)"
+    ]
+  },
+  {
+    "id": "inv5_EUA",
+    "pais": "Estados Unidos",
+    "nombre": "Evaluación del impacto humano del turismo en el mapache pigmeo (Procyon pygmaeus), especie en peligro crítico de extinción.",
+    "fechaInicio": "11 de enero 2026",
+    "fechaFin": "27 de febrero 2026",
+    "instituciones": [
+      "Universidad de Miami",
+      "Fundación de Parques y Museos de Cozumel"
+    ]
+  },
+  {
+    "id": "inv6_EUA",
+    "pais": "Estados Unidos",
+    "nombre": "Investigación colaborativa: Barreras metabólicas del hábitat impuesta a los migrantes verticales diurnos tropicales.",
+    "fechaInicio": "13 de diciembre 2025",
+    "fechaFin": "31 de enero 2026",
+    "instituciones": [
+      "Universidad del Sur de Florida",
+      "Universidad Estatal de Arizona",
+      "Universidad Rhode Island",
+      "Centro de Investigaciones Biológicas del Noroeste (CIBNOR)",
+      "Centro Interdisciplinario de Ciencias Marinas (CICIMAR)"
+    ]
+  },
+
+  {
+    "id": "inv1_NOR",
+    "pais": "Noruega",
+    "nombre": "Expedición Un Océano II (One Ocean Expedition II)",
+    "fechaInicio": "10 de noviembre 2025",
+    "fechaFin": "9 de diciembre 2025",
+    "instituciones": [
+      "Fundación Statsraad Lehmkuhl",
+      "Universidad Autónoma de Baja California Sur"
+    ]
   }
+
 ]
