@@ -1,29 +1,216 @@
 [
   {
-    "id": "cap1",
-    "pais": "España",
-    "titulo": "Gestión de Aguas Rurales",
-    "modalidad": "Presencial",
-    "tituloOriginal": "Sustainable Water Management for Rural Communities",
-    "instituto": "INAP - Instituto Nacional de Administración Pública",
-    "fechaInicio": "15 Mar 2024",
-    "fechaFin": "20 May 2024",
-    "dte": "ESP-2024-WTR-001",
-    "limiteCandidaturas": "01 Mar 2024",
-    "notas": "Requiere experiencia previa en proyectos de saneamiento ambiental."
+    "id": "cap1_NICHIBOKU",
+    "pais": "Nichiboku",
+    "titulo": "Promoción de la agricultura orientada al mercado para los países de América Latina (Planificación y gestión) (A)",
+    "modalidad": "",
+    "tituloOriginal": "Promoción de la agricultura orientada al mercado para los países de América Latina (Planificación y gestión) (A), organizado por la Agencia de Cooperación Internacional del Japón (JICA).",
+    "instituto": "Agencia de Cooperación Internacional del Japón (JICA)",
+    "fechaInicio": "21 de enero 2026",
+    "fechaFin": "7 de febrero 2026",
+    "dte": "OPM 01370/2025",
+    "limiteCandidaturas": "23 de octubre 2025",
+    "notas": "ALEJANDRA VALDEZ IZQIERDO DTE 00180/2025  Y HECTOR ARRONTE CALDERON DTE/00181/2025"
   },
   {
-    "id": "cap2",
-    "pais": "España",
-    "titulo": "Finanzas Sostenibles",
-    "modalidad": "Virtual",
-    "tituloOriginal": "Sustainable Finance Strategies",
-    "instituto": "Universidad Complutense de Madrid",
-    "fechaInicio": "10 Jun 2024",
-    "fechaFin": "30 Jul 2024",
-    "dte": "ESP-2024-FIN-002",
-    "limiteCandidaturas": "15 May 2024",
-    "notas": ""
-  }
-]
+    "id": "cap2_NICHIBOKU",
+    "pais": "Nichiboku",
+    "titulo": "Curso del Programa de Cooperación para la Formación de Recursos Humanos en la Asociación Estratégica Global México-Japón (Nichiboku).",
+    "modalidad": "",
+    "tituloOriginal": "Energy Efficiency System and Technology in Japanese Process Industry",
+    "instituto": "No se especifica",
+    "fechaInicio": "25 de enero 2026",
+    "fechaFin": "7 de febrero 2026",
+    "dte": "OPM 01394/2025",
+    "limiteCandidaturas": "3 de diciembre 2025",
+    "notas": "Hugo Enrique Hernandez Silva ,Fabiola Jazmin Sanchez Rangel,Luis Miguel  Valdivieso CATAS  DTE 00291 2025"
+  },
 
+  {
+    "id": "cap1_CHINA",
+    "pais": "China",
+    "titulo": "Primer Taller Internacional en Inteligencia Artificial para Pesca",
+    "modalidad": "",
+    "tituloOriginal": "Primer Taller Internacional en Inteligencia Artificial para Pesca",
+    "instituto": "No se especifica",
+    "fechaInicio": "25 de junio 2026",
+    "fechaFin": "10 de julio de 2026",
+    "dte": "DTE 00194/2026",
+    "limiteCandidaturas": "01-30 de abril 2026",
+    "notas": "sin notas"
+  },
+
+  {
+    "id": "cap1_KCCP",
+    "pais": "KCCP",
+    "titulo": "Reducción del Riesgo de Desastres para la Sostenibilidad y la Resiliencia (Latinoamérica)",
+    "modalidad": "Virtual y  Presencial",
+    "tituloOriginal": "Curso del Programa de Cooperación para la Asociación Estratégica Global México-Japón (Nichiboku): Reducción del Riesgo de Desastres para la Sostenibilidad y la Resiliencia (Latinoamérica)",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "18 de noviembre (virtual) y 12 de enero (presencial)",
+    "fechaFin": "12 de diciembre (virtual) y 7 de febrero (presencial)",
+    "dte": "OPM 01417/2025",
+    "limiteCandidaturas": "29 de septiembre",
+    "notas": "JOSE ANTONIO VILLANUEVA SANTIAGO   OPM 1604/2025 AYUNTAMINETO DE TUXTLA GUTIERREZ"
+  },
+
+  {
+    "id": "cap2_KCCP",
+    "pais": "KCCP",
+    "titulo": "Curso professional Diploma of tropical medicine and hygiene",
+    "modalidad": "Inglés",
+    "tituloOriginal": "curso professional Diploma of tropical medicine and hygiene",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "26 de marzo 2026",
+    "fechaFin": "14 de junio 2026",
+    "dte": "OPM 01455/2025",
+    "limiteCandidaturas": "17 de diciembre",
+    "notas": "JATZIVE LOPEZ ALCAZA DTE 00108/2026 Y ERENDY NAHELI HERNANDEZ SANCHEZ DTE 00109/2026"
+  },
+
+  {
+    "id": "cap3_KCCP",
+    "pais": "KCCP",
+    "titulo": "CURSO MOVILIDAD TRANSICIÓN ENERGÉTICA",
+    "modalidad": "Inglés",
+    "tituloOriginal": "CURSO ENERGY TRANSITION MOBILLITY",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "25 de enero 2026",
+    "fechaFin": "7 de febrero 2026",
+    "dte": "OPM01461/2025",
+    "limiteCandidaturas": "5 de noviembre 2025",
+    "notas": "Roberto Vladimir Ávalos Bravo DTE 00255"
+  },
+
+  {
+    "id": "cap4_KCCP",
+    "pais": "KCCP",
+    "titulo": "Políticas y prácticas en la sociedad que envejece: creación de comunidades inclusivas de edad",
+    "modalidad": "Inglés",
+    "tituloOriginal": Policies and Practices in Aging Society:Creating Age-Inclusive Communities",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "13 de enero 2026",
+    "fechaFin": "23 de enero 2026",
+    "dte": "OPM 01603/2025 ",
+    "limiteCandidaturas": "30 de octubre de 2025",
+    "notas": "MARIA LOPEZ ORTEGA Y PAMELA TELLA VEGA  INSTITUTO NACIONAL DE GERIATRIA  DTE/00179/2025"
+  },
+
+  {
+    "id": "cap5_KCCP",
+    "pais": "KCCP",
+    "titulo": "Curso Internacional de Desarrollo de Capacidades para la Aplicación del Enfoque de Mejoramiento de Vida para el Desarrollo Rural Participativo PANAMA",
+    "modalidad": "Español",
+    "tituloOriginal": "Curso Internacional de Desarrollo de Capacidades para la Aplicación del Enfoque de Mejoramiento de Vida para el Desarrollo Rural Participativo PANAMA",
+    "instituto": "no especificado",
+    "fechaInicio": "31 de enero 2026",
+    "fechaFin": "15 de febrero 2026",
+    "dte": "DTE 00127/2025",
+    "limiteCandidaturas": "3 de diciembre de 2025",
+    "notas": "MARIA LOPEZ ORTEGA Y PAMELA TELLA VEGA  INSTITUTO NACIONAL DE GERIATRIA  DTE/00179/2025"
+  },
+
+  {
+    "id": "cap6_KCCP",
+    "pais": "KCCP",
+    "titulo": "Administración y gestión estratégica de puertos (para el Gestor de Puerto)",
+    "modalidad": "Inglés",
+    "tituloOriginal": "Strategic Port Administration and Management (for Port Manager)",
+    "instituto": "Varias instituciones",
+    "fechaInicio": "15 de febrero 2026",
+    "fechaFin": "14 de marzo 2026",
+    "dte": "OPM /01424",
+    "limiteCandidaturas": "24 de noviembre de 2025",
+    "notas": "Teresa Garcia Pulido  DTE00290/2025"
+  },
+
+  {
+    "id": "cap7_KCCP",
+    "pais": "KCCP",
+    "titulo": "Fortalecimiento de la Industria Automotriz incluyendo EV a través del Desarrollo de Recursos Humanos en el Estado de Aguascalientes en México",
+    "modalidad": "Español",
+    "tituloOriginal": "Fortalecimiento de la Industria Automotriz incluyendo EV a través del Desarrollo de Recursos Humanos en el Estado de Aguascalientes en México",
+    "instituto": "SUB SECRETARIA DE DESARROLLO SOCIAL",
+    "fechaInicio": "1 de enero 2026",
+    "fechaFin": "16 de enero 2026",
+    "dte": "no especificado",
+    "limiteCandidaturas": "23 de diciembre de 2025",
+    "notas": "IBARRA ORENDAY CALUDIA,RUVALCABA FIGUEROA RAUDE,LOZA GUERRERO KEVIN,PINEDA CAMPO CESAR DANIEL,COLIN GUTIERREZ PAULINO,MELLADO VAÑLDES JUAN FERNANDO,RODRIGUEZ VALDES JAIRO,RAQUEL CACERES FRANCOISCO,ANDRADE SERAFIN JPORGE ARMANDO,GARCIA SANCHEZ RABINDRANATH,GONZALEZ SEVERO GIOVANA,ARREDONDO LOPEZ CARLOS,OROZCO MUÑOZ JOSE FERNA,ROBLES SANTA CRUZ LUIS FERNANDO,LOPEZ RUIZ ISRAEL,DANIEL MUNIZ MEDINA "
+  },
+
+  {
+    "id": "cap1_India_bis",
+    "pais": "India Bis",
+    "titulo": "Curso sobre desarrollo de capacidades para los profesionales de la vida silvestre y la conservación",
+    "tituloOriginal": "Course on capacity building for wildlife &CONSERVATION PRACTITIPNERS",
+    "instituto": "Instituciones varias y estados",
+    "fechaInicio": "9 de febrero 2026",
+    "fechaFin": "13 de febrero 2026",
+    "dte": "DTE 0067/2026",
+    "limiteCandidaturas": "13 de enero de 2025",
+    "notas": "Postulaciones recibidas: Ana Adeliz Rascon Mendoza , David Lerma Quiroga  NV 00107 2026"
+  },
+  {
+    "id": "cap2_India_bis",
+    "pais": "India Bis",
+    "titulo": "DESARROLLO DE GESTION PUBLICA ",
+    "tituloOriginal": "DESARROLLO DE GESTION PUBLICA ",
+    "instituto": "Instituciones varias y estados",
+    "fechaInicio": "10 de febrero 2026",
+    "fechaFin": "19 de febrero 2026",
+    "dte": "DTE 000146/2026",
+    "limiteCandidaturas": "No especificado",
+    "notas": "Postulaciones recibidas: "
+  },
+  {
+    "id": "cap3_India_bis",
+    "pais": "India Bis",
+    "titulo": "LATAFORMAS DIGITALES DE MANO DE OBRA Y GENERACIÓN DE EMPLEO BASADA EN LA ECONOMÍA",
+    "tituloOriginal": "DIGITAL LABOR PLATFORMS AND ECONOMY BASED ENPLOYMENT GENERATION",
+    "instituto": "Instituciones varias y estados",
+    "fechaInicio": "30 de marzo 2026",
+    "fechaFin": "10 de abril 2026",
+    "dte": "NV 00199/2026",
+    "limiteCandidaturas": "No especificado",
+    "notas": "Postulaciones recibidas: MAESTRA IVONNE JAQUELINE YERBES SALAZAR"
+  },
+
+  {
+    "id": "cap4_India_bis",
+    "pais": "India Bis",
+    "titulo": "ROGRAMA INTERNACIONAL DE FORMACIÓN SOBRE EL FUTURO DEL TRABAJO Y LA TECNOLOGÍA",
+    "tituloOriginal": "INTERNATIONAL TRAINING PROGRAMME ON FUTURE OF WORK AND  TECHOLOGY",
+    "instituto": "Instituciones varias y estados",
+    "fechaInicio": "9 de marzo 2026",
+    "fechaFin": "27 de marzo 2026",
+    "dte": "NV 00198/2026",
+    "limiteCandidaturas": "No especificado",
+    "notas": "Postulaciones recibidas: IVANNA LIBERTAD EVIA QUIJANO"
+  },
+
+  {
+    "id": "cap5_India_bis",
+    "pais": "India Bis",
+    "titulo": "DESARROLLO DE LA GESTIÓN DE LA SALUD PÚBLICA",
+    "tituloOriginal": "PUBLIC HEALTH MANAGEMENT DEVELOPMENT",
+    "instituto": "Instituciones varias y estados",
+    "fechaInicio": "10 de febrero 2026",
+    "fechaFin": "19 de febrero 2026",
+    "dte": "VV 00200/2026",
+    "limiteCandidaturas": "No especificado",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap6_India_bis",
+    "pais": "India Bis",
+    "titulo": "GESTIÓN Y GOBERNANZA DEL DESARROLLO TURÍSTICO",
+    "tituloOriginal": "TOURISM DEVELOPMENT MANAGEMENT & GOVERNANCE",
+    "instituto": "Instituciones varias y estados",
+    "fechaInicio": "17 de marzo 2026",
+    "fechaFin": "29 de marzo 2026",
+    "dte": "DTE 00201/2026",
+    "limiteCandidaturas": "No especificado",
+    "notas": "No especificado"
+  }
+
+]
