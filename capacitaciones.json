@@ -289,18 +289,7 @@
     "limiteCandidaturas": "6 de febrero 2026",
     "notas": "No especificado"
   },
-  {
-    "id": "cap9_Singapur",
-    "pais": "Singapur",
-    "titulo": "NORMAS DE GEDER EN EL LIDERAZGO",
-    "tituloOriginal": "TRASCENDING GEDER NORMS  IN LEADERSHIP",
-    "instituto": "Instituciones varias",
-    "fechaInicio": "4 de mayo 2026",
-    "fechaFin": "8 de mayo 2026",
-    "dte": "DTE 00046/2026",
-    "limiteCandidaturas": "27 de febrero 2026",
-    "notas": "No especificado"
-  },
+
   {
     "id": "cap7_Singapur",
     "pais": "Singapur",
@@ -352,6 +341,7 @@
   }
 
 ]
+
 
 
 
