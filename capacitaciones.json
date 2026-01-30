@@ -211,7 +211,146 @@
     "dte": "DTE 00201/2026",
     "limiteCandidaturas": "No especificado",
     "notas": "No especificado"
+  },
+
+
+
+
+  
+    {
+    "id": "cap1_Singapur",
+    "pais": "Singapur",
+    "titulo": "SEGURIDAD ALIMENTARIA ",
+    "tituloOriginal": "SAFFETY FOOD",
+    "instituto": "SADER INIFAP",
+    "fechaInicio": "9 de marzo 2026",
+    "fechaFin": "13 de marzo 2026",
+    "dte": "DTE 00203/2025",
+    "limiteCandidaturas": "2 de enero de 2026",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap2_Singapur",
+    "pais": "Singapur",
+    "titulo": "INOVACION EN LA GOBERNANZA",
+    "tituloOriginal": "INONOVATION IN GOVERNANCE",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "6 de abril 2026",
+    "fechaFin": "10 de abril",
+    "dte": "DTE 00036/2026",
+    "limiteCandidaturas": "3 de abril 2026",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap3_Singapur",
+    "pais": "Singapur",
+    "titulo": "GESTIÓN INTEGRADA DE RESIDUOS - ECONOMÍA CIRCULAR",
+    "tituloOriginal": "INTEGRATED WASTE MANAGEMENT-CIRCULAR ECONOMY",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "18 de mayo 2026",
+    "fechaFin": "22 de mayo 2026",
+    "dte": "DTE 0037/2026",
+    "limiteCandidaturas": "13 de marzo 2026",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap4_Singapur",
+    "pais": "Singapur",
+    "titulo": "ECOSISTEMA URBANO RESILIENTE PARA LA ADAPTABILIDAD",
+    "tituloOriginal": "RESILIENT URBAN ECOSYSTEM FOR ADAPTABILITY",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "6 de abril 2026",
+    "fechaFin": "10 de abril 2026",
+    "dte": "DTE 00038/2026",
+    "limiteCandidaturas": "6 de febrero 2026",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap5_Singapur",
+    "pais": "Singapur",
+    "titulo": "SISTEMA INTEGRADO DE TRANSPORTE URBANO",
+    "tituloOriginal": "INTEGRATED URBAN TRANSPORT SYSTEM",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "20 de abril 2026",
+    "fechaFin": "24 de abril 2026",
+    "dte": "DTE 00039/2026",
+    "limiteCandidaturas": "20 de febrero 2026",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap6_Singapur",
+    "pais": "Singapur",
+    "titulo": "ADMINISTRACIÓN PÚBLICA Y GOBERNANZA",
+    "tituloOriginal": "PUBLIC ADMINISTRATION & GOVERNANCE",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "6 de abril 2026",
+    "fechaFin": "10 de abril 2026",
+    "dte": "DTE 00040/2026",
+    "limiteCandidaturas": "6 de febrero 2026",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap9_Singapur",
+    "pais": "Singapur",
+    "titulo": "NORMAS DE GEDER EN EL LIDERAZGO",
+    "tituloOriginal": "TRASCENDING GEDER NORMS  IN LEADERSHIP",
+    "instituto": "Instituciones varias"",
+    "fechaInicio": "4 de mayo 2026",
+    "fechaFin": "8 de mayo 2026",
+    "dte": "DTE 00046/2026",
+    "limiteCandidaturas": "27 de febrero 2026",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap7_Singapur",
+    "pais": "Singapur",
+    "titulo": "LIDERAZGO ESTRATÉGICO Y GOBERNANZA",
+    "tituloOriginal": "STRATEGIC LEADERSHIP & GOVERNANCE ",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "18 de mayo 2026",
+    "fechaFin": "22 de mayo 2026",
+    "dte": "DTE 00041/2026",
+    "limiteCandidaturas": "13 de marzo 2026",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap8_Singapur",
+    "pais": "Singapur",
+    "titulo": "NORMAS DE GEDER EN EL LIDERAZGO",
+    "tituloOriginal": "TRASCENDING GEDER NORMS  IN LEADERSHIP",
+    "instituto": "Instituciones varias"",
+    "fechaInicio": "4 de mayo 2026",
+    "fechaFin": "8 de mayo 2026",
+    "dte": "DTE 00046/2026",
+    "limiteCandidaturas": "27 de febrero 2026",
+    "notas": "No especificado"
+  },
+  {
+    "id": "cap9_Singapur",
+    "pais": "Singapur",
+    "titulo": "GESTIÓN PORTUARIA Y OPERACIONES",
+    "tituloOriginal": "PORT MANAGEMENT AN OPERATIONS",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "11 de mayo 2026",
+    "fechaFin": "15 de mayo 2026",
+    "dte": "DTE 00058/2026",
+    "limiteCandidaturas": "6 de marzo 2026",
+    "notas": "No especificado"
+  },
+
+  {
+    "id": "cap10_Singapur",
+    "pais": "Singapur",
+    "titulo": "GESTIÓN SANITARIA",
+    "tituloOriginal": "HEALTHCARE MANANGEMENT",
+    "instituto": "Instituciones varias",
+    "fechaInicio": "6 de mayo 2026",
+    "fechaFin": "10 de mayo 2026",
+    "dte": "DTE 00197/2026",
+    "limiteCandidaturas": "4 de mayo 2026",
+    "notas": "No especificado"
   }
 
 ]
+
 
