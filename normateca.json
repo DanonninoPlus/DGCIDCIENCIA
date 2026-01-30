@@ -63,9 +63,21 @@
     "anio": "15/10/2025",
     "descripcion": "Constitución Política de los Estados Unidos Mexicanos",
     "archivo": "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/img/Normateca/6_La%20Constitución%20Politica%20de%20los%20Estados%20Unidos%20Mexicanos.pdf"
+  },
+
+    {
+    "id": "NORM_007",
+    "titulo": "7_INFO_ANUAL_2025_LOW PRINT FINAL OK",
+    "tipo": "Informe Anual AMEXCID 2025",
+    "categoria": "Informe",
+    "pais": "México",
+    "anio": "Diciembre 2025",
+    "descripcion": "Informe anual de la AMEXCID del año 2025",
+    "archivo": "https://drive.google.com/drive/folders/1HpkaNHiXDiB84HNZ2iku0OsX7MZCnOY_/INFO_ANUAL_2025_LOW%20PRINT%20FINAL%20OK%20(1).pdf"
   }
   
 ]
+
 
 
 
