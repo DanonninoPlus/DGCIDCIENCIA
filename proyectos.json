@@ -446,8 +446,8 @@
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Ejecución",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Esta iniciativa está en cierre y fue parte de los proyectos ganadores de la Convocatoria 2022 del Fondo Conjunto de Cooperación, cuyo objetivo fue construir una estrategia de acción para ampliar la participación política de las mujeres indígenas, desde los propios contextos y prácticas culturales.",
+    "notas": "3.	INSTITUCIONES PARTICIPANTES: Por México: Universidad Autónoma de Chipas (UNACH)  -  Por Chile:  Universidad de la Frontera (UFRO)"
   },
 
   {
@@ -484,12 +484,12 @@
     "Continente": "Sudamérica",
     "Pais": "Chile",
     "Tipo de proyecto": "En ejecución",
-    "Sector": "Educación",
+    "Sector": "Derechos Humanos, Identidad",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Ejecución",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Hoja de ruta formulada y acordada para preservar y revitalizar las lenguas indígenas de Chile y México en torno a dos ejes: la participación de los pueblos indígenas y la corresponsabilidad y coordinación interinstitucional.",
+    "notas": "INSTITUCIONES PARTICIPANTES: Por México: Instituto Nacional de Lenguas Indígenas  -  Por Chile: Unidad Cooordinadora de Asuntos Indígenas"
   },
 
   {
@@ -1673,4 +1673,5 @@
   }
   
 ]
+
 
