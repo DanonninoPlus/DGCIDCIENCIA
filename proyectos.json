@@ -1185,7 +1185,6 @@
     "Objetivo": "Pendiente",
     "notas": "Pendiente"
   },
-  
     {
     "id": "p2_EUA",
      "Nombredelproyecto": "Secundaria Técnica No. 68 (Ciudad Renacimiento, Acapulco, Guerrero)",
@@ -1196,8 +1195,8 @@
     "Fechadeinicio": "2026",
     "Fechadetermino": "2026",
     "status": "Ejecución",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Proyecto en colaboración con la Secretaría de Gobernación, bajo la estrategia “Guerrero por la Paz”, para el Programa de Asistencia Humanitaria del Comando Norte.",
+    "notas": "El proyecto ya fue aprobado dentro de un Proyecto Mayor en el que también se incluyen escuelas del norte y sureste de México propuestas por el Instituto Nacional de la Infraestructura Física Educativa (INIFED)."
   },
   
     {
@@ -1210,8 +1209,8 @@
     "Fechadeinicio": "2024",
     "Fechadetermino": "2029",
     "status": "Ejecución",
-    "Objetivo": "1-Proyecto en colaboración con la Secretaría de Gobernación, bajo la estrategia “Guerrero por la Paz”, para el Programa de Asistencia Humanitaria del Comando Norte. 2-La propuesta inicial se ingresó en 2025 y solicitó un apoyo de 2 millones de pesos",
-    "notas": "El proyecto ya fue aprobado dentro de un Proyecto Mayor en el que también se incluyen escuelas del norte y sureste de México propuestas por el Instituto Nacional de la Infraestructura Física Educativa (INIFED). Está pendiente la asignación de recursos."
+    "Objetivo": "Pendiente",
+    "notas": "Pendiente"
   },
 
     {
@@ -1687,8 +1686,5 @@
   }
   
 ]
-
-
-
 
 
