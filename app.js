@@ -1,4 +1,4 @@
-// app.js - Versión UI Mejorada (DG Cooperación)
+// app.js - Versión UI Mejorada (DG Cooperación) v9.0 marzo 2026
 
 const LS_KEY = "dg_proyectos_v2";
 
@@ -48,13 +48,16 @@ const tabInvestigacion = document.getElementById("tabInvestigacion");
 const gestionCapacitaciones = document.getElementById("gestionCapacitaciones");
 const gestionInvestigacion = document.getElementById("gestionInvestigacion");
 
+const capContainer = document.getElementById("capacitacionesList");
+
+
 
 /* ============================================================
    🔵 1. CARGA DE DATOS
    ============================================================*/
 async function loadFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/proyectos.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dgQUA/main/proyectos.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar el JSON externo");
     const data = await res.json();
@@ -67,7 +70,7 @@ async function loadFromJsonUrl() {
 
 async function loadnormatecaFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/normateca.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dgQUA/main/normateca.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar normateca.json");
     const data = await res.json();
@@ -81,7 +84,7 @@ async function loadnormatecaFromJsonUrl() {
 
 async function loadInvestigacionFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/investigacion.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dgQUA/main/investigacion.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar investigacion.json");
     const data = await res.json();
@@ -96,14 +99,17 @@ async function loadInvestigacionFromJsonUrl() {
 
 async function loadCapacitacionesFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/capacitaciones.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dgQUA/main/capacitaciones.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar capacitaciones.json");
+
     const data = await res.json();
-    return Array.isArray(data) ? data : [];
+
+    return data || {};
+
   } catch (err) {
     console.warn("Error cargando Capacitaciones:", err);
-    return [];
+    return {};
   }
 }
 
@@ -449,18 +455,53 @@ function attachEvents() {
         if(tabId === 'tabnormateca') renderNormateca();
 
         if (tabId === 'tabgestion') {
-        mostrarCapacitaciones()
+        renderCapacitaciones()
         renderInvestigacion();   
         }
 
     });
   });
 
-  // ===== GESTIÓN: SUB-TABS =====
-  if (tabCapacitaciones && tabInvestigacion) {
-    tabCapacitaciones.addEventListener("click", mostrarCapacitaciones);
-    tabInvestigacion.addEventListener("click", mostrarInvestigacion);
-  }
+
+  
+    // ===== GESTIÓN: SUB-TABS =====
+    if (tabCapacitaciones && tabInvestigacion) {
+
+      tabCapacitaciones.addEventListener("click", () => {
+
+        // activar estilos
+        tabCapacitaciones.classList.add("bg-white","text-indigo-600");
+        tabCapacitaciones.classList.remove("text-slate-400");
+
+        tabInvestigacion.classList.remove("bg-white","text-indigo-600");
+        tabInvestigacion.classList.add("text-slate-400");
+
+        // contenido
+        document.getElementById("gestionCapacitaciones").classList.remove("hidden");
+        document.getElementById("gestionInvestigacion").classList.add("hidden");
+
+        renderCapacitaciones();
+
+      });
+
+      tabInvestigacion.addEventListener("click", () => {
+
+        // activar estilos
+        tabInvestigacion.classList.add("bg-white","text-indigo-600");
+        tabInvestigacion.classList.remove("text-slate-400");
+
+        tabCapacitaciones.classList.remove("bg-white","text-indigo-600");
+        tabCapacitaciones.classList.add("text-slate-400");
+
+        // contenido
+        document.getElementById("gestionCapacitaciones").classList.add("hidden");
+        document.getElementById("gestionInvestigacion").classList.remove("hidden");
+
+        renderInvestigacion();
+
+      });
+
+    }
 
 
 }
@@ -608,125 +649,92 @@ function populateResponsibles() {
    🔵 9. GESTIÓN - CAPACITACIONES & PERMISOS DE INVESTIGAIÓN
    ============================================================*/
 
-function mostrarCapacitaciones() {
-  gestionCapacitaciones.classList.remove("hidden");
-  gestionInvestigacion.classList.add("hidden");
+function renderCapacitaciones() {
 
-  tabCapacitaciones.classList.add("bg-white", "text-indigo-600", "shadow-sm");
-  tabCapacitaciones.classList.remove("text-slate-400");
+  const data = capacitaciones; // ← usamos el JSON para especificar las capacitaciones de cada país
 
-  tabInvestigacion.classList.remove("bg-white", "text-indigo-600", "shadow-sm");
-  tabInvestigacion.classList.add("text-slate-400");
+  const contenedor = document.getElementById("capacitacionesList");
+  contenedor.innerHTML = "";
 
-  renderCapacitaciones();
+  Object.entries(data).forEach(([pais, info]) => {
 
-}
+    const card = document.createElement("div");
+    card.className = "bg-white rounded-xl shadow-sm p-4 mb-4";
 
-
-function mostrarInvestigacion() {
-  gestionInvestigacion.classList.remove("hidden");
-  gestionCapacitaciones.classList.add("hidden");
-
-  tabInvestigacion.classList.add("bg-white", "text-indigo-600", "shadow-sm");
-  tabInvestigacion.classList.remove("text-slate-400");
-
-  tabCapacitaciones.classList.remove("bg-white", "text-indigo-600", "shadow-sm");
-  tabCapacitaciones.classList.add("text-slate-400");
-
-}
-
-/* ============================================================
-   🔵 9.1 GESTIÓN - CAPACITACIONES
-   ============================================================*/
-
-   function renderCapacitaciones() {
-  gestionCapacitaciones.innerHTML = "";
-
-  // 1️⃣ Agrupar proyectos por país
-  const porPais = {};
-  capacitaciones.forEach(cap => {
-    if (!porPais[cap.pais]) porPais[cap.pais] = [];
-    porPais[cap.pais].push(cap);
-  });
-
-  // 2️⃣ Crear acordeón por país
-   Object.keys(porPais).forEach(pais => {
-  const contenedorPais = document.createElement("div");
-  contenedorPais.className = "bg-white rounded-3xl p-4 shadow-sm border border-slate-100";
-
-  contenedorPais.innerHTML = `
-    <button class="w-full flex items-center justify-between acordeon-btn">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center">📍</div>
+    card.innerHTML = `
+      <div class="flex justify-between items-center cursor-pointer pais-header">
         <div>
-          <div class="font-bold uppercase">${pais}</div>
-          <div class="text-[10px] text-slate-400 font-bold">
-            ${porPais[pais].length} cursos activos
+          <div class="font-semibold text-slate-700">${pais}</div>
+
+          <div class="text-sm text-slate-500">
+            Total de recepción de capacitaciones:
+            <span class="text-purple-600 font-semibold">${info.totalRecepcion}</span>
+          </div>
+
+          <div class="text-sm text-slate-500">
+            Total de capacitaciones difundidas:
+            <span class="text-purple-600 font-semibold">${info.totalDifusion}</span>
           </div>
         </div>
-      </div>
-      <i class="fas fa-chevron-down transition-transform"></i>
-    </button>
 
-    <div class="panel hidden mt-4 space-y-3"></div>
-  `;
-
-
-  // 3️⃣ Cards de proyectos
-const panelPais = contenedorPais.querySelector(".panel");
-
-porPais[pais].forEach(cap => {
-  const card = document.createElement("div");
-  card.className = "rounded-2xl overflow-hidden";
-
-  card.innerHTML = `
-    <button class="w-full bg-indigo-600 text-white px-4 py-4 flex justify-between items-center acordeon-btn">
-      <div class="font-bold text-sm">${cap.titulo}</div>
-      <span class="text-[9px] bg-white/20 px-2 py-1 rounded-full uppercase">${cap.modalidad}</span>
-    </button>
-
-    <div class="panel hidden bg-white p-4 space-y-4">
-      
-      <div class="text-xs">
-        <i class="fas fa-graduation-cap text-indigo-600 mr-1"></i>
-        <b>Título original</b><br>${cap.tituloOriginal}
+        <div class="material-symbols-outlined text-slate-400 transition-transform">expand_more</div>
       </div>
 
-      <div class="text-xs">
-        <i class="fas fa-university text-indigo-600 mr-1"></i>
-        <b>Instituto</b><br>${cap.instituto}
+      <div class="capacitaciones hidden mt-3 bg-slate-50 rounded-xl p-3">
+        ${
+          info.capacitaciones.map(cap => `
+
+          <div class="flex items-center justify-between py-2 text-sm cursor-pointer text-slate-600 hover:text-purple-600"
+              onclick="abrirCapacitacion('${cap.id}')">
+
+            <span class="truncate">
+              ${cap.titulo}
+            </span>
+
+            <span class="material-symbols-outlined text-slate-400 text-base">
+              chevron_right
+            </span>
+
+          </div>
+
+            
+          `).join("")
+        }
       </div>
+    `;
 
-      <div class="grid grid-cols-2 gap-3">
-        <div class="bg-slate-50 p-2 rounded-lg text-center">
-          <div class="text-[9px] font-bold uppercase">Inicio</div>
-          ${cap.fechaInicio}
-        </div>
-        <div class="bg-slate-50 p-2 rounded-lg text-center">
-          <div class="text-[9px] font-bold uppercase">Término</div>
-          ${cap.fechaFin}
-        </div>
-      </div>
+    contenedor.appendChild(card);
+  });
 
-      <div class="bg-yellow-50 border border-yellow-200 p-3 rounded-xl text-xs">
-        <b>Código DTE:</b> ${cap.dte}<br>
-        <b>Límite candidaturas:</b> ${cap.limiteCandidaturas}
-      </div>
+  activarAcordeon();
+}
 
-      ${cap.notas ? `
-      <div class="bg-indigo-50 border border-indigo-100 p-3 rounded-xl text-xs italic">
-        <b>Notas del curso</b><br>${cap.notas}
-      </div>` : ""}
+// ===== Activar el acordeón =====
 
-    </div>
-  `;
+function activarAcordeon() {
 
-  panelPais.appendChild(card);
-});
+  const headers = document.querySelectorAll(".pais-header");
 
-gestionCapacitaciones.appendChild(contenedorPais);
-});
-attachAccordionEvents();
+  headers.forEach(header => {
+
+    header.addEventListener("click", () => {
+
+      const contenido = header.parentElement.querySelector(".capacitaciones");
+
+      contenido.classList.toggle("hidden");
+
+    });
+
+  });
+
+}
+
+// ===== Abrir la página de la capacitación =====
+
+function abrirCapacitacion(id){
+
+  window.location.href = `capacitacion.html?id=${id}`;
+
 }
 
 
@@ -805,5 +813,3 @@ attachAccordionEvents();
 
   attachAccordionEvents();
 }
-
-
