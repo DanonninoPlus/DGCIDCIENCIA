@@ -1,137 +1,268 @@
 <!DOCTYPE html>
-
-<html lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>DGCIDCIENCIA - Splash Screen</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "surface-container-low": "#f2f3f8",
-              "primary-fixed": "#e2dfff",
-              "on-surface": "#191c1f",
-              "on-tertiary-container": "#6cdece",
-              "on-secondary-fixed": "#0a016a",
-              "on-primary-fixed-variant": "#3b399c",
-              "surface-container-highest": "#e1e2e7",
-              "secondary-container": "#9e9fff",
-              "surface-bright": "#f8f9fe",
-              "primary-fixed-dim": "#c2c1ff",
-              "surface": "#f8f9fe",
-              "on-background": "#191c1f",
-              "on-tertiary": "#ffffff",
-              "on-primary-fixed": "#0d006a",
-              "error": "#ba1a1a",
-              "on-tertiary-fixed": "#00201c",
-              "outline": "#777583",
-              "on-tertiary-fixed-variant": "#005048",
-              "surface-dim": "#d8dadf",
-              "background": "#f8f9fe",
-              "tertiary-fixed": "#85f6e5",
-              "outline-variant": "#c7c5d4",
-              "primary-container": "#4b49ac",
-              "surface-container-high": "#e7e8ed",
-              "primary": "#333093",
-              "tertiary": "#004740",
-              "on-secondary-container": "#32318b",
-              "secondary": "#5454ae",
-              "inverse-surface": "#2e3134",
-              "on-secondary": "#ffffff",
-              "on-primary-container": "#c8c6ff",
-              "on-secondary-fixed-variant": "#3b3b94",
-              "secondary-fixed": "#e2dfff",
-              "surface-variant": "#e1e2e7",
-              "tertiary-fixed-dim": "#67d9c9",
-              "error-container": "#ffdad6",
-              "inverse-primary": "#c2c1ff",
-              "surface-container-lowest": "#ffffff",
-              "on-surface-variant": "#464552",
-              "secondary-fixed-dim": "#c1c1ff",
-              "on-error": "#ffffff",
-              "on-error-container": "#93000a",
-              "surface-container": "#eceef3",
-              "on-primary": "#ffffff",
-              "inverse-on-surface": "#eff0f5",
-              "tertiary-container": "#006157",
-              "surface-tint": "#5452b5"
-            },
-            fontFamily: {
-              "headline": ["Plus Jakarta Sans"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
-          },
-        },
-      }
-    </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-      .bg-splash-gradient {
-        background: linear-gradient(
-          to bottom,
-          #eceef3 0%,
-          #f8f9fe 35%,
-          #ffffff 50%,
-          #f8f9fe 65%,
-          #eceef3 100%
-        );
-      }
-    </style>
-<style>
-      body {
-        min-height: max(884px, 100dvh);
-      }
-    </style>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DG Cooperación - Gestión de Proyectos</title>
+  
+  <!-- Usamos Tailwind CSS para los estilos modernos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Librerías para exportación que ya usabas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js" defer></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    .active-tab { border-bottom: 3px solid #4f46e5; color: #4f46e5; font-weight: 700; }
+    .accordion-content { transition: max-height 0.3s ease-out; }
+  </style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-hidden">
-<!-- SPLASH SCREEN CONTAINER -->
-<main class="relative h-screen w-full flex flex-col items-center justify-center bg-splash-gradient">
-<!-- Interactive Canvas -->
-<a aria-label="Entrar al Portal Institucional" class="absolute inset-0 flex flex-col items-center justify-center group focus:outline-none" href="portal.html">
-<!-- Central Visual Identity Cluster -->
-<div class="flex flex-col items-center space-y-8 p-12 transition-transform duration-500 group-active:scale-95 z-10">
-<!-- Company Logo Placeholder -->
-<div class="w-24 h-24 bg-surface-container-highest rounded-xl flex items-center justify-center shadow-sm">
-<span class="material-symbols-outlined text-5xl text-on-surface-variant/40" data-icon="corporate_fare">corporate_fare</span>
+<body class="bg-slate-50 min-h-screen text-slate-900 pb-20">
+
+  <!-- HEADER INSTITUCIONAL -->
+  <header class="bg-white border-b sticky top-0 z-40 px-4 py-3 flex items-center justify-between shadow-sm">
+    <div class="flex items-center gap-3">
+      <!-- Espacio para tu Logo -->
+      <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white">
+        <i class="fas fa-globe-americas text-xl"></i>
+      </div>
+      <div>
+        <h1 class="text-lg font-bold leading-tight">DGCIDCIENCIA</h1>
+        <p class="text-[10px] text-slate-500 uppercase tracking-widest">DG de Proyectos de Cooperación Internacional para el Desarrollo, Ciencia, Tecnología y Entidades Federativas </p>
+      </div>
+    </div>
+    <button id="btnAddProject" class="bg-indigo-600 hover:bg-indigo-700 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-transform active:scale-95">
+      <i class="fas fa-plus"></i>
+    </button>
+  </header>
+
+  <!-- BUSCADOR Y FILTROS TÁCTILES -->
+  <div id="filterSection" class="bg-white p-4 border-b shadow-sm space-y-3 sticky top-[65px] z-30">
+    <div class="relative">
+      <i class="fas fa-search absolute left-3 top-3 text-slate-400"></i>
+      <input id="searchInput" type="search" placeholder="Buscar proyectos..." 
+        class="w-full pl-10 pr-4 py-2 bg-slate-100 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm transition-all">
+    </div>
+    
+    <div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
+      <select id="filterResponsible" class="bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs font-medium outline-none focus:border-indigo-500">
+        <option value="">Sector</option>
+      </select>
+      <select id="filterStatus" class="bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs font-medium outline-none focus:border-indigo-500">
+        <option value="">Estado</option>
+        <option value="Planeación">Planeación</option>
+        <option value="Ejecución">Ejecución</option>
+        <option value="Finalizado">Finalizado</option>
+      </select>
+      
+      <!-- El filtro de Región/Continente se llena dinámicamente o puedes agregarlo aquí -->
+    </div>
+  </div>
+
+  <!-- Contador de proyectos dinámico -->
+<div class="px-4 py-2 max-w-2xl mx-auto">
+    <div id="projectCounter" class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">
+        Cargando proyectos...
+    </div>
 </div>
-<!-- Brand Headline -->
-<div class="text-center space-y-2">
-<h1 class="font-headline font-extrabold text-5xl md:text-6xl text-primary tracking-tighter">
-                        DGCIDCIENCIA
-                    </h1>
-<p class="font-label text-on-surface-variant tracking-[0.2em] text-xs font-medium uppercase">
-                        Portal de Gestión AMEXCID
-                    </p>
-</div>
-<!-- Interaction Indicator -->
-<div class="flex items-center gap-2 text-primary/60 font-medium text-sm pt-4">
-<span>Toque para continuar</span>
-<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-<!-- Subtle background texture -->
-<div class="absolute inset-0 opacity-[0.03] pointer-events-none overflow-hidden">
-<div class="w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAhrauBcZCHGxup5cJfUJcmxMpCGvSZkwBiP6oOunzmNJLuyxsehk58IP4otxgh1GQv0mSzWmVfp05pqPDwHX5fHsvQ20LWrdLPLVrcyKLXp_Z25xlcjEABDV1mG4rXx4MbNM2q7vfphrvy1fSKqEpevypyiCensizhvU-ZMoKO3qGjFmaeGcTBOKx0DmCwT4Sihz0B4HOEcc8GIik_m7VQDWcU2UIKiKR9QyQqt_qzf9ZQR5jnxq43AQG7RAeIbpjR-O_-S1FRo9s');"></div>
-</div>
-</a>
-<!-- Versioning Footer -->
-<footer class="absolute bottom-12 w-full px-8 flex flex-col items-center justify-center gap-1">
-<div class="h-px w-8 bg-outline-variant/30 mb-4"></div>
-<p class="font-label text-[11px] text-on-surface-variant/60 tracking-wider">
-                Versión 9.0.0
-            </p>
-<p class="font-label text-[11px] text-on-surface-variant/40 tracking-tight">
-                Actualización: 15 de Mayo, 2024
-            </p>
-</footer>
-</main>
-</body></html>
+
+  <main class="p-4 max-w-2xl mx-auto">
+    <!-- LISTADO DE PROYECTOS -->
+    <section id="projectList" class="space-y-4"></section>
+
+    <!-- SECCIÓN NORMATECA -->
+    <section id="normatecaSection" class="hidden">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl font-bold text-slate-800">Normateca Digital</h2>
+        <button id="btnnormatecaExcel" class="text-indigo-600 text-sm font-semibold flex items-center gap-1">
+          <i class="fas fa-file-excel"></i> Exportar
+        </button>
+      </div>
+      <div id="normatecaList" class="space-y-4"></div>
+    </section>
+
+    <!-- SECCIÓN GESTIÓN -->
+    <section id="gestionSection" class="hidden">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl font-bold text-slate-800">Gestión</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-1 text-sm font-medium">Panel de control por categoría.</p>
+      </div>
+
+            <!-- CONTENIDO INTERNO DE GESTIÓN -->
+            <div id="gestionContent" class="space-y-6">
+            
+                <!-- SUB-TABS DE GESTIÓN -->
+                <div id="gestionTabs" class="flex gap-2 bg-slate-200/50 rounded-xl p-1">
+      
+                    <button
+                      id="tabCapacitaciones"
+                      class="flex-1 py-2 text-xs font-bold uppercase tracking-wider rounded-lg bg-white text-indigo-600 shadow-sm">
+                      Capacitaciones
+                    </button>
+
+                    <button
+                      id="tabInvestigacion"
+                      class="flex-1 py-2 text-xs font-bold uppercase tracking-wider rounded-lg text-slate-400">
+                      Permisos de Investigación
+                    </button>
+
+                 </div>
+
+                <!-- CONTENIDO: CAPACITACIONES -->
+                <div id="gestionCapacitaciones" class="space-y-4">
+
+                  <div class="text-xs tracking-widest text-slate-400 uppercase font-bold">
+                    CAPACITACIONES
+                  </div>
+
+                  <div id="capacitacionesList"></div>
+
+                </div>
+
+                <!-- CONTENIDO: INVESTIGACIÓN -->
+                <div id="gestionInvestigacion" class="hidden">
+
+                  <div class="text-xs tracking-widest text-slate-400 uppercase font-bold">
+                    PERMISOS DE INVESTIGACIÓN
+                  </div>
+
+                  <div id="investigacionList"></div>
+
+                </div>
+ 
+  
+
+
+    </section>
+
+    <!-- ÁREA DE REPORTES (NUEVA PARA LOS BOTONES DE EXPORTAR) -->
+    <section id="reportsSection" class="hidden space-y-4">
+        <h2 class="text-xl font-bold text-slate-800 mb-4">Reportes y Datos</h2>
+        <div class="grid grid-cols-1 gap-4">
+            <button id="btnExportPDF" class="flex items-center gap-4 bg-white p-4 rounded-xl border shadow-sm hover:border-red-200 transition-colors">
+                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center text-xl"><i class="fas fa-file-pdf"></i></div>
+                <div class="text-left">
+                    <div class="font-bold text-slate-800">Exportar PDF</div>
+                    <div class="text-xs text-slate-500">Genera un documento visual de los proyectos</div>
+                </div>
+            </button>
+            <button id="btnExportXLS" class="flex items-center gap-4 bg-white p-4 rounded-xl border shadow-sm hover:border-green-200 transition-colors">
+                <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-xl"><i class="fas fa-file-excel"></i></div>
+                <div class="text-left">
+                    <div class="font-bold text-slate-800">Exportar Excel</div>
+                    <div class="text-xs text-slate-500">Hoja de cálculo para análisis de datos</div>
+                </div>
+            </button>
+            <button id="btnImportJSON" class="flex items-center gap-4 bg-white p-4 rounded-xl border shadow-sm hover:border-blue-200 transition-colors">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl"><i class="fas fa-file-import"></i></div>
+                <div class="text-left">
+                    <div class="font-bold text-slate-800">Importar JSON</div>
+                    <div class="text-xs text-slate-500">Cargar respaldo de base de datos</div>
+                </div>
+            </button>
+        </div>
+    </section>
+  </main>
+
+  <div id="printArea" class="hidden"></div>
+
+  <!-- NAVEGACIÓN INFERIOR (TAB BAR) -->
+  <nav class="fixed bottom-0 w-full bg-white border-t flex justify-around items-center py-3 z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+    <button id="tabProyectos" class="flex flex-col items-center gap-1 active-tab transition-colors px-4">
+      <i class="fas fa-folder-open text-lg"></i>
+      <span class="text-[10px] font-medium uppercase tracking-tighter">Proyectos</span>
+    </button>
+    <button id="tabnormateca" class="flex flex-col items-center gap-1 text-slate-400 transition-colors px-4">
+      <i class="fas fa-book text-lg"></i>
+      <span class="text-[10px] font-medium uppercase tracking-tighter">Normateca</span>
+    </button>
+    <button id="tabgestion" class="flex flex-col items-center gap-1 text-slate-400 transition-colors px-4">
+      <i class="fas fa-layer-group text-lg"></i>
+      <span class="text-[10px] font-medium uppercase tracking-tighter">Gestión</span>
+    </button>
+    <button id="tabReportes" class="flex flex-col items-center gap-1 text-slate-400 transition-colors px-4">
+      <i class="fas fa-chart-bar text-lg"></i>
+      <span class="text-[10px] font-medium uppercase tracking-tighter">Reportes</span>
+    </button>
+  </nav>
+
+  <!-- MODAL DE PROYECTO (ADAPTADO A MÓVIL) -->
+  <div id="modal" class="fixed inset-0 hidden items-end sm:items-center justify-center bg-slate-900/60 backdrop-blur-sm z-[60]">
+    <div class="bg-white rounded-t-3xl sm:rounded-2xl p-6 w-full max-w-lg shadow-2xl animate-slide-up overflow-y-auto max-h-[90vh]">
+      <div class="flex justify-between items-center mb-6">
+        <h2 id="modalTitle" class="text-xl font-extrabold text-slate-800 italic">NUEVO PROYECTO</h2>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600"><i class="fas fa-times text-xl"></i></button>
+      </div>
+      
+      <form id="projectForm" class="space-y-5">
+        <input type="hidden" id="projId" />
+
+        <div class="space-y-1">
+          <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">Nombre del Proyecto</label>
+          <input id="projNombredelproyecto" required class="w-full bg-slate-50 p-3 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm transition-all" placeholder="Ej. Cooperación Tecnológica..." />
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-1">
+            <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">Continente</label>
+            <input id="projContinente" required class="w-full bg-slate-50 p-3 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm" placeholder="Ej. Asia" />
+          </div>
+          <div class="space-y-1">
+            <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">País</label>
+            <input id="projPais" required class="w-full bg-slate-50 p-3 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm" placeholder="Ej. Japón" />
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">Sector (Separar por comas)</label>
+          <input id="projSector" class="w-full bg-slate-50 p-3 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm" placeholder="Educación, Salud..." />
+        </div>
+
+        <div class="grid grid-cols-3 gap-3">
+          <div class="col-span-1 space-y-1">
+            <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">Estado</label>
+            <select id="projStatus" class="w-full bg-slate-50 p-3 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-xs">
+              <option>Planeación</option>
+              <option>Ejecución</option>
+              <option>Finalizado</option>
+            </select>
+          </div>
+          <div class="col-span-1 space-y-1">
+            <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">Inicio</label>
+            <input id="projFechadeinicio" class="w-full bg-slate-50 p-3 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-xs" placeholder="Año" />
+          </div>
+          <div class="col-span-1 space-y-1">
+            <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">Término</label>
+            <input id="projFechadetermino" class="w-full bg-slate-50 p-3 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-xs" placeholder="Año" />
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">Objetivo Estratégico</label>
+          <textarea id="projObjetivo" rows="3" class="w-full bg-slate-50 p-3 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm resize-none"></textarea>
+        </div>
+
+        <div class="space-y-1">
+            <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider ml-1">Notas Adicionales</label>
+            <textarea id="projNotas" rows="2" class="w-full bg-slate-50 p-3 border-none rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm resize-none"></textarea>
+          </div>
+
+        <div class="flex gap-3 pt-4">
+          <button type="button" id="btnCancel" class="flex-1 py-4 text-slate-500 font-bold uppercase tracking-widest text-xs">Cancelar</button>
+          <button type="submit" class="flex-[2] bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-xs shadow-lg shadow-indigo-100 transition-all active:scale-95">Guardar Proyecto</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
