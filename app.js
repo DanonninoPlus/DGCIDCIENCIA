@@ -57,7 +57,7 @@ const capContainer = document.getElementById("capacitacionesList");
    ============================================================*/
 async function loadFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dgQUA/main/proyectos.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/proyectos.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar el JSON externo");
     const data = await res.json();
@@ -70,7 +70,7 @@ async function loadFromJsonUrl() {
 
 async function loadnormatecaFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dgQUA/main/normateca.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/normateca.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar normateca.json");
     const data = await res.json();
@@ -84,7 +84,7 @@ async function loadnormatecaFromJsonUrl() {
 
 async function loadInvestigacionFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dgQUA/main/investigacion.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/investigacion.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar investigacion.json");
     const data = await res.json();
@@ -99,7 +99,7 @@ async function loadInvestigacionFromJsonUrl() {
 
 async function loadCapacitacionesFromJsonUrl() {
   try {
-    const url = "https://raw.githubusercontent.com/DanonninoPlus/Proyectos-dgQUA/main/capacitaciones.json";
+    const url = "https://raw.githubusercontent.com/DanonninoPlus/DGCIDCIENCIA/main/capacitaciones.json";
     const res = await fetch(url);
     if (!res.ok) throw new Error("No se pudo cargar capacitaciones.json");
 
