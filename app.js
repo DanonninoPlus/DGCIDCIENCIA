@@ -1,4 +1,4 @@
-// app.js - Versión UI Mejorada (DG Cooperación) v9.0 marzo 2026
+// app.js - Versión UI Mejorada (DG Cooperación) v11.0 abril 2026
 
 const LS_KEY = "dg_proyectos_v2";
 
@@ -161,50 +161,39 @@ function escapeHtml(text) {
 }
 
 /* ============================================================
-   🔵 4. RENDER LISTA (DISEÑO MEJORADO)
+   🔵 4. RENDER LISTA (DISEÑO MEJORADO) // REDISEÑADO
    ============================================================*/
 function renderList() {
   const q = searchInput.value.trim().toLowerCase();
   const sectorFilter = filterResponsible.value;
   const statusFilter = filterStatus.value;
 
-  // 1. Primero filtras los proyectos
   let filtered = proyectos.filter(p => {
     const matchQ = !q || (p.Nombredelproyecto + " " + p.status + " " + p.Pais + " " + p.Continente).toLowerCase().includes(q);
     const matchSector = !sectorFilter || (p.Sector && p.Sector.toUpperCase().includes(sectorFilter.toUpperCase()));
     const matchStatus = !statusFilter || p.status === statusFilter;
-    return matchQ && matchSector && matchStatus;
+    return matchQ && matchStatus && matchSector;
   });
 
-   // 2. ACTUALIZAS EL CONTADOR (Esto es lo que hace la magia)
   const counterEl = document.getElementById("projectCounter");
-  if (counterEl) {
-      counterEl.innerHTML = `${filtered.length} Proyectos encontrados`;
+  if (counterEl) counterEl.innerHTML = `${filtered.length} Proyectos Activos`;
+
+  if (filtered.length === 0) {
+    projectList.innerHTML = `<div class="p-8 text-center bg-surface-container-low rounded-2xl text-outline">No se encontraron proyectos</div>`;
+    return;
   }
 
-  // 3. Sigues con el resto del renderizado
+  // Agrupar por continente
   const grupos = {};
   const conteoContinente = {};
   const conteoPais = {};
 
-  if (filtered.length === 0) {
-    projectList.innerHTML = `<div class="p-8 text-center bg-white rounded-2xl border-2 border-dashed border-slate-200 text-slate-400 font-medium">No se encontraron proyectos</div>`;
-    return;
-  }
-
   filtered.forEach(p => {
     const c = (p.Continente || "Sin Continente").trim();
     const pais = (p.Pais || "Sin País").trim();
-
-    
-    // 🔢 Conteo por continente
-conteoContinente[c] = (conteoContinente[c] || 0) + 1;
-
-// 🔢 Conteo por país (clave única continente|país)
-const clavePais = `${c}|${pais}`;
-conteoPais[clavePais] = (conteoPais[clavePais] || 0) + 1;
-
-
+    conteoContinente[c] = (conteoContinente[c] || 0) + 1;
+    const clavePais = `${c}|${pais}`;
+    conteoPais[clavePais] = (conteoPais[clavePais] || 0) + 1;
 
     if (!grupos[c]) grupos[c] = {};
     if (PAISES_CON_SUBTIPO.includes(pais)) {
@@ -220,140 +209,306 @@ conteoPais[clavePais] = (conteoPais[clavePais] || 0) + 1;
 
   projectList.innerHTML = "";
 
+  // Iconos por continente
+  const continenteIconos = {
+    "AMÉRICA": "public",
+    "AMERICA": "public",
+    "EUROPA": "travel_explore",
+    "ÁFRICA": "map",
+    "AFRICA": "map",
+    "ASIA": "map",
+    "OCEANÍA": "map"
+  };
+
   Object.keys(grupos).sort().forEach(continente => {
     const contDiv = document.createElement("div");
-    contDiv.className = "mb-4";
+    contDiv.className = "rounded-2xl overflow-hidden bg-surface-container-low transition-all duration-300";
+    
+    const icono = continenteIconos[continente.toUpperCase()] || "public";
+    const count = conteoContinente[continente] || 0;
+    
     contDiv.innerHTML = `
-      <button class="w-full flex items-center justify-between bg-white px-5 py-4 rounded-2xl shadow-sm border border-slate-100 hover:border-indigo-200 transition-all acordeon-btn">
-        <div class="flex items-center gap-3">
-            <span class="text-xl">🌍</span>
-             <span class="font-bold text-slate-800 uppercase tracking-tight">
-            ${continente}
-            <span class="ml-2 text-[15px] font-black text-indigo-500">
-               (${conteoContinente[continente]})
-             </span>
-            </span>
-
+      <div class="p-5 flex items-center justify-between cursor-pointer border-l-4 border-secondary bg-surface-container-low cont-btn">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-secondary-fixed rounded-xl text-secondary">
+            <span class="material-symbols-outlined">${icono}</span>
+          </div>
+          <div>
+            <h2 class="font-headline font-bold text-lg text-primary tracking-tight">${continente}</h2>
+            <p class="text-xs font-label font-bold text-on-surface-variant uppercase tracking-widest">${count} Proyectos Activos</p>
+          </div>
         </div>
-        <i class="fas fa-chevron-down text-slate-300 transition-transform"></i>
-      </button>
-      <div class="panel hidden mt-2 space-y-3 pl-2 border-l-2 border-indigo-100 ml-4 py-2"></div>
+        <span class="material-symbols-outlined text-outline-variant transition-transform cont-icon">expand_more</span>
+      </div>
+      <div class="cont-panel hidden bg-surface-container p-2 space-y-2"></div>
     `;
-    const contContent = contDiv.querySelector(".panel");
+    
+    const panel = contDiv.querySelector(".cont-panel");
+    const btn = contDiv.querySelector(".cont-btn");
+    const icon = contDiv.querySelector(".cont-icon");
+    
+    btn.addEventListener("click", () => {
+      panel.classList.toggle("hidden");
+      icon.classList.toggle("rotate-180");
+    });
 
+    // Agregar países
     Object.keys(grupos[continente]).sort().forEach(pais => {
-      const paisDiv = document.createElement("div");
-      paisDiv.className = "mb-2";
-      paisDiv.innerHTML = `
-        <button class="w-full flex items-center gap-2 px-3 py-2 text-indigo-600 font-bold text-sm hover:bg-indigo-50 rounded-lg transition-colors acordeon-btn">
-        <i class="fas fa-map-marker-alt text-[10px]"></i>
-        ${pais.toUpperCase()}
-        <span class="ml-2 text-[14px] font-black text-emerald-600">
-        (${conteoPais[`${continente}|${pais}`] || 0})
-        </span>
-
-
-        </button>
-        <div class="panel hidden mt-2 space-y-2 pl-3"></div>
-      `;
-      const paisContent = paisDiv.querySelector(".panel");
-
       const dataPais = grupos[continente][pais];
+      const countPais = conteoPais[`${continente}|${pais}`] || 0;
       
-      const renderCard = (p) => {
-        const statusColors = {
-            'Planeación': 'bg-indigo-100 text-indigo-700',
-            'Ejecución': 'bg-emerald-100 text-emerald-700',
-            'Finalizado': 'bg-slate-100 text-slate-700'
-        };
-        const colorClass = statusColors[p.status] || 'bg-slate-100 text-slate-700';
-        
-        const card = document.createElement("div");
-        card.className = "bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden";
-        card.innerHTML = `
-          <button class="w-full text-left px-4 py-4 acordeon-btn group">
-            <div class="flex justify-between items-start gap-3">
-                <div class="flex-1">
-                    <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1 leading-none">${p.Sector || 'Sin Sector'}</div>
-                    <div class="font-bold text-slate-800 leading-tight group-hover:text-indigo-600 transition-colors">${escapeHtml(p.Nombredelproyecto)}</div>
-                </div>
-                <span class="px-2 py-1 rounded text-[9px] font-black uppercase ${colorClass}">${p.status}</span>
+      const paisDiv = document.createElement("div");
+      
+      // Determinar si tiene subtipos
+      const tieneSubtipos = PAISES_CON_SUBTIPO.includes(pais) && !Array.isArray(dataPais);
+      
+      if (!tieneSubtipos && Array.isArray(dataPais) && dataPais.length > 0) {
+        // País sin subtipos - acordeón directo
+        paisDiv.className = "bg-surface-container-lowest rounded-xl overflow-hidden diplomatic-shadow mb-2";
+        paisDiv.innerHTML = `
+          <div class="p-4 flex items-center justify-between cursor-pointer pais-btn">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-6 overflow-hidden rounded shadow-sm">
+                <img class="w-full h-full object-cover flag-img" data-pais="${pais}" src="" alt="Bandera de ${pais}">
+              </div>
+              <span class="font-semibold text-primary">${pais}</span>
             </div>
-          </button>
-          <div class="panel hidden px-4 pb-5 border-t border-slate-50 pt-4 bg-slate-50/50">
-            <div class="grid grid-cols-2 gap-4 mb-4">
-                <div class="bg-white p-2 rounded-lg border border-slate-100 text-center">
-                    <div class="text-[8px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Inicio</div>
-                    <div class="text-xs font-bold text-slate-700"><i class="far fa-calendar-alt mr-1"></i> ${p.Fechadeinicio || '---'}</div>
-                </div>
-                <div class="bg-white p-2 rounded-lg border border-slate-100 text-center">
-                    <div class="text-[8px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Término</div>
-                    <div class="text-xs font-bold text-slate-700"><i class="fas fa-hourglass-end mr-1"></i> ${p.Fechadetermino || '---'}</div>
-                </div>
-            </div>
-            <div class="space-y-3">
-                <div>
-                    <h4 class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1">Objetivo Estratégico</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed">${escapeHtml(p.Objetivo || "Sin objetivo definido.")}</p>
-                </div>
-
-                ${p.Estados && p.Estados.length ? `
-                <div>
-                  <h4 class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1">
-                    Estados de la República
-                  </h4>
-
-                  <div class="flex flex-wrap gap-1">
-                    ${p.Estados.map(e => `
-                      <span class="px-2 py-1 bg-slate-200 text-slate-700 text-[10px] rounded-full font-semibold">
-                        ${e}
-                      </span>
-                    `).join("")}
-                  </div>
-                </div>
-                ` : ""}
-
-
-                
-                ${p.notas ? `
-                <div class="bg-amber-50/50 p-3 rounded-xl border border-amber-100 italic">
-                    <h4 class="text-[9px] font-bold text-amber-600 uppercase tracking-widest mb-1">Observaciones</h4>
-                    <p class="text-xs text-amber-800">${escapeHtml(p.notas)}</p>
-                </div>` : ''}
-            </div>
-            <div class="mt-5 flex gap-2">
-              <button data-id="${p.id}" class="btn-edit flex-1 py-2 bg-indigo-50 text-indigo-600 rounded-lg text-[10px] font-bold uppercase tracking-wider hover:bg-indigo-600 hover:text-white transition-all">Editar</button>
-              <button data-id="${p.id}" class="btn-delete flex-1 py-2 bg-white border border-red-100 text-red-500 rounded-lg text-[10px] font-bold uppercase tracking-wider hover:bg-red-500 hover:text-white transition-all">Eliminar</button>
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-[10px] font-black tracking-tighter">${countPais} PROY</span>
+              <span class="material-symbols-outlined text-outline-variant pais-icon transition-transform">expand_more</span>
             </div>
           </div>
+          <div class="pais-panel hidden bg-surface-container-low p-3 space-y-3"></div>
         `;
-        return card;
-      };
-
-      if (PAISES_CON_SUBTIPO.includes(pais) && !Array.isArray(dataPais)) {
-        Object.keys(dataPais).sort().forEach(sub => {
+        
+        const paisPanel = paisDiv.querySelector(".pais-panel");
+        const paisBtn = paisDiv.querySelector(".pais-btn");
+        const paisIcon = paisDiv.querySelector(".pais-icon");
+        
+        paisBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          paisPanel.classList.toggle("hidden");
+          paisIcon.classList.toggle("rotate-180");
+        });
+        
+        // Agregar proyectos directamente
+        dataPais.forEach(p => {
+          paisPanel.appendChild(renderProjectCard(p));
+        });
+      } else if (tieneSubtipos) {
+        // País con subtipos
+        paisDiv.className = "bg-surface-container-lowest rounded-xl overflow-hidden diplomatic-shadow mb-2";
+        paisDiv.innerHTML = `
+          <div class="p-4 flex items-center justify-between cursor-pointer pais-btn">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-6 overflow-hidden rounded shadow-sm">
+                <img class="w-full h-full object-cover flag-img" data-pais="${pais}" src="" alt="Bandera de ${pais}">
+              </div>
+              <span class="font-semibold text-primary">${pais}</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-[10px] font-black tracking-tighter">${countPais} PROY</span>
+              <span class="material-symbols-outlined text-outline-variant pais-icon transition-transform">expand_more</span>
+            </div>
+          </div>
+          <div class="pais-panel hidden bg-surface-container-low p-3 space-y-3"></div>
+        `;
+        
+        const paisPanel = paisDiv.querySelector(".pais-panel");
+        const paisBtn = paisDiv.querySelector(".pais-btn");
+        const paisIcon = paisDiv.querySelector(".pais-icon");
+        
+        paisBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          paisPanel.classList.toggle("hidden");
+          paisIcon.classList.toggle("rotate-180");
+        });
+        
+        // Agregar subtipos
+        Object.keys(dataPais).sort().forEach(subtipo => {
           const subDiv = document.createElement("div");
-          subDiv.className = "mb-2 ml-2";
+          subDiv.className = "space-y-2";
           subDiv.innerHTML = `
-            <button class="w-full text-left font-bold text-[11px] text-emerald-600 mb-2 px-2 flex items-center gap-1">
-                <i class="fas fa-tag text-[8px]"></i> ${sub.toUpperCase()}
-            </button>
+            <div class="flex items-center gap-2 px-2 pb-1">
+              <span class="material-symbols-outlined text-secondary scale-75">account_balance</span>
+              <span class="text-[10px] font-black uppercase tracking-[0.2em] text-outline">${subtipo}</span>
+            </div>
             <div class="space-y-2"></div>
           `;
-          const subContent = subDiv.querySelector("div");
-          dataPais[sub].forEach(p => subContent.appendChild(renderCard(p)));
-          paisContent.appendChild(subDiv);
+          const subContent = subDiv.querySelector("div:last-child");
+          dataPais[subtipo].forEach(p => {
+            subContent.appendChild(renderProjectCard(p));
+          });
+          paisPanel.appendChild(subDiv);
         });
-      } else {
-        dataPais.forEach(p => paisContent.appendChild(renderCard(p)));
       }
-      contContent.appendChild(paisDiv);
+      
+      panel.appendChild(paisDiv);
     });
+    
     projectList.appendChild(contDiv);
   });
-
-  attachAccordionEvents();
+  
+  // Cargar banderas después de renderizar
+  loadFlags();
   attachEditDeleteEvents();
+}
+
+
+
+
+/* ============================================================
+   🔵 4.1 RENDER LISTA (DISEÑO MEJORADO) // REDISEÑADO:
+    
+    loadFlags() (para cargar las banderas de los países)
+
+    getCountryCode() (para obtener el código de cada país)
+
+    renderProjectCard() (para generar cada tarjeta de proyecto con el nuevo diseño)
+   ============================================================*/
+
+
+// Función para cargar banderas usando FlagCDN
+function loadFlags() {
+  document.querySelectorAll('.flag-img').forEach(img => {
+    const pais = img.getAttribute('data-pais');
+    if (pais) {
+      const paisCodigo = getCountryCode(pais);
+      img.src = `https://flagcdn.com/w40/${paisCodigo}.png`;
+      img.onerror = () => { img.src = ''; img.outerHTML = `<span class="text-sm">🏳️</span>`; };
+    }
+  });
+}
+
+// Helper para códigos de país (versión ampliada)
+function getCountryCode(pais) {
+  const codes = {
+    // Latinoamérica
+    'Argentina': 'ar', 'Bolivia': 'bo', 'Brasil': 'br', 'Chile': 'cl', 'Colombia': 'co',
+    'Costa Rica': 'cr', 'Cuba': 'cu', 'Ecuador': 'ec', 'El Salvador': 'sv', 'Guatemala': 'gt',
+    'Haití': 'ht', 'Honduras': 'hn', 'México': 'mx', 'Nicaragua': 'ni', 'Panamá': 'pa',
+    'Paraguay': 'py', 'Perú': 'pe', 'República Dominicana': 'do', 'Uruguay': 'uy', 'Venezuela': 've',
+    // Europa
+    'Alemania': 'de', 'Austria': 'at', 'Bélgica': 'be', 'Dinamarca': 'dk', 'España': 'es',
+    'Finlandia': 'fi', 'Francia': 'fr', 'Grecia': 'gr', 'Hungría': 'hu', 'Irlanda': 'ie',
+    'Italia': 'it', 'Noruega': 'no', 'Países Bajos': 'nl', 'Polonia': 'pl', 'Portugal': 'pt',
+    'Reino Unido': 'gb', 'República Checa': 'cz', 'Rumania': 'ro', 'Rusia': 'ru', 'Suecia': 'se',
+    'Suiza': 'ch', 'Ucrania': 'ua',
+    // Asia
+    'China': 'cn', 'Corea del Sur': 'kr', 'Filipinas': 'ph', 'India': 'in', 'Indonesia': 'id',
+    'Japón': 'jp', 'Malasia': 'my', 'Tailandia': 'th', 'Vietnam': 'vn',
+    // África
+    'Angola': 'ao', 'Argelia': 'dz', 'Egipto': 'eg', 'Kenia': 'ke', 'Marruecos': 'ma',
+    'Nigeria': 'ng', 'Sudáfrica': 'za',
+    // Norteamérica
+    'Canadá': 'ca', 'Estados Unidos': 'us',
+    // Oceanía
+    'Australia': 'au', 'Nueva Zelanda': 'nz'
+  };
+  return codes[pais] || 'un';
+}
+
+// Función para renderizar cada tarjeta de proyecto (NUEVO DISEÑO CON CAMBIOS SOLICITADOS)
+function renderProjectCard(p) {
+  // Mapeo de estados a colores: Verde para Ejecución, Naranja para Planeación, Gris para Finalizado
+  const statusColors = {
+    'Planeación': 'bg-orange-500 text-white',
+    'Ejecución': 'bg-green-600 text-white',
+    'Finalizado': 'bg-gray-400 text-white'
+  };
+  const colorClass = statusColors[p.status] || 'bg-gray-400 text-white';
+  
+  const card = document.createElement("div");
+  card.className = "bg-surface-container-lowest rounded-xl border border-secondary/10 overflow-hidden mb-3";
+  card.innerHTML = `
+    <div class="p-4 flex items-center justify-between cursor-pointer project-btn hover:bg-surface-container/50 transition-colors">
+      <h3 class="font-headline font-bold text-sm text-primary">${escapeHtml(p.Nombredelproyecto)}</h3>
+      <span class="material-symbols-outlined text-outline-variant project-icon transition-transform">expand_more</span>
+    </div>
+    <div class="project-panel hidden p-5 space-y-6 border-t border-surface-container">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-3">
+          <span class="material-symbols-outlined text-secondary text-sm">calendar_today</span>
+          <div>
+            <p class="text-[9px] uppercase tracking-widest text-outline font-bold">Inicio</p>
+            <p class="text-xs font-semibold text-primary">${p.Fechadeinicio || '---'}</p>
+          </div>
+        </div>
+        <div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-3">
+          <span class="material-symbols-outlined text-secondary text-sm">event_available</span>
+          <div>
+            <p class="text-[9px] uppercase tracking-widest text-outline font-bold">Término</p>
+            <p class="text-xs font-semibold text-primary">${p.Fechadetermino || '---'}</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex gap-4">
+        <div class="w-1 bg-secondary rounded-full"></div>
+        <div class="flex-1">
+          <h4 class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Objetivo Estratégico</h4>
+          <p class="text-sm text-on-surface-variant leading-relaxed">${escapeHtml(p.Objetivo || 'Sin objetivo definido.')}</p>
+        </div>
+      </div>
+      
+
+      ${p.Estados && p.Estados.length ? `
+      <div>
+        <h4 class="text-[10px] uppercase tracking-widest text-outline font-bold mb-2">ESTADOS DE LA REPÚBLICA</h4>
+        <div class="space-y-1.5">
+          ${p.Estados.map(e => `
+            <div class="flex items-center gap-2">
+              <span class="text-secondary text-sm">•</span>
+              <span class="text-sm text-on-surface-variant font-medium">${escapeHtml(e)}</span>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+      ` : '<div class="hidden"></div>'}
+
+      
+      
+      ${p.notas ? `
+      <div class="bg-surface-container-high/50 p-4 rounded-xl border-l-4 border-outline-variant">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="material-symbols-outlined text-outline text-xs">sticky_note_2</span>
+          <span class="text-[9px] font-black uppercase tracking-widest text-outline">Observaciones Técnicas</span>
+        </div>
+        <p class="text-[11px] italic text-on-surface-variant">${escapeHtml(p.notas)}</p>
+      </div>
+      ` : ""}
+      
+      <div class="flex items-center justify-between pt-2 border-t border-surface-container">
+        <span class="px-3 py-1 ${colorClass} text-[10px] font-black rounded-full uppercase tracking-widest">${p.status}</span>
+        <button data-id="${p.id}" class="btn-download text-secondary text-xs font-bold flex items-center gap-1">
+          Descargar Ficha
+          <span class="material-symbols-outlined text-sm">download</span>
+        </button>
+      </div>
+    </div>
+  `;
+  
+  const projectBtn = card.querySelector(".project-btn");
+  const projectPanel = card.querySelector(".project-panel");
+  const projectIcon = card.querySelector(".project-icon");
+  
+  projectBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    projectPanel.classList.toggle("hidden");
+    projectIcon.classList.toggle("rotate-180");
+  });
+  
+  // Evento para el botón de descarga (por ahora solo alerta)
+  const downloadBtn = card.querySelector(".btn-download");
+  if (downloadBtn) {
+    downloadBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      // Por ahora mostramos un mensaje. Después implementaremos la descarga real
+      alert(`📄 Preparando ficha del proyecto: ${p.Nombredelproyecto}\n\nPróximamente podrás descargar la ficha completa en PDF.`);
+    });
+  }
+  
+  return card;
 }
 
 /* ============================================================
@@ -424,17 +579,20 @@ function attachEvents() {
   btnExportXLS.addEventListener("click", exportXLS);
   btnImportJSON.addEventListener("click", importJSON);
 
-  // Tabs Logic
+  
+ 
+
+    // Tabs Logic
   const tabs = {
     'tabProyectos': { section: 'projectList', filters: 'filterSection' },
     'tabnormateca': { section: 'normatecaSection', filters: null },
-    'tabgestion': { section: 'gestionSection', filters: null }, // 👈 AQUÍ
+    'tabgestion': { section: 'gestionSection', filters: null },
     'tabReportes': { section: 'reportsSection', filters: null }
   };
 
   Object.keys(tabs).forEach(tabId => {
     document.getElementById(tabId).addEventListener("click", () => {
-        // Reset tabs
+        // Reset tabs principales
         Object.keys(tabs).forEach(id => {
             document.getElementById(id).classList.remove("active-tab", "text-indigo-600");
             document.getElementById(id).classList.add("text-slate-400");
@@ -452,56 +610,120 @@ function attachEvents() {
         if (current.filters) filters.classList.remove("hidden");
         else filters.classList.add("hidden");
 
+        // Ocultar Acciones si está visible al cambiar de sección
+        const accionesSection = document.getElementById("accionesSection");
+        if (accionesSection && !accionesSection.classList.contains("hidden")) {
+          accionesSection.classList.add("hidden");
+        }
+
+        // 👇 NUEVO: Al volver a la sección Proyectos, restaurar el subtab "Proyectos"
+        if (tabId === 'tabProyectos') {
+          const projectListSection = document.getElementById("projectList");
+          if (projectListSection && projectListSection.classList.contains("hidden")) {
+            projectListSection.classList.remove("hidden");
+          }
+          
+          // Restaurar el estado visual de los subtabs
+          const subtabProyectos = document.getElementById("subtabProyectos");
+          const subtabAcciones = document.getElementById("subtabAcciones");
+          const projectListSectionEl = document.getElementById("projectList");
+          const accionesSectionEl = document.getElementById("accionesSection");
+          
+          if (subtabProyectos && subtabAcciones) {
+            // Activar visualmente "Proyectos"
+            subtabProyectos.classList.add("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+            subtabProyectos.classList.remove("text-on-surface-variant");
+            subtabAcciones.classList.remove("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+            subtabAcciones.classList.add("text-on-surface-variant");
+            
+            // Asegurar contenido correcto
+            if (projectListSectionEl) projectListSectionEl.classList.remove("hidden");
+            if (accionesSectionEl) accionesSectionEl.classList.add("hidden");
+          }
+        }
+
         if(tabId === 'tabnormateca') renderNormateca();
 
         if (tabId === 'tabgestion') {
-        renderCapacitaciones()
-        renderInvestigacion();   
+          renderCapacitaciones();
+          renderInvestigacion();   
         }
-
     });
   });
 
+    // ===== NUEVOS SUBTABS: PROYECTOS / ACCIONES =====
+  const subtabProyectos = document.getElementById("subtabProyectos");
+  const subtabAcciones = document.getElementById("subtabAcciones");
+  const projectListSection = document.getElementById("projectList");
+  const accionesSection = document.getElementById("accionesSection");
+
+  if (subtabProyectos && subtabAcciones) {
+    // Estado inicial: Proyectos visible, Acciones oculto
+    if (accionesSection) accionesSection.classList.add("hidden");
+    
+    subtabProyectos.addEventListener("click", () => {
+      // Estilos del tab activo
+      subtabProyectos.classList.add("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+      subtabProyectos.classList.remove("text-on-surface-variant");
+      subtabAcciones.classList.remove("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+      subtabAcciones.classList.add("text-on-surface-variant");
+      
+      // Mostrar/ocultar secciones
+      if (projectListSection) projectListSection.classList.remove("hidden");
+      if (accionesSection) accionesSection.classList.add("hidden");
+      
+      // Refrescar lista por si acaso
+      renderList();
+    });
+    
+    subtabAcciones.addEventListener("click", () => {
+      // Estilos del tab activo
+      subtabAcciones.classList.add("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+      subtabAcciones.classList.remove("text-on-surface-variant");
+      subtabProyectos.classList.remove("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+      subtabProyectos.classList.add("text-on-surface-variant");
+      
+      // Mostrar/ocultar secciones
+      if (projectListSection) projectListSection.classList.add("hidden");
+      if (accionesSection) accionesSection.classList.remove("hidden");
+    });
+  }
 
   
-    // ===== GESTIÓN: SUB-TABS =====
-    if (tabCapacitaciones && tabInvestigacion) {
+// ===== GESTIÓN: SUB-TABS (con el mismo estilo que Proyectos/Acciones) =====
+if (tabCapacitaciones && tabInvestigacion) {
 
-      tabCapacitaciones.addEventListener("click", () => {
+  // Estado inicial
+  tabCapacitaciones.classList.add("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+  tabCapacitaciones.classList.remove("text-on-surface-variant");
+  tabInvestigacion.classList.remove("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+  tabInvestigacion.classList.add("text-on-surface-variant");
 
-        // activar estilos
-        tabCapacitaciones.classList.add("bg-white","text-indigo-600");
-        tabCapacitaciones.classList.remove("text-slate-400");
+  tabCapacitaciones.addEventListener("click", () => {
+    // Activar Capacitaciones, desactivar Investigación
+    tabCapacitaciones.classList.add("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+    tabCapacitaciones.classList.remove("text-on-surface-variant");
+    tabInvestigacion.classList.remove("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+    tabInvestigacion.classList.add("text-on-surface-variant");
+    
+    document.getElementById("gestionCapacitaciones").classList.remove("hidden");
+    document.getElementById("gestionInvestigacion").classList.add("hidden");
+    renderCapacitaciones();
+  });
 
-        tabInvestigacion.classList.remove("bg-white","text-indigo-600");
-        tabInvestigacion.classList.add("text-slate-400");
+  tabInvestigacion.addEventListener("click", () => {
+    // Activar Investigación, desactivar Capacitaciones
+    tabInvestigacion.classList.add("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+    tabInvestigacion.classList.remove("text-on-surface-variant");
+    tabCapacitaciones.classList.remove("bg-surface-container-lowest", "text-secondary", "diplomatic-shadow");
+    tabCapacitaciones.classList.add("text-on-surface-variant");
+    
+    document.getElementById("gestionCapacitaciones").classList.add("hidden");
+    document.getElementById("gestionInvestigacion").classList.remove("hidden");
+    renderInvestigacion();
+  });
 
-        // contenido
-        document.getElementById("gestionCapacitaciones").classList.remove("hidden");
-        document.getElementById("gestionInvestigacion").classList.add("hidden");
-
-        renderCapacitaciones();
-
-      });
-
-      tabInvestigacion.addEventListener("click", () => {
-
-        // activar estilos
-        tabInvestigacion.classList.add("bg-white","text-indigo-600");
-        tabInvestigacion.classList.remove("text-slate-400");
-
-        tabCapacitaciones.classList.remove("bg-white","text-indigo-600");
-        tabCapacitaciones.classList.add("text-slate-400");
-
-        // contenido
-        document.getElementById("gestionCapacitaciones").classList.add("hidden");
-        document.getElementById("gestionInvestigacion").classList.remove("hidden");
-
-        renderInvestigacion();
-
-      });
-
-    }
+}
 
 
 }
