@@ -1,4 +1,4 @@
-/ app.js - Versión UI Mejorada (DG Cooperación) v11.0 abril 2026
+// app.js - Versión UI Mejorada (DG Cooperación) v11.0 abril 2026
 
 const LS_KEY = "dg_proyectos_v2";
 
