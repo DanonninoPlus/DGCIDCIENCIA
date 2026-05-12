@@ -1,4 +1,4 @@
-// app.js - Versión UI Mejorada (DG Cooperación) v11.1 abril 2026
+// app.js - Versión UI Mejorada (DG Cooperación) v11.0 abril 2026
 
 const LS_KEY = "dg_proyectos_v2";
 
@@ -465,14 +465,13 @@ if (btnMenu && menuPanel) {
         window.location.href = "entregados.html";
       });
     }
-
-
+   
   // Opción: Fichas Técnicas
   const menuFichasTecnicas = document.getElementById("menuFichasTecnicas");
   if (menuFichasTecnicas) {
     menuFichasTecnicas.addEventListener("click", () => {
-      menuPanel.style.display = "none";
-      alert("📄 Fichas Técnicas\n\nPróximamente.");
+      menuPanel.classList.add("hidden");
+      window.location.href = "fichas.html";
     });
   }
 }
