@@ -11,8 +11,8 @@
     "Fechadetermino": "01-08-2025",
     "status": "Finalizado",
     "Objetivo": "Fomentar una buena cultura de la evaluación en los proyectos de cooperación internacional al desarrollo.",
-    "Estados": [""],
-    "notas": "-" 
+    "Estados": ["n/a"],
+    "notas": "sin notas" 
 },
 
         {
@@ -26,7 +26,7 @@
     "Fechadetermino": "05-12-2025",
     "status": "Finalizado",
     "Objetivo": "Fortalecer la formación de recursos humanos y el desarrollo de capacidades en instituciones de investigación agrícola, transferencia) tecnológica y educación, con el fin de apoyar la seguridad alimentaria de pequeños agricultores y promover el desarrollo de sistemas agroecológicos sostenibles que respondan a los desafíos del cambio climático y la migración.",
-    "Estados": [""],
+    "Estados": ["n/a"],
     "notas": "Impartido por el Insituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP)"
 },
 
@@ -41,7 +41,7 @@
     "Fechadetermino": "03-12-2025",
     "status": "Finalizado",
     "Objetivo": "Crear un momentum de mutuo aprendizaje para actualizar y ampliar el conocimiento sobre estrategias y metodologías de conservación in vitro de germoplasma vegetal.",
-    "Estados": [""],
+    "Estados": ["n/a"],
     "notas": "Impartido por el Insituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP)"
 },
 
@@ -56,7 +56,7 @@
     "Fechadetermino": "17-02-2026",
     "status": "Finalizado",
     "Objetivo": "Fortalecer las capacidades del personal de los Sistemas de Monitoreo de Calidad del Aire (SMCA), a través de la capacitación en el uso de herramientas para el manejo y análisis de datos de la calidad del aire generados en los SMCA.",
-    "Estados": [""],
+    "Estados": ["n/a"],
     "notas": "Impartido por el Instituto Nacional de Ecología y Cambio Climático (INECC)"
 },
 
@@ -71,7 +71,7 @@
     "Fechadetermino": "20-02-2026",
     "status": "Finalizado",
     "Objetivo": "Lograr un eficiente uso de la Red Mesoamericana para la Gestión Integral de Riesgos (RMGIR) como herramienta de identificación y prevención de riesgos, integrando la metodología japonesa de los 8 pasos para la formulación Planes Locales para la Reducción de Riesgos de Desastre (PLALOCS).",
-    "Estados": [""],
+    "Estados": ["n/a"],
     "notas": "Impartido por el Centro Nacional de Prevención de Desastres (CENAPRED)"
 },
 
@@ -86,8 +86,8 @@
     "Fechadetermino": "24-02-2026",
     "status": "Finalizado",
     "Objetivo": "Los tres países con diferentes niveles de envejecimiento (México, Uruguay y Japón) compartan sus esfuerzos y buenas prácticas en relación con el envejecimiento, extraer lecciones aprendidas y determinar desafíos comunes en sus políticas.",
-    "Estados": [""],
-    "notas": "-" 
+    "Estados": ["n/a"],
+    "notas": "sin notas" 
 },
 
         {
@@ -101,8 +101,8 @@
     "Fechadetermino": "26-02-2026",
     "status": "Finalizado",
     "Objetivo": "Generar un espacio de intercambio sobre casos concretos de uso y aplicación del enfoque SHEP entre representantes de los países de la región latinoamericana, instituciones educativas y organizaciones internacionales. El enfoque SHEP busca reducir las brechas de desigualdad, contribuir a la reducción de la movilidad humana y ofrecer una alternativa laboral para los productores de cada país.",
-    "Estados": [""],
-    "notas": "-" 
+    "Estados": ["n/a"],
+    "notas": "sin notas" 
 
  },
 
@@ -117,7 +117,7 @@
     "Fechadetermino": "27-01-2026",
     "status": "Finalizado",
     "Objetivo": "Dar continuidad al diálogo global iniciado en Canberra, Australia, en 2025, colocando en el centro la voz de las comunidades y su vínculo con la academia, la sociedad civil y los tomadores de decisiones, en torno a la justicia hídrica.",
-    "Estados": [""],
+    "Estados": ["n/a"],
     "notas": "Albergado por el Instituto Mexicano de Tecnología del Agua (IMTA)"
 
 }
