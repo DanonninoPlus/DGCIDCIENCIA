@@ -1255,62 +1255,6 @@
     "status": "Ejecución",
     "Objetivo": "Pendiente",
     "notas": "Pendiente"
-  },
-
-  {
-    "id": "p1_Japón_trilateral",
-     "Nombredelproyecto": "Diplomado internacional en agroecosistemas diversificados sustentables de frutales tropicales asociados con granos y hortalizas para productores a pequeña escala",
-    "Continente": "Asia",
-    "Pais": "Japón",
-    "Tipo de proyecto": "Trilateral - JMPP2030",
-    "Sector": "Agricultura",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "2025",
-    "status": "Ejecución",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-    {
-    "id": "p2_Japón_trilateral",
-     "Nombredelproyecto": "Asesoría técnica en materia de agricultura tropical",
-    "Continente": "Asia",
-    "Pais": "Japón",
-    "Tipo de proyecto": "Trilateral - JMPP2030",
-    "Sector": "Agricultura",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "2025",
-    "status": "Ejecución",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-      {
-    "id": "p3_Japón_trilateral",
-     "Nombredelproyecto": "Seminario Latinoamericano de Criopreservación",
-    "Continente": "Asia",
-    "Pais": "Japón",
-    "Tipo de proyecto": "Trilateral - JMPP2030",
-    "Sector": "Ciencia Tecnología e Innovación",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "2025",
-    "status": "Ejecución",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-        {
-    "id": "p4_Japón_trilateral",
-     "Nombredelproyecto": "Seminario Internacional sobre gestión de riesgos con CENAPRED",
-    "Continente": "Asia",
-    "Pais": "Japón",
-    "Tipo de proyecto": "Trilateral - JMPP2030",
-    "Sector": "Reducción de Riesgos de Desastres",
-    "Fechadeinicio": "2025",
-    "Fechadetermino": "2026",
-    "status": "Ejecución",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
   }
 
 ]
