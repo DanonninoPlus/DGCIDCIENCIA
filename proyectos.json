@@ -590,513 +590,313 @@
     "notas": "Instituciones: Universidad Autónoma de Baja California (UABC) por México, la Universidad Católica del Norte de Chile y con la coordinación nacional del Parque Marino del Pacífico (PMP), de la Universidad Nacional (UNA) y del Ministerio de Medio Ambiente y Energía (MINAE) de Costa Rica."
   },
 
-  {
-    "id": "p1_Uruguay",
-    "Nombredelproyecto": "Cooperación bilateral para el desarrollo de modelos de toma de decisiones para el área agrícola",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Agropecuario, Silvicultura, Pesca y Caza",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2025",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p2_Uruguay",
-    "Nombredelproyecto": "Desarrollo de inoculantes microbianos basado en microorganismos promotores del crecimiento vegetal, como alternativa sustentable al uso de agroquimicos",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Agropecuario, Silvicultura, Pesca y Caza",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2024",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p3_Uruguay",
-    "Nombredelproyecto": "Fortalecimiento e intercambio de capaciudades para avanzar en la protección de enfermedades neurodegenerativas (COLABORACIÓN TRIANGULAR CON CHILE)",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Ciencia Tecnología e Innovación",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2025",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p4_Uruguay",
-    "Nombredelproyecto": "Desarrollo sostenible del Enoturismo y cedanas de valor complementarias, mediantes sinergias e intercambios, conocieminto y buenas practicas entre Uruguay y México",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Ciencia Tecnología e Innovación",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2024",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p5_Uruguay",
-    "Nombredelproyecto": "Sexualidad sin fakes, en accion por los derechos sexuales y reproductivos (SSyR)",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Protección social, Género",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2024",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p6_Uruguay",
-    "Nombredelproyecto": "Fortalecimiento de capacidades cientificas y tecnologicas en el sector espacial de Uruguay y México para el desarrollo de plataformas satelitales de Observación de la Tierra para el monitoreo de los efectos del cambio climatico en zonas forestales y agrícolas",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Ciencia Tecnología e Innovación",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2024",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p7_Uruguay",
-    "Nombredelproyecto": "Intercambio de capacidades cientifico-tecnologicas para la mitigación del cambio climatico y el desarrollo de sistemas híbridos energéticos",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Ciencia Tecnología e Innovación",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2024",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p8_Uruguay",
-    "Nombredelproyecto": "Generación de dinámicas ecosistémicas entre México y Uruguay para I+D+i y agregado de valor en cadenas productivas locales con énfasis en la problemática ambiental, economía circular y desarrollo sustentable",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Ciencia Tecnología e Innovación",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2024",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p9_Uruguay",
-    "Nombredelproyecto": "Programa de atención a personas adultas mayores víctimas de violencia en América Latina",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Protección social, Género",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2025",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p10_Uruguay",
-    "Nombredelproyecto": "Bases para una gestión integrada de la seguridad vial",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Política de Gobierno",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2025",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p11_Uruguay",
-    "Nombredelproyecto": "Determinación de las concentraciones de flúor sistémico con el uso de biomarcadores de exposición a fluoruros (orina, uñas y cabello) en población mexicana y uruguaya en zonas geográficas de riesgo",
-    "Continente": "Sudamérica",
-    "Pais": "Uruguay",
-    "Sector": "Ciencia Tecnología e Innovación",
-    "Fechadeinicio": "2022",
-    "Fechadetermino": "2024",
-    "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
-
     {
-    "id": "p12_Uruguay_1",
+    "id": "p1_Uruguay",
     "Nombredelproyecto": "Mejora de la sostenibilidad de la ganadería en México y Uruguay: un solo bienestar - una sola salud",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
     "Sector": "Agropecuario",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Contribuir a la sostenibilidad de los sistemas de producción ganaderos en México y en Uruguay, con el bienestar animal como componente fundamental de la misma.",
+    "Estados": ["Estado de México"],
+    "notas": "Monto asignado: 95,000 USD"
   },
 
-  {
-    "id": "p13_Uruguay_2",
-    "Nombredelproyecto": "Red Latinoamericana de Neuroprotección y Nutrigenómica (REDLANN). Fase II: Fortalecimiento e intercambio de capacidades para avanzar en la protección de la salud cerebral y mental de la primera infancia (propuesta multilateral con Chile, Brasil y Ecuador)",
+    {
+    "id": "p2_Uruguay",
+    "Nombredelproyecto": "Red Latinoamericana de Neuroprotección y
+Nutrigenómica (REDLANN). Fase II: Fortalecimiento e intercambio de capacidades para avanzar en la protección de la salud cerebral y mental de la primera infancia (propuesta multilateral con Chile, Brasil y Ecuador)",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
     "Sector": "Ciencia Tecnología e Innovación",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Consolidar y expandir REDLANN como red de excelencia latinoamericana en neuroprotección y nutrigenómica para favorecer a los niños de primera infancia.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 95,000 USD"
   },
 
-  {
-    "id": "p14_Uruguay_3",
-    "Nombredelproyecto": "Modelo para Nodos para Bioimagenología en América Latina",
+    {
+    "id": "p3_Uruguay",
+    "Nombredelproyecto": "Establecimiento de un Modelo Piloto de Nodos de Bioimagenología en América Latina: Cooperación entre México y Uruguay para una Infraestructura Regional",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
     "Sector": "Ciencia Tecnología e Innovación",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Implementar una modelo piloto de coordinación de infraestructuras de investigación en bioimagenología avanzada entre Uruguay y México.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 78,650 USD"
   },
 
-  {
-    "id": "p15_Uruguay_4",
+
+    {
+    "id": "p4_Uruguay",
     "Nombredelproyecto": "Ka’an–Río: Cooperación entre destinos con alma",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
-    "Sector": "Comerciales, Industria",
+    "Sector": "Comercio e Industria",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Posicionar a Maya Ka’an (con epicentro en Felipe Carrillo Puerto, México) y al Departamento de Río Negro (Uruguay) como destinos binacionales modelo de turismo comunitario con identidad territorial.",
+    "Estados": ["Quintana Roo"],
+    "notas": "Monto asignado: 69,000 USD"
   },
 
-  {
-    "id": "p16_Uruguay_5",
-    "Nombredelproyecto": "Rutas del Queso de Colonia y Cotija: Modelos de gestión colaborativa para el desarrollo regional a través de la innovación y la consolidación del valor local entre Colonia y Michoacán",
+
+    {
+    "id": "p5_Uruguay",
+    "Nombredelproyecto": "Rutas del Queso de Colonia y Cotija: Modelos de gestión colaborativa para el desarrollo regional a través de la innovación y la consolidación del valor local entre Colonia y Michoacán.",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
-    "Sector": "Comerciales, Industria",
+    "Sector": "Comercio e Industria",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Fortalecer el desarrollo económico regional mediante el intercambio y aplicación de modelos de gestión colaborativa e innovación en la cadena de valor del queso.",
+    "Estados": ["Michoacán"],
+    "notas": "Monto asignado: 79,104 USD"
   },
 
-  {
-    "id": "p17_Uruguay_6",
-    "Nombredelproyecto": "Saberes que conectan: producción, turismo e innovación",
+
+    {
+    "id": "p6_Uruguay",
+    "Nombredelproyecto": "Saberes que conectan: innovación, producción y territorio como pilares para el desarrollo sostenible de la gastronomía tradicional y el turismo productivo de Aguascalientes, México y San José, Canelones y Florida, Uruguay",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
-    "Sector": "Comerciales, Industria",
+    "Sector": "Comercio e Industria",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Promover el desarrollo sostenible a través de la valorización de los productos alimentarios tradicionales de San José, Uruguay y Aguascalientes, México.",
+    "Estados": ["Aguascalientes"],
+    "notas": "Monto asignado:100,000 USD"
   },
 
-  {
-    "id": "p18_Uruguay_7",
+
+    {
+    "id": "p7_Uruguay",
     "Nombredelproyecto": "Entramados: Fortalecimiento de las estrategias sociales de abordaje comunitario para la promoción de sociedades del cuidado en México y Uruguay.",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
     "Sector": "Desarrollo social",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Contribuir al fortalecimiento de estrategias de abordaje territorial de las políticas sociales y de cuidados en México y en Uruguay.",
+    "Estados": ["Ciudad de México"],
+    "notas": "Monto asignado: 60,000 USD"
   },
-
-  {
-    "id": "p19_Uruguay_8",
+  
+    {
+    "id": "p8_Uruguay",
     "Nombredelproyecto": "Atención y prevención de delitos sexuales contra niñas, niños y adolescentes en el Estado Tlaxcala y Uruguay",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
     "Sector": "Desarrollo social",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Fortalecer las capacidades institucionales para la atención y prevención de delitos sexuales.",
+    "Estados": ["Tlaxcala"],
+    "notas": "Monto asignado: 95,000 USD"
   },
 
-  {
-    "id": "p20_Uruguay_9",
-    "Nombredelproyecto": "Salud mental libre de violencia",
+    {
+    "id": "p9_Uruguay",
+    "Nombredelproyecto": "Construir servicios de Salud Mental y Adicciones libres de violencia y discriminación: Un Enfoque
+Binacional México–Uruguay.",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
     "Sector": "Gobernabilidad",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Fortalecer la cooperación y las capacidades técnicas de las instituciones en la protección de los derechos de las personas usuarias de los servicios de internación por razones de salud mental y tratamiento de adicciones.",
+    "Estados": ["Ciudad de México"],
+    "notas": "Monto asignado: 95,055 USD"
+  
+ 
   },
 
-  {
-    "id": "p21_Uruguay_10",
-    "Nombredelproyecto": "Fortalecimiento de capacidades científico-tecnológicas en energía eólica:México–Uruguay",
+    {
+    "id": "p10_Uruguay",
+    "Nombredelproyecto": "Fortalecimiento de capacidades científico-tecnológicas en energía eólica: México–Uruguay",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
     "Sector": "Medio Ambiente",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Fortalecer las capacidades científico-tecnológicas en el área de la energía eólica entre México-Uruguay.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 74,496 USD"  
   },
 
-  {
-    "id": "p22_Uruguay_11",
+    {
+    "id": "p11_Uruguay",
     "Nombredelproyecto": "Adolescencia y Juventudes que cuidan: Red Binacional por la Salud Mental",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
     "Sector": "Salud",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Promover el protagonismo de las adolescencias y juventudes en la construcción de una red binacional por la salud mental a través del fortalecimiento de la cooperación entre México y Uruguay.",
+    "Estados": ["Querétaro"],
+    "notas": "Monto asignado: 80,000 USD"
+  
+ 
   },
 
-  {
-    "id": "p23_Uruguay_12",
+    {
+    "id": "p12_Uruguay",
     "Nombredelproyecto": "Estimación ultrasónica de parámetros elásticos y acústicos en bio-estructuras laminares relacionados a etapas tempranas de estados patológicos.",
     "Continente": "Sudamérica",
     "Pais": "Uruguay",
     "Sector": "Salud",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "status": "Ejecución",
+    "Objetivo": "Caracterizar de manera no invasiva el estado de una pared arterial mediante lastécnicas elastográficas con el fin de contribuir al diagnóstico temprano y de bajo costo de enfermedades cardiovasculares.",
+    "Estados": ["Aguascalientes"],
+    "notas": "Monto asignado: 57,950 USD"  
+
   },
 
-  {
-    "id": "p1_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Comité de Contratación Pública (CCP): Acompañamiento Técnico a empresas con potencial de participación en los mercados de contratación pública de los países de la Alianza del Pacífico, con miras a aumentar sus posibilidades de éxito en la adjudicación de contratos públicos",
+
+    {
+    "id": "p1_Alianza del Pacífico",
+    "Nombredelproyecto": "Participación en los mercados de contratación pública de los países de la Alianza del Pacífico ",
     "Continente": "Sudamérica",
     "Pais": "Alianza del Pacífico",
-    "Sector": "Gestión gubernamental",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "12 meses a partir del inicio de su implementación",
+    "Sector": "Comercio e industria ",
+    "Fechadeinicio": [""],
+    "Fechadetermino": [""],
     "status": "Ejecución",
-    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
-    "notas": "Pendiente"
+    "Objetivo": "Acompañamiento técnico a empresas con potencial de participación en los mercados de contratación pública en los países de la AP.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 120,000 USD"  
+ 
   },
 
-  {
-    "id": "p2_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Comité de Contratación Pública (CCP): Acompañamiento Técnico a empresas con potencial de participación en los mercados de contratación pública de los países de la Alianza del Pacífico, con miras a aumentar sus posibilidades de éxito en la adjudicación de contratos públicos",
+
+    {
+    "id": "p2_Alianza del Pacífico",
+    "Nombredelproyecto": "Fortalecimiento de competencias didácticas digitales de los docentes y directivos de la Educación Básica ",
     "Continente": "Sudamérica",
     "Pais": "Alianza del Pacífico",
     "Sector": "Educación",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "6 meses de ejecución, 9 meses vigencia convenio, a partir de la fecha de inicio de ejecución",
+    "Fechadeinicio": [""],
+    "Fechadetermino": [""],
     "status": "Ejecución",
-    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
-    "notas": "Pendiente"
-  },
+    "Objetivo": "Compartir las buena prácticas e intercambio de experiencias exitosas en Chile, Colombia México y Perú enfocada a los docentes y directivos de eduación básica.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 58,500 USD"     
 
-  {
-    "id": "p3_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Grupo Técnico de Medio Ambiente y Crecimiento Verde (GTMACV): Implementación de las Líneas Directrices de la OCDE para Empresas Multinacionales en los países de la Alianza del Pacífico en materia ambiental y derechos humanos. Experiencias y mejores prácticas",
+ },
+
+
+    {
+    "id": "p3_Alianza del Pacífico",
+    "Nombredelproyecto": "Directrices de la OCDE para Empresas Multinacionales en los países de la Alianza del Pacífico ",
     "Continente": "Sudamérica",
     "Pais": "Alianza del Pacífico",
-    "Sector": "Medio Ambiente",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "Sector": "Medio ambiente, Desarrollo social",
+    "Fechadeinicio": [""],
+    "Fechadetermino": [""],
     "status": "Ejecución",
-    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
-    "notas": "Pendiente"
+    "Objetivo": "Experiencias y mejores prácticas e Implementación de las Líneas estratégicas de la OCDE en materia ambiental y derechos humanos.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 120,000 USD"  
+ 
   },
 
-  {
-    "id": "p4_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Grupo Técnico de Desarrollo e Inclusión Social (GTDIS): Lecciones aprendidas y recomendaciones sobre el uso del Índice de Pobreza Multidimensional (IMP) oficial en los países miembros de la Alianza del Pacífico (AP)",
+
+    {
+    "id": "p4_Alianza del Pacífico",
+    "Nombredelproyecto": "Estudio sobre los efectos de la Pandemia por COVID-19 ",
     "Continente": "Sudamérica",
     "Pais": "Alianza del Pacífico",
     "Sector": "Desarrollo social",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
+    "Fechadeinicio": [""],
+    "Fechadetermino": [""],
     "status": "Ejecución",
-    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
-    "notas": "Pendiente"
-  },
+    "Objetivo": "Conocer el impacto de la pandemia en el crecimiento económico, las brechas de género, y en la pobreza multidimensional en los países miembros de la Alianza del Pacífico.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 60,000 USD"   
 
-  {
-    "id": "p5_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Grupo Técnico de Estrategia Comunicacional (GTEC): Campaña Digital Protocolo Comercial",
+ },
+
+
+    {
+    "id": "p5_Alianza del Pacífico",
+    "Nombredelproyecto": "Mejora la calidad regulatoria de los países miembros de la Alianza del Pacífico.",
     "Continente": "Sudamérica",
     "Pais": "Alianza del Pacífico",
-    "Sector": "Comercio",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "05 meses a partir de la fecha de inicio de ejecución",
+    "Sector": "Gobernabilidad",
+    "Fechadeinicio": [""],
+    "Fechadetermino": [""],
     "status": "Ejecución",
-    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
-    "notas": "Pendiente"
+    "Objetivo": "Fortalecimiento de las capacidades de las entidades nacionales en calidad regulatoria de los países miembros de la Alianza del Pacífico.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 122,600 USD"  
+
   },
 
 
-  {
-    "id": "p6_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Grupo Técnico de Laboral (GTL): Portal de Virtual Formación Compartida de la Alianza del Pacífico",
-    "Continente": "Sudamérica",
-    "Pais": "Alianza del Pacífico",
-    "Sector": "Trabajo",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
-    "status": "Ejecución",
-    "Objetivo": "Plan de Trabajo 2022 del Fondo AP",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p7_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Programa de Voluntariado Juvenil de la Alianza del Pacífico, Proyecto México Voluntad Joven: Arte y Feminismos",
-    "Continente": "Sudamérica",
-    "Pais": "Alianza del Pacífico",
-    "Sector": "Cultura, Género",
-    "Fechadeinicio": "2025",
-    "Fechadetermino": "2025",
-    "status": "Ejecución",
-    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p8_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Comités de Mejora Regulatoria / Obstáculos Técnicos al Comercio (CMR/OTC): Fortalecimiento de las capacidades para mejorar la calidad regulatoria de los países miembros de la Alianza del Pacífico (AP)",
-    "Continente": "Sudamérica",
-    "Pais": "Alianza del Pacífico",
-    "Sector": "Asuntos Económicos",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "10 meses a partir de la fecha de inicio de ejecución",
-    "status": "Ejecución",
-    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p9_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Grupo Técnico de Agencias de Promoción (GTAP): Contribución a la comercialización de los destinos turísticos de la Alianza del Pacífico a través de la VIII Macrorrueda de Turismo de la Alianza del Pacifico",
-    "Continente": "Sudamérica",
-    "Pais": "Alianza del Pacífico",
-    "Sector": "Turismo",
-    "Fechadeinicio": "2025",
-    "Fechadetermino": "10 meses a partir de la fecha de inicio de ejecución",
-    "status": "Ejecución",
-    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p10_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Grupo Técnico de Género (GTG): Elaboración de un manual para facilitar la participación de mujeres rurales e indígenas en mercados internacionales",
+    {
+    "id": "p6_Alianza del Pacífico",
+    "Nombredelproyecto": "Participación de mujeres rurales e indígenas en mercados internacionales ",
     "Continente": "Sudamérica",
     "Pais": "Alianza del Pacífico",
     "Sector": "Género",
-    "Fechadeinicio": "2026",
-    "Fechadetermino": "8 meses a partir de la fecha de inicio de ejecución",
-    "status": "Planeación",
-    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
-    "notas": "Pendiente"
-  },
+    "Fechadeinicio": [""],
+    "Fechadetermino": [""],
+    "status": "Ejecución",
+    "Objetivo": "Elaboración de un manual para facilitar la participación de mujeres rurales e indígenas de los cuatro países de la AP en mercados internacionales.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 70,000 USD"   
 
-  {
-    "id": "p11_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Grupo Técnico de Pesca y Acuicultura (GTPA): Potenciar la comercialización de productos de la pesca y acuicultura artesanal de la Alianza del Pacífico, con énfasis en el empoderamiento económico de la mujer",
+ },
+
+
+    {
+    "id": "p7_Alianza del Pacífico",
+    "Nombredelproyecto": "Fortalecimiento de las prácticas de pesca y acuicultura artesanal de la Alianza del Pacífico.",
     "Continente": "Sudamérica",
     "Pais": "Alianza del Pacífico",
-    "Sector": "Pesca",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
-    "status": "Planeación",
-    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
-    "notas": "Pendiente"
-  },
+    "Sector": "Agropecuario, Comercio , I
+ndustria , Género",
+    "Fechadeinicio": [""],
+    "Fechadetermino": [""],
+    "status": "Ejecución",
+    "Objetivo": "Potenciar la comercialización de productos de la pesca y acuicultura artesanal, con énfasis en el empoderamiento económico de la mujer.",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 120,000 USD"  
 
-  {
-    "id": "p12_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Caminos de Saberes: Formación y Autonomía para Mujeres en ruralidad de los países de la Alianza del Pacífico, con énfasis en los oficios tradicionales y prácticas ancestrales",
+ },
+
+
+    {
+    "id": "p8_Alianza del Pacífico",
+    "Nombredelproyecto": "Voluntariado Juvenil AP 2025.",
     "Continente": "Sudamérica",
     "Pais": "Alianza del Pacífico",
-    "Sector": "Género",
-    "Fechadeinicio": "2025",
-    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
-    "status": "Planeación",
-    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
-    "notas": "Pendiente"
-  },
+    "Sector": "Desarrollo social",
+    "Fechadeinicio": [""],
+    "Fechadetermino": [""],
+    "status": "Ejecución",
+    "Objetivo": "Promover acciones de integración de las juventudes, enfocadas a la reconstrucción del tejido social de comunidades y poblaciones principalmente rurales de los cuatro países de la AP..",
+    "Estados": ["N/A"],
+    "notas": "Monto asignado: 330,000 USD" 
 
-  {
-    "id": "p13_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Estudio y propuesta para la implementación de un Sello Mujeres en la Alianza del Pacífico, y sesiones de capacitación dirigidas a ejecutivas/os de empresas de la AP",
-    "Continente": "Sudamérica",
-    "Pais": "Alianza del Pacífico",
-    "Sector": "Género",
-    "Fechadeinicio": "2025",
-    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
-    "status": "Planeación",
-    "Objetivo": "Plan de Trabajo 2023 del Fondo AP",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p14_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Implementación del Programa de Capacitación en Aprovechamiento y Circularidad de Residuos Sólidos Urbanos Orgánicos en Municipios de la Costa Pacífica",
-    "Continente": "Sudamérica",
-    "Pais": "Alianza del Pacífico",
-    "Sector": "Medio Ambiente",
-    "Fechadeinicio": "2025",
-    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
-    "status": "Planeación",
-    "Objetivo": "Plan de Trabajo 2024 del Fondo AP",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p15_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Fortalecer las capacidades exportadoras de las micro, pequeñas y medianas empresas (Mipymes), lideradas por hombres y mujeres, de la Alianza del Pacífico (AP) a través del comercio electrónico transfronterizo entre los países miembros de la AP, con el apoyo de entidades gubernamentales competentes y colaboración del sector privado, en los respectivos países de la AP",
-    "Continente": "Sudamérica",
-    "Pais": "Alianza del Pacífico",
-    "Sector": "Asuntos Económicos",
-    "Fechadeinicio": "2025",
-    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
-    "status": "Planeación",
-    "Objetivo": "Plan de Trabajo 2024 del Fondo AP",
-    "notas": "Pendiente"
-  },
-
-  {
-    "id": "p16_Alianza_del_Pacífico",
-    "Nombredelproyecto": "Contribuir a la visión integral de la realidad pesquera mediante la incorporación de la dimensión socioeconómica en el proceso de diagnóstico, manejo y toma de decisiones en el sector pesquero y acuícola en los países de la Alianza del Pacífico",
-    "Continente": "Sudamérica",
-    "Pais": "Alianza del Pacífico",
-    "Sector": "Pesca",
-    "Fechadeinicio": "2025",
-    "Fechadetermino": "12 meses a partir de la fecha de inicio de ejecución",
-    "status": "Planeación",
-    "Objetivo": "Plan de Trabajo 2024 del Fondo AP",
-    "notas": "Pendiente"
-  },
+},
 
     {
     "id": "p1_Canada",
