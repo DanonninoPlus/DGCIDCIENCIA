@@ -782,20 +782,34 @@ function renderInvestigacion() {
         <button class="w-full text-left px-4 py-4 acordeon-btn">
           <div class="font-bold text-sm">${escapeHtml(inv.nombre)}</div>
         </button>
+
         <div class="panel hidden bg-white text-slate-700 px-4 py-4 space-y-3">
-          <div class="text-xs">
-            <i class="far fa-calendar-alt mr-1 text-indigo-600"></i>
-            <b>Fecha de ejecución</b><br>
-            ${inv.fechaInicio || '—'} – ${inv.fechaFin || '—'}
-          </div>
-          <div class="text-xs">
-            <i class="fas fa-university mr-1 text-indigo-600"></i>
-            <b>Instituciones</b>
-            <ul class="list-disc pl-4 mt-1">
-              ${(inv.instituciones || []).map(i => `<li>${escapeHtml(i)}</li>`).join("")}
-            </ul>
-          </div>
+            <div class="text-xs">
+                <i class="far fa-calendar-alt mr-1 text-indigo-600"></i>
+                <b>Fecha de ejecución</b><br>
+                ${inv.fechaInicio || '—'} – ${inv.fechaFin || '—'}
+            </div>
+            <div class="text-xs">
+                <i class="fas fa-bullseye mr-1 text-indigo-600"></i>
+                <b>Objetivo</b><br>
+                ${escapeHtml(inv.objetivo || 'No especificado')}
+            </div>
+            <div class="text-xs">
+                <i class="fas fa-tag mr-1 text-indigo-600"></i>
+                <b>Estatus</b><br>
+                <span class="estatus-badge ${(inv.estatus || '').replace(' ', '-')}">${escapeHtml(inv.estatus || 'Desconocido')}</span>
+            </div>
+            <div class="text-xs">
+                <i class="fas fa-university mr-1 text-indigo-600"></i>
+                <b>Instituciones</b>
+                <ul class="list-disc pl-4 mt-1">
+                ${(inv.instituciones || []).map(i => `<li>${escapeHtml(i)}</li>`).join("")}
+                </ul>
+            </div>
         </div>
+
+
+
       `;
       panelPais.appendChild(card);
     });
@@ -803,6 +817,7 @@ function renderInvestigacion() {
   });
   attachAccordionEvents();
 }
+
 
 /* ============================================================
    🔵 10. EXPORTACIONES
