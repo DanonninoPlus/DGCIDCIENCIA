@@ -28,6 +28,27 @@
     .bg-tertiary-fixed { background-color: #6dfad2; }
     .rotate-180 { transform: rotate(180deg); }
     .no-scrollbar::-webkit-scrollbar { display: none; }
+
+
+
+    /* Estilos para el estatus en permisos de investigación */
+.estatus-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+.estatus-badge.Finalizado { background-color: #10b981; color: white; }
+.estatus-badge.Cancelado { background-color: #ef4444; color: white; }
+.estatus-badge.Autorizado { background-color: #3b82f6; color: white; }
+.estatus-badge.Trámite { background-color: #f59e0b; color: black; }
+.estatus-badge.En-ejecución { background-color: #8b5cf6; color: white; }
+
+
+    
   </style>
 </head>
 <body class="bg-slate-50 min-h-screen pb-20">
