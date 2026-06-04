@@ -3,66 +3,81 @@
     "id": "inv1_EUA",
     "pais": "Estados Unidos",
     "nombre": "Integrando educación científica, divulgación y participación comunitaria estudiando el Golfo de California en la embarcación histórica Western Flyer.",
-    "fechaInicio": "27 de marco 2025",
+    "fechaInicio": "27 de marzo 2025",
     "fechaFin": "10 de junio 2025",
-    "objetivo": "Texto del objetivo",
-    "estatus": "En ejecución",
+    "objetivo": "Reconstruir parte del viaje histórico de 1940 de John Steinbeck y Ed Ricketts en el velero Western Flyer, integrando la investigación y la educación con el estudio de la biodiversidad y la oceanografía, con la participación de estudiantes y comunidades locales del Golfo de California.",
+    "estatus": "Finalizado",
     "instituciones": [
       "Western Flyer Foundation ",
       "Universidad Autónoma de Baja California Sur"
     ]
   },
-  {
+
+    {
     "id": "inv2_EUA",
     "pais": "Estados Unidos",
-    "nombre": "ESCUCHE GoMex - Investigaciones a largo plazo sobre las tendencias del paisaje sonoro, la ecología de los cetáceos y el ruido en el golfo de México",
+    "nombre": "ESCUCHE GoMex- Investigaciónes a largo plazo sobre las tendencias del paisaje sonoro, la ecología de los cetáceos y el ruido en el golfo de México.",
     "fechaInicio": "10 de junio 2025",
     "fechaFin": "15 de julio 2025",
+    "objetivo": "Recopilar un conjunto de datos estandarizados, sólidos y calibrados de registros de mamíferos marinos y del ruido ambiental, con la ayuda de paquetes de grabación acustica de alta frecuencia, ubicados en 36 sitios del Golfo de México.",
+    "estatus": "Finalizado",
     "instituciones": [
       "Universidad de California en San Diego",
       "Universidad Nacional Autónoma de México",
       "Universidad de Veracruz"
     ]
   },
-  {
+
+      {
     "id": "inv3_EUA",
     "pais": "Estados Unidos",
-    "nombre": "Campaña de Carbono y Ecosistemas en el Golfo de México (Gulf of Mexico Ecosystems and Carbon Cruise, GOMECC-5) de 2025.",
-    "fechaInicio": "Cancelada debido a un incendio en la sala de máquinas del buque - 10 de octubre 2025",
+    "nombre": "Campaña de carbono y ecosistemas en el Golfo de México (Gulf of Mexico Ecosystems and Carbon Cruise, GOMECC-5) de 2025.",
+    "fechaInicio": "10 de octubre 2025",
     "fechaFin": "30 de noviembre 2025",
+    "objetivo": "Estudiar el proceso de acidificación del Océano a lo largo de las aguas costeras del Golfo de México, en apoyo al programa NOAA(National Oceanic and Atmospheric Administration) sobre la Acidificación del Océano.",
+    "estatus": "Cancelado",
     "instituciones": [
       "Laboratorio Oceanográfico y Meteorológico del Atlántico (AOML, por sus siglas en inglés) de la Administración Nacional Oceánica y Atmosférica (NOAA, por sus siglas en inglés)",
       "Universidad Autónoma de Baja California"
     ]
   },
-  {
+
+        {
     "id": "inv4_EUA",
     "pais": "Estados Unidos",
-    "nombre": "Cuantificación de los efectos térmicos de la circulación de fluidos en la corteza oceánica sobre las temperaturas en la zona de subducción del sur de México.",
+    "nombre": "Cuantificación de los efectos térmicos de la circulación de fluidos en la corteza oceánica sobre las temperaturas en la zona de subdicción del sur de México.",
     "fechaInicio": "5 de noviembre 2025",
     "fechaFin": "26 de diciembre 2025",
+    "objetivo": "Medir la temperatura en los sedimentos del fondo marino y mapear la distribución de sedimentos frente a México. Mejorar las estimaciones de las temperaturas de la zona de subducción y comprender mejor los procesos que las controlan.",
+    "estatus": "Finalizado",
     "instituciones": [
       "Instituto de Minería y Tecnología de Nuevo México",
       "Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)"
     ]
   },
-  {
+
+          {
     "id": "inv5_EUA",
     "pais": "Estados Unidos",
-    "nombre": "Evaluación del impacto humano del turismo en el mapache pigmeo (Procyon pygmaeus), especie en peligro crítico de extinción.",
+    "nombre": "Evaluación del impacto humano del turismo en el mapache pigmeo (Procycon pygmaeus), especie en peligro de extinción.",
     "fechaInicio": "11 de enero 2026",
     "fechaFin": "27 de febrero 2026",
+    "objetivo": "Comprender la interacción y percepción de los visitantes o empleados de la industria turística de Cozumel con el mapache pigmeo, al fin de proporcionar datos a los conservacionistas para cunatificar los riesgos antropogénicos que la industria turística representa para los mapaches. Asimismo, identificar áreas donde la educación de turistas y empleados podría reducir los riesgos para el mapache pigmeo.",
+    "estatus": "Finalizado",
     "instituciones": [
       "Universidad de Miami",
-      "Fundación de Parques y Museos de Cozumel"
+      "Ecología del Ayuntamiento de Cozumel"
     ]
   },
-  {
+
+            {
     "id": "inv6_EUA",
     "pais": "Estados Unidos",
-    "nombre": "Investigación colaborativa: Barreras metabólicas del hábitat impuesta a los migrantes verticales diurnos tropicales.",
-    "fechaInicio": "13 de diciembre 2025",
-    "fechaFin": "31 de enero 2026",
+    "nombre": "Investigación colaborativa: Barreras metabólicas del hábitad impuesta a los migrantes verticales diurnos tropicales.",
+    "fechaInicio": "13 diciembre 2025",
+    "fechaFin": "31 enero 2026",
+    "objetivo": "Definir hábitats fisiológicamente accesibles para diversos animales oceánicos, midiendo la dependencia de tasas metabolicas, tanto activas como en reposo, respecto a la temperatura y el oxígeno.",
+    "estatus": "Finalizado",
     "instituciones": [
       "Universidad del Sur de Florida",
       "Universidad Estatal de Arizona",
@@ -72,16 +87,121 @@
     ]
   },
 
-  {
+
+              {
+    "id": "inv7_EUA",
+    "pais": "Estados Unidos",
+    "nombre": "Acidificación del Océano en la Costa Oeste de Norte América del 2026",
+    "fechaInicio": "1 de junio de 2026",
+    "fechaFin": "1 de noviembre de 2026",
+    "objetivo": "Realizar un diagnóstico integral de la Acidificación del Océano (AO) a lo largo de la plataforma continental de la costa del Pacífico de Norteamérica.",
+    "estatus": "Cancelado",
+    "instituciones": [
+      "Universidad Autónoma de Baja California.",
+      "CICESE (Centro de Investigación Científica y de Educación Superior de Ensenada, Baja California)"
+    ]
+  },
+
+
+                {
+    "id": "inv8_EUA",
+    "pais": "Estados Unidos",
+    "nombre": "Investigación colaborativa: Una mejor comprensión del peligro sísmico en Tehuantepec, México, utilizando estudios magnetotelúricos marinos y terrestres.",
+    "fechaInicio": "15 de junio de 2026",
+    "fechaFin": "5 de julio de 2026",
+    "objetivo": "Evaluar el nivel de riesgo sísmico que representa la zona de subducción bajo el Golfo de Tehuantepec, mediante la obtención de imágenes del agua en la zona de subducción utilizando datos magnetotelúricos marinos.",
+    "estatus": "En ejecución",
+    "instituciones": [
+      "Universidad de California en San Diego (UCSD)",
+      "Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)"
+    ]
+  },
+  
+
+                {
+    "id": "inv9_EUA",
+    "pais": "Estados Unidos",
+    "nombre": "ESCUCHE GoMex - Investigaciones a largo plazo sobre las tendencias del paisaje sonoro, la ecología de los cetáceos y el ruido en el Golfo de México.",
+    "fechaInicio": "10 de junio de 2026",
+    "fechaFin": "15 de julio de 2026",
+    "objetivo": "Implementar un Programa Internacional de Monitoreo Acústico pasivo (PAM) a largo plazo para evaluar la distribución y abundancia de cetáceos en todo el Golfo de México, usando grabadoras submarinas (HARPs), busca determinar si las variaciones poblacionales se deben a desplazamientos naturales o a impactos del derrame Deepwater Horizon. Esta información permitirá a México y EE. UU desarrollen modelos predictivos para la restauración y conservación efectiva de especies en peligro frente a estresores humanos.",
+    "estatus": "Trámite",
+    "instituciones": [
+      "University of California, San Diego",
+      "Instituto de Ciencias del Mar y Limnología UNAM",
+      "Universidad Veracruzana"
+    ]
+  },
+
+                  {
+    "id": "inv10_EUA",
+    "pais": "Estados Unidos",
+    "nombre": "El zorro gris de Cozumel: enfoques para investigar su persistencia y estado taxonómico.",
+    "fechaInicio": "25 de febrero 2026",
+    "fechaFin": "15 de abril 2026",
+    "objetivo": "Estudiar la  persistencia y definir el estatus taxonómico del zorro de Cozumel (Urocyon sp.), un carnívoro críticamente amenazado que podría representar una especie endémica distinta al zorro gris continental. Mediante el uso de técnicas no invasivas, como cámaras trampa y recolección de pelo con trampas adhesivas aromatizadas, el estudio busca obtener muestras de ADN que permitirán comprender sus necesidades ecológicas e implementar estrategias urgentes de conservación en la isla.",
+    "estatus": "Finalizado",
+    "instituciones": [
+      "Pathos Wildlife",
+      "Fundación de Parques y Museos de Cozumel"
+    ]
+  },
+
+                    {
+    "id": "inv11_EUA",
+    "pais": "Estados Unidos",
+    "nombre": "Particle-Hosted Sulfur Cycling and Organic Matter Burial in Oxygen Deficient Zones",
+    "fechaInicio": "15 de abril 2026",
+    "fechaFin": "30 de junio de 2026",
+    "objetivo": "Investigar cómo las variaciones en los niveles de oxígeno disuelto en el océano influyen en el secuestro y enterramiento de carbono orgánico en los sedimentos marinos profundos.",
+    "estatus": "En ejecución",
+    "instituciones": [
+      "University of California Santa Barbara (UCSB)",
+      "Universidad Autónoma de Baja California (UABC)"
+    ]
+  },
+
+                      {
+    "id": "inv12_EUA",
+    "pais": "Estados Unidos",
+    "nombre": "La microdiversidad impulsa el funcionamiento de los ecosistemas: las bacterias SAR11 como modelos para la pérdida de nitrógeno oceánico",
+    "fechaInicio": "1 de noviembre 2026",
+    "fechaFin": "19 de diciembre de 2026",
+    "objetivo": "Aclarar los mecanismos subyacentes que mantienen la diversidad de clados OMZ SAR11 y cuantificar la contribución relativa de distintos subclados OMZ SAR11 a la composición y el metabolismo de la comunidad a lo largo de los gradientes químicos OMZ.",
+    "estatus": "Trámite",
+    "instituciones": [
+      "Universidad Estatal de Montana",
+      "Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)",
+      "Universidad Nacional Autónoma de México (UNAM)"
+    ]
+  },
+
+                        {
+    "id": "inv1_FRA",
+    "pais": "Francia",
+    "nombre": "Globos Estratosféricos de larga duración para el estudio de la baja estratosférica ecuatorial.",
+    "fechaInicio": "1 de octubre 2026",
+    "fechaFin": "31 de agosto de 2026",
+    "objetivo": "Estudiar la química y la dinámica de la estratosfera ecuatorial mediante globos instrumentados de larga duración.",
+    "estatus": "Trámite",
+    "instituciones": [
+      "Centro Nacional de Estudios Espaciales de Francia (CNES)"
+    ]
+  },
+
+                          {
     "id": "inv1_NOR",
-    "pais": "Noruega",
-    "nombre": "Expedición Un Océano II (One Ocean Expedition II)",
+    "pais": "Francia",
+    "nombre": "Expedición Un Océano II (One Ocean Expedition II).",
     "fechaInicio": "10 de noviembre 2025",
-    "fechaFin": "9 de diciembre 2025",
+    "fechaFin": "9 de diciembre de 2025",
+    "objetivo": "Generar atención, estimular la ciencia oceánica y compartir conocimientos sobre el papel crucial del océano para el desarrollo sostenible en una perspectiva global.",
+    "estatus": "Finalizado",
     "instituciones": [
       "Fundación Statsraad Lehmkuhl",
       "Universidad Autónoma de Baja California Sur"
     ]
   }
+
 
 ]
