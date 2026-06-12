@@ -354,6 +354,18 @@ function renderProjectCard(p) {
           <div><p class="text-[9px] uppercase tracking-widest text-outline font-bold">Término</p><p class="text-xs font-semibold text-primary">${p.Fechadetermino || '---'}</p></div>
         </div>
       </div>
+
+      ${p.Sector ? `
+      <div class="flex items-center gap-3 bg-surface-container-low/50 p-3 rounded-lg">
+        <span class="material-symbols-outlined text-secondary text-sm">business_center</span>
+        <div>
+          <p class="text-[9px] uppercase tracking-widest text-outline font-bold">Sector</p>
+          <p class="text-sm font-medium text-primary">${escapeHtml(p.Sector)}</p>
+        </div>
+      </div>
+      ` : ''}
+
+      
       <div class="flex gap-4">
         <div class="w-1 bg-secondary rounded-full"></div>
         <div class="flex-1">
