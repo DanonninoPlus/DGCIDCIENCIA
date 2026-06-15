@@ -895,136 +895,587 @@
 
 },
 
-    {
+
+[
+ 
+
+  {
     "id": "p1_Canada",
-     "Nombredelproyecto": "Producción de hidrolizados de proteína de frijol común con potencial hipoglucemiante por medio de tecnologías de membrana",
+    "Nombredelproyecto": "Producción de hidrolizados de proteína de frijol común con potencial hipoglucemiante por medio de tecnologías de membrana.",
     "Continente": "América del Norte",
     "Pais": "Canadá",
     "Sector": "Salud",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Generar un hidrolizado de proteína de frijol común a través de tecnología de membrana, para formar una bebida funcional para personas con diabetes, con el objetivo de disminuir sus niveles de glucosa.",
+    "Estados": ["N/A"],
+    "notas": "Intituciones: Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco, Universidad Laval"
+
   },
+
 
   {
     "id": "p2_Canada",
-     "Nombredelproyecto": "Prevenir los problemas de salud mental asociados al trabajo y al mejoramiento de la productividad",
+    "Nombredelproyecto": "Prevenir los problemas de salud mental asociados al trabajo y al mejoramiento de la productividad.",
     "Continente": "América del Norte",
     "Pais": "Canadá",
     "Sector": "Salud",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "A través de la herramienta quebequense QSBT (Questionnaire sur la Santé et le Bien-être au Travail), se estudiarán las condiciones de trabajo en México, para medir, predecir y determinar las consecuencias de Factores de Riesgo Psicosocial (RPS) como el acoso y la violencia laboral. Utilizando datos masivos para mapear y evaluar los RPS, y haciendo uso de la realidad virtual, se elaborará un plan de acción con enfoque terapéutico, para evaluar y reducir la angustia, contribuyendo así a la prevención de problemas de salud mental y al mejoramiento de la productividad.",
+    "Estados": ["N/A"],
+    "notas": "Intituciones: Happinss Mexico S de RL de CV,  Universidad Laval"
+
   },
+
 
   {
     "id": "p3_Canada",
-     "Nombredelproyecto": "Materiales Multifuncionales para Aplicación en Energía",
+    "Nombredelproyecto": "Investigaciones Raman in situ para mejorar la resistencia a la fatiga de sistemas de almacenamiento de energía de iones de litio.",
     "Continente": "América del Norte",
     "Pais": "Canadá",
     "Sector": "Ciencia Tecnología e Innovación",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
-  },
+    "Objetivo": "Diseñar una metodología de caracterización electroquímica, física y química in situ de sistemas de almacenamiento de energía. Dicha metodología permitirá monitorear la evolución de la estructura, fase y propiedades microestructurales de componentes internos (cátodo, ánodo, electrolito en estado sólido) de sistemas de almacenamiento de energía en condiciones realistas de operación, con la finalidad de generar el conocimiento necesario para comprender mejor los mecanismos de falla en los dispositivos de almacenamiento de energía.",
+    "Estados": ["N/A"],
+    "notas": "Intituciones: Centro de Investigaciones en Óptica (CIO-CONAHCYT), Institut National de la Recherche Scientifique (INRS)- Énergie, Matériaux et Télécommunications(EMT)"
+
+  }, 
 
   {
     "id": "p4_Canada",
-     "Nombredelproyecto": "Investigaciones Raman in situ para mejorar la resistencia a la fatiga de sistemas de almacenamiento de energía de iones de litio",
+    "Nombredelproyecto": "Programa de creación de capacidades y transferencia tecnológica para la sostenibilidad",
     "Continente": "América del Norte",
     "Pais": "Canadá",
     "Sector": "Ciencia Tecnología e Innovación",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Desarrollo e implementación de un programa de creación y fortalecimiento de capacidades dirigido al sector forestal mexicano que gira alrededor de una plataforma de modelación SpaDes (Spatial Discrete Event Simulation; https://SpaDES.predictiveecology.org/). De igual manera se busca formalizar el establecimiento de un grupo de colaboración multisectorial con énfasis en la participación de mujeres, diseñar de manera colaborativa el enfoque de creación y fortalecimiento de capacidades, determinando los alcances específicos de los Objetivos de Desarrollo Sostenible, y diseñar e implementar capacitaciones, talleres y conferencias relacionadas con el uso de la plataforma y la aplicación de herramientas analíticas.",
+    "Estados": ["N/A"],
+    "notas": "Intituciones: Instituto de Ecología UNAM, Université Laval"
+
   },
 
   {
     "id": "p5_Canada",
-     "Nombredelproyecto": "Programa de creación de capacidades y transferencia tecnológica para la sostenibilidad",
+    "Nombredelproyecto": "Modelado y simulación de un lecho fluidizado calentado por microondas para la síntesis de amoniaco.",
     "Continente": "América del Norte",
     "Pais": "Canadá",
     "Sector": "Ciencia Tecnología e Innovación",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Mediante el proceso Haber Bosch, la producción del amoniaco a nivel global genera un 1.4% de CO2 y consume el 1% de la energía mundial.
+El objetivo de este proyecto es incrementar la producción de amoniaco, electrificando el proceso mediante tecnología de microondas; en específico, modelar y simular a partir de datos de laboratorio el reactor fluidizado, calentado por microondas, permitiendo el uso de la electricidad como fuente de energía. Las emisiones de gases de efecto invernadero serían menores y el proceso consumiría menos energía en comparación con el proceso Haber-Bosch, resultando en un proceso más selectivo y a presión ambiente.",
+    "Estados": ["N/A"],
+    "notas": "Intituciones: Instituto de Ciencias Aplicadas y Tecnología de la UNAM, Escuela Politécnica de Montreal "
+
   },
 
   {
     "id": "p6_Canada",
-     "Nombredelproyecto": "Modelado y simulación de un lecho fluidizado calentado por microondas para la síntesis de amoniaco",
+    "Nombredelproyecto": "Amplificación de la Fluorescencia de los Puntos Cuánticos de Carbono mediante Resonancia Plasmónica",
     "Continente": "América del Norte",
     "Pais": "Canadá",
     "Sector": "Ciencia Tecnología e Innovación",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Este proyecto propone la síntesis verde de puntos cuánticos de carbono (CQDs) y su acoplamiento plasmónico con nanopartículas metálicas, utilizando microscopía avanzada en 2D y 3D para su caracterización optoelectrónica. Los datos microscópicos contribuirán a la realización de simulaciones electro-físicas, facilitando la comprensión y predicción de las propiedades de nuevos materiales sin necesidad de realizar síntesis adicional. Estos avances en la síntesis y caracterización representan un paso crucial hacia la explotación del potencial de los CQDs,  marcando así un progreso significativo hacia la sostenibilidad.",
+    "Estados": ["N/A"],
+    "notas": "Intituciones: Universidad Autónoma de Nuevo León (UANL), Universidad de McGill"
+
   },
 
   {
     "id": "p7_Canada",
-     "Nombredelproyecto": "Amplificación de la Fluorescencia de los Puntos Cuánticos de Carbono mediante Resonancia Plasmónica",
+    "Nombredelproyecto": "Funcionalización de tintas conductoras para electrónica impresa",
     "Continente": "América del Norte",
     "Pais": "Canadá",
     "Sector": "Ciencia Tecnología e Innovación",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Mediante el desarrollo de nuevos métodos de síntesis, amigables con el medio ambiente, se integrarán nanopartículas de plata en tintas comerciales utilizadas en la fabricación impresa de diodos, transistores y otros componentes electrónicos. Los nanomateriales generados, serán evaluados para determinar las propiedades que confiere la plata, así como el beneficio que se tendría en componentes utilizados en microelectrónica, óptica y fotónica.",
+    "Estados": ["N/A"],
+    "notas": "Intituciones: Benemérita Universidad Autónoma de Puebla, Institut national de la recherche scientifique (INRS)  - Centre : Énergie, Matériaux et Télécommunications"
+
   },
 
   {
     "id": "p8_Canada",
-     "Nombredelproyecto": "Funcionalización de tintas conductoras para electrónica impresa",
+    "Nombredelproyecto": "Materiales Multifuncionales para Aplicación en Energía",
     "Continente": "América del Norte",
     "Pais": "Canadá",
     "Sector": "Ciencia Tecnología e Innovación",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Desarrollar ánodos con nanoestructuras de carbono para baterías de litio, y probar su rendimiento electroquímico en términos de capacidades energéticas para 2000 ciclos de carga-descarga y caracterizar la evolución microestructural ex situ mediante microscopía electrónica.",
+    "Estados": ["N/A"],
+    "notas": "Intituciones: Tecnológico Nacional de México, Universidad McGill"
   },
+
 
   {
     "id": "p1_EUA",
-     "Nombredelproyecto": "Salvando el hábitat crítico de hibernación de la mariposa Monarca migratoria en el centro de México",
+    "Nombredelproyecto": "Salvando el hábitat crítico de hibernación de la mariposa Monarca migratoria en el centro de México",
     "Continente": "América del Norte",
     "Pais": "Estados Unidos",
-    "Tipo de proyecto": "Proyecto",
     "Sector": "Protección Ambiental",
-    "Fechadeinicio": "2024",
+    "Fechadeinicio": "2025",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Pendiente",
-    "notas": "Pendiente"
+    "Objetivo": "Plantar 100,000 oyameles (Abies religiosa) dentro de la Reserva de la Biosfera de la Mariposa Monarca e instalar jardines para especies polinizadoras en la zona de amortiguamiento de dicha Reserva.",
+    "Estados": ["Michoacán"],
+    "notas": "Intituciones: Butterfly Pavilion,CONANP, Consulmex Denver, AMEXCID,SEMARNAT"
+
+
+]
   },
-    {
+
+
+  {
     "id": "p2_EUA",
-     "Nombredelproyecto": "Secundaria Técnica No. 68 (Ciudad Renacimiento, Acapulco, Guerrero)",
+    "Nombredelproyecto": "Intervención en la Escuela Secundaria Técnica No. 68, Colonia Renacimiento, Acapulco, Guerrero.",
     "Continente": "América del Norte",
     "Pais": "Estados Unidos",
-    "Tipo de proyecto": "Proyecto",
+    "Sector": "Educación",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2026",
+    "status": "Planeación",
+    "Objetivo": "Mejorar las condiciones físicas y educativas del plantel para ampliar las oportunidades de desarrollo de su comunidad estudiantil y fomentar la participación social.",
+    "Estados": ["Guerrero"],
+    "notas": "Comando Norte-SEGOB-AMEXCID. Proyecto de costo mayor, aprobado dentro del proyecto "Mejoramiento de la infraestructura educativa de escuelas de educación básica en zonas rurales del norte y sureste de México" del INIFED. En espera de asignación de recursos para su ejecución."
+  },
+
+
+  {
+    "id": "p3_EUA",
+    "Nombredelproyecto": "Fortalecimiento de los programas y acciones de atención a personas con discapacidad del SNDIF",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Provisión de sillas de ruedas y camas hospitalarias como parte del programa de Asistencia Social del Sistema Nacional para el Desarrollo Integral de la Familia (SNDIF), en beneficio de la población con discapacidad, sujeta de asistencia social y con necesidades de apoyos funcionales para su movilidad.",
+    "Estados": ["Ciudad de México", "Chiapas", "Estado de México", "Oaxaca", "Veracruz" ],
+    "notas": "Comando Norte-SNDIF.Proyecto de costo menor. Insumos entregados al SNDIF que se encuentran en proceso de distribución estatal."
+  },
+
+
+  {
+    "id": "p4_EUA",
+    "Nombredelproyecto": "Fortalecimiento de campañas móviles de salud para la detección oportuna de cáncer y otras enfermedades en localidades de difícil acceso del municipio de Teapa, Tabasco.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Provisión de dos equipos ecógrafos portátiles para el fortalecimiento de campañas móviles de salud, con el objetivo de integrar servicios de detección temprana de enfermedades como cáncer cervicouterino, cáncer de mama, infecciones y otros padecimientos prevenibles o tratables mediante diagnóstico oportuno y atención primaria adecuada.",
+    "Estados": ["Tabasco"],
+    "notas": "Comando Norte- SNDIF. Proyecto de costo menor. Insumos entregados al SNDIF que se encuentran en proceso de distribución estatal."
+  },
+
+
+  {
+    "id": "p5_EUA",
+    "Nombredelproyecto": "Fortalecimiento de los programas y acciones del SNDIF para la atención de personas en situación de emergencia por bajas temperaturas durante la temporada de frío.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Provisión de insumos básicos (colchonetas y cobijas) para albergues temporales y hogares en coordinación con Sistemas DIF y gobiernos Federal, Estatal y Municipal.",
+    "Estados": ["Tlaxcala", "Hidalgo", "Estado de México", "Puebla", "Oaxaca"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo menor. Insumos entregados al SNDIF que se encuentran en proceso de distribución estatal."
+  },
+
+
+  {
+    "id": "p6_EUA",
+    "Nombredelproyecto": "Fortalecimiento de los programas y acciones del SNDIF para la atención de personas en situación de emergencia por huracanes y fenómenos meteorológicos extremos.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Provisión de insumos para refugios (colchonetas, sábanas), herramientas para brigadas de rescate y equipo de protección personal para la atención de comunidades afectadas, a cargo del SNDIF en corrdinación con los tres órdenes de Gobierno Federal, Estatal y Municipal.",
+    "Estados": ["Colima", "Guerrero", "Chiapas", "Oaxaca", "Quintana Roo", "Yucatán", "Campeche", "Tabasco", "Veracruz"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo menor. Insumos entregados al SNDIF que se encuentran en proceso de distribución estatal."
+  },
+
+
+  {
+    "id": "p7_EUA",
+    "Nombredelproyecto": "Adquisición de apoyos funcionales para niñas, niños y adolescentes con discapacidad musculoesquelética o neuromotora del Estado de Tlaxcala.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2026-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Adquisición de apoyos funcionales para niñas, niños y adolescentes con discapacidad musculoesquelética o neuromotora del Estado de Tlaxcala.",
+    "Estados": ["Tlaxcala"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo menor en espera de dictamen de Comando Norte."
+  },
+
+
+  {
+    "id": "p8_EUA",
+    "Nombredelproyecto": "Rehabilitación del drenaje pluvial de la escuela primaria "René Juárez Cisneros" en Acapulco, Guerrero.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2026-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Rehabilitación del drenaje pluvial de la escuela primaria "René Juárez Cisneros" en Acapulco, Guerrero.",
+    "Estados": ["Guerrero"],
+    "notas": "Comando Norte-AMEXCID. Proyecto de costo menor en espera de dictamen de Comando Norte."
+  },
+
+
+  {
+    "id": "p9_EUA",
+    "Nombredelproyecto": "Proyecto conjunto para la restauración de la escuela primaria "René Juárez Cisneros" en Acapulco.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2025",
+    "Fechadetermino": "2026-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Proyecto conjunto para la restauración de la escuela primaria "René Juárez Cisneros" en Acapulco.",
+    "Estados": ["Guerrero"],
+    "notas": "Comando Norte-AMEXCID. Proyecto de costo menor en espera de dictamen de Comando Norte."
+  },
+
+
+  {
+    "id": "p10_EUA",
+    "Nombredelproyecto": "Ampliación de la cobertura de atención integral brindada a adultos mayores, fortaleciendo el programa de día de los 4 Centros Gerontológicos del Sistema Nacional DIF, mediante equipamiento.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2026-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Provisión de equipos médicos, de laboratorio, audiovisuales, mobiliario y aparatos deportivos para: 1- Beneficiar mediante los servicios otorgados a las personas de los centros gerontológicos y personas de la comunidad aledañas, mejorando la calidad de la atención integral de las personas mayores. 2- Ampliar la capacidad del Programa de Día para atender a un mayor número de personas mayores de la comunidad aledaña, proporcionando atención médica, terapéutica y social para mejorar su calidad de vida. 3- Cubrir necesidades específicas como movilidad, deterioro cognitivo e interacción social para facilitar la integración de las personas mayores a sus actividades cotidianas.",
+    "Estados": ["Ciudad de México", "Morelos", "Oaxaca"],
+    "notas": "Comando Norte-SNDIF. Aprobado dentro del Proyecto Mayor denominado --- Mejorar el acceso a servicios de atención médica inclusivos y de calidad para niños, adultos y personas mayores en situación de vulnerabilidad y discapacidad en 21 comunidades. --- En espera de asignación de recursos para ejecución."
+  },
+
+
+  {
+    "id": "p11_EUA",
+     "Nombredelproyecto": "Ampliación del proyecto para el "Fortalecimiento de los servicios de rehabilitación no hospitalaria para personas con discapacidad que viven en zonas de alta y muy alta marginación social y zonas de difícil acceso, mediante el acondicionamiento y equipamiento de 15 Unidades Básicas de Rehabilitación",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2026-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Provisión de equipo médico para que las Unidades Básicas de Rehabilitación fortalezcan sus servicios de rehabilitación integral no hospitalaria a fin de lograr la inclusión social y familiar de las personas con discapacidad o en riesgo potencial de presentarla en las poblaciones de alta y muy alta marginación, mediante su acondicionamiento y equipamiento.",
+    "Estados": ["Guerrero", "Chiapas", "Veracruz", "Hidalgo", "Campeche", "Tabasco", "Yucatán"],
+    "notas": "Comando Norte-SNDIF. Aprobado dentro del Proyecto Mayor denominado --- Mejorar el acceso a servicios de atención médica inclusivos y de calidad para niños, adultos y personas mayores en situación de vulnerabilidad y discapacidad en 21 comunidades. --- En espera de asignación de recursos para ejecución."
+  },
+
+
+  {
+    "id": "p12_EUA",
+    "Nombredelproyecto": "Fortalecimiento de los servicios ofrecidos en materia de rehabilitación a personas con discapacidad en los Centros de Rehabilitación del Sistema Nacional DIF, mediante el equipamiento para nuevas terapias y el
+reforzamiento de las existentes.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2026-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Equipamiento de los Centros de Rehabilitación para elevar la calidad en el servicio, aumentar el número de consultas, en prevención, detección, rehabilitación, proyectada en la incidencia a la inclusión educativa y laboral y la habilitación de la atención a personas con discapacidad.",
+    "Estados": ["Ciudad de México"],
+    "notas": "Comando Norte-SNDIF. Aprobado dentro del Proyecto Mayor denominado --- Mejorar el acceso a servicios de atención médica inclusivos y de calidad para niños, adultos y personas mayores en situación de vulnerabilidad y discapacidad en 21 comunidades. --- En espera de asignación de recursos para ejecución."
+  },
+
+
+  {
+    "id": "p13_EUA",
+    "Nombredelproyecto": "Fortalecimiento de la capacidad de cobertura de la Estrategia Integral de Asistencia Social Alimentaria y Desarrollo Comunitario (EIASADC) en localidades de alto y muy alto índice de marginación.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2026-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Provisión de materiales  y equipos, así como acondicionamiento de espacios e insumos para cultivo y crianza para la obtención de alimentos, a fin de fomentar el desarrollo comunitario para combatir la desnutrición, malnutrición y buscar una alternativa con la que las familias y comunidad puedan satisfacer la necesidad de contar con alimentos sanos para su consumo en una dieta balanceada y que puedan producirlos a bajos costos.",
+    "Estados": ["Sin específicar"],
+    "notas": "Comando Norte-SNDIF. Aprobado dentro del Proyecto Mayor denominado --- Mejorar el acceso a servicios de atención médica inclusivos y de calidad para niños, adultos y personas mayores en situación de vulnerabilidad y discapacidad en 21 comunidades. --- En espera de asignación de recursos para ejecución."
+  },
+
+
+  {
+    "id": "p14_EUA",
+    "Nombredelproyecto": "Fortalecimiento de los servicios del CNMAICDC Tlazocihualpilli para brindar actividades de superación personal como alternativas de vida, dirigidas a niñas, niños, adolescentes, jóvenes y población en general
+para hacer frente al contexto de violencia.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2026-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Provisión de mobiliario y equipo de electricidad, médico, deportivo, recreativo y de panadería, entre otros, a fin de incrementar el número de niñas, niños, adolescentes, jóvenes y comunidad en general, en condiciones de vulnerabilidad y rezago social, que hacen uso de los talleres y servicios del Centro Nacional Modelo de Atención, Investigación, Capacitación y Desarrollo Comunitario (CNMAICDC) Tlazocihualpilli como una alternativa real y cercana para alejarse de entornos familiares y sociales negativos, conflictivos y dañinos.",
+    "Estados": ["Ciudad de México"],
+    "notas": "Comando Norte-SNDIF. Aprobado dentro del Proyecto Mayor denominado --- Mejorar el acceso a servicios de atención médica inclusivos y de calidad para niños, adultos y personas mayores en situación de vulnerabilidad y discapacidad en 21 comunidades. --- En espera de asignación de recursos para ejecución."
+  },
+
+
+  {
+    "id": "p15_EUA",
+    "Nombredelproyecto": "Adecuación de Centros y Establecimientos para la atención de población en contexto de movilidad, o sujeta de asistencia social para impulsar su autosuficiencia en servicios energéticos, de saneamiento y agua potable, en áreas de alta marginación.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2026-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Que los Centros y Establecimientos para la atención de población en contextos de movilidad o sujeta a asistencia social cuenten con innovaciones tecnológicas que permitan el ahorro en gastos de energía y mejoramiento ambiental utilizando sistemas de saneamiento y agua potable, con el fin de mejorar la prestación de servicios.",
+    "Estados": ["Campeche", "Chiapas", "Veracruz", "Oaxaca", "Tabasco", "Chihuahua", "Coahuila", "Sonora", "Baja California"],
+    "notas": "Comando Norte-SNDIF. Aprobado como parte del Proyecto Mayor denominado --- Mejorar la eficiencia energética, abordar la escasez de energía y mejorar los servicios esenciales como el sanemiento y el acceso al agua potable en 10 localidades prioritarias. --- En espera de asignación de recursos para ejecución."
+  },
+
+
+  {
+    "id": "p16_EUA",
+    "Nombredelproyecto": "Reequipamiento de 20 Unidades Básicas del Estado de Tlaxcala.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2026-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Fortalecer la calidad de la atención en las Unidades Básicas de Rehabilitación (UBR) del estado de Tlaxcala, a través de la adquisición de equipo terapéutico de alta tecnología que permita mejorar las condiciones en la prestación de los servicios dirigidos a la población con discapacidad temporal o permanente garantizando su accesibilidad, e inclusión con goce de sus derechos, en un marco de respeto e igualdad de oportunidades",
+    "Estados": ["Tlaxcala"],
+    "notas": "Comando Norte-SNDIF. Aprobado dentro del Proyecto Mayor denominado --- Mejorar el acceso a servicios de atención médica inclusivos y de calidad para niños, adultos y personas mayores en situación de vulnerabilidad y discapacidad en 21 comunidades. --- En espera de asignación de recursos para ejecución."
+  },
+
+
+  {
+    "id": "p17_EUA",
+    "Nombredelproyecto": "Mejoramiento de la infraestructura educativa de escuelas de educación básica en zonas rurales del norte y sureste de México",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2026-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Mejorar las condiciones de infraestructura de planteles educativos del norte y sureste de México.brindando espacios de calidad y dotando de mobiliario y equipo, acorde a las necesidades de las comunidades escolares.",
+    "Estados": ["Baja California", "Chihuahua", "Sonora", "Coahuila", "Nuevo León", "Chiapas", "Oaxaca", "Quintana Roo", "Tabasco", "Yucatán"],
+    "notas": "Comando Norte-INIFED. Proyecto Mayor. En espera de asignación de recursos para ejecución."
+  },
+
+
+  {
+    "id": "p18_EUA",
+    "Nombredelproyecto": "Mejoramiento de la infraestructura educativa de escuelas primarias y secundarias en zonas rurales del sur-sureste de México",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
     "Sector": "Asistencia Humanitaria",
     "Fechadeinicio": "2026",
     "Fechadetermino": "2026",
     "status": "Ejecución",
-    "Objetivo": "Proyecto en colaboración con la Secretaría de Gobernación, bajo la estrategia “Guerrero por la Paz”, para el Programa de Asistencia Humanitaria del Comando Norte.",
-    "notas": "El proyecto ya fue aprobado dentro de un Proyecto Mayor en el que también se incluyen escuelas del norte y sureste de México propuestas por el Instituto Nacional de la Infraestructura Física Educativa (INIFED)."
+    "Objetivo": "Mejorar las condiciones de infraestructura de 16 planteles educativos del sur-sureste de México brindando espacios de calidad y dotando de mobiliario y equipo, acorde a las necesidades de las comunidades escolares.",
+    "Estados": ["Veracruz", "Chiapas", "Yucatán", "Oaxaca"],
+    "notas": "Comando Norte-INIFED. Proyecto Mayor aprobado con recursos para ejecución."
   },
+
+
+  {
+    "id": "p19_EUA",
+    "Nombredelproyecto": "Desarrollo Institucional de la Escuela Nacional de Protección Civil",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2022",
+    "Fechadetermino": "2026-tentativo",
+    "status": "Ejecución",
+    "Objetivo": "Construcción el nuevo edificio de la Escuela Nacional de Protección Civil (ENAPROC) del Centro Nacional para la Prevención de Desastres (CENAPRED). ",
+    "Estados": ["Ciudad de México"],
+    "notas": "Comando Norte-CENAPRED"
+  },
+
+
+  {
+    "id": "p20_EUA",
+    "Nombredelproyecto": "Equipamiento humanitario y mantenimiento menor en ESG No. 8, colonia Renacimiento, Acapulco.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Fortalecer las condiciones mínimas de seguridad, saneamiento y respuesta ante emergencias en una instalación pública ubicada en la colonia Renacimiento, Acapulco, Guerrero, mediante equipamiento humanitario básico y mantenimiento menor. La intervención contempla botiquines reabastecibles y equipo médico básico tipo consultorio, insumos para atención de lesiones, golpes de calor y deshidratación, equipamiento de protección civil y contra incendios, señalización de evacuación, comunicación básica para emergencias, insumos para agua potable e higiene, herramientas y equipos para desazolve de drenajes y manejo de agua acumulada tras eventos hidrometeorológicos, e instalación de dispositivos de alerta sísmica. Se incluye pintura interior/exterior y señalización pintada",
+    "Estados": ["Guerrero"],
+    "notas": "Comando Norte-SEGOB. Proyecto de costo menor"
+  },
+
+
+  {
+    "id": "p21_EUA",
+    "Nombredelproyecto": "Equipamiento humanitario y mantenimiento menor en ESG No. 49, colonia Renacimiento, Acapulco.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Fortalecer las condiciones mínimas de seguridad, saneamiento y respuesta ante emergencias en una instalación pública ubicada en la colonia Renacimiento, Acapulco, Guerrero, mediante equipamiento humanitario básico y mantenimiento menor. La intervención contempla botiquines reabastecibles y equipo médico básico tipo consultorio, insumos para atención de lesiones, golpes de calor y deshidratación, equipamiento de protección civil y contra incendios, señalización de evacuación, comunicación básica para emergencias, insumos para agua potable e higiene, herramientas y equipos para desazolve de drenajes y manejo de agua acumulada tras eventos hidrometeorológicos, e instalación de dispositivos de alerta sísmica. Se incluye pintura interior/exterior y señalización pintada.",
+    "Estados": ["Guerrero"],
+    "notas": "Comando Norte-SEGOB. Proyecto de costo menor"
+  },
+
+
+  {
+    "id": "p22_EUA",
+    "Nombredelproyecto": "Equipamiento humanitario y mantenimiento menor en EST Emiliano Zapata, colonia Renacimiento, Acapulco.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Fortalecer las condiciones mínimas de seguridad, saneamiento y respuesta ante emergencias en una instalación pública ubicada en la colonia Renacimiento, Acapulco, Guerrero, mediante equipamiento humanitario básico y mantenimiento menor. La intervención contempla botiquines reabastecibles y equipo médico básico tipo consultorio, insumos para atención de lesiones, golpes de calor y deshidratación, equipamiento de protección civil y contra incendios, señalización de evacuación, comunicación básica para emergencias, insumos para agua potable e higiene, herramientas y equipos para desazolve de drenajes y manejo de agua acumulada tras eventos hidrometeorológicos, e instalación de dispositivos de alerta sísmica. Se incluye pintura interior/exterior y señalización pintada",
+    "Estados": ["Guerrero"],
+    "notas": "Comando Norte-SEGOB. Proyecto de costo menor"
+  },
+
+
+  {
+    "id": "p23_EUA",
+    "Nombredelproyecto": "Consolidación y mejora de los servicios de rehabilitación integral para la atención de personas con discapacidad y condiciones del neurodesarrollo.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Provisión de equipamiento especializado y herramientas terapéuticas que permitan la incorporación de nuevas intervenciones y el fortalecimiento de las ya existentes, favoreciendo una atención integral en las áreas física, cognitiva, sensorial y de comunicación.",
+    "Estados": ["Sin específicar"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo mayor"
+  },
+
+
+  {
+    "id": "p24_EUA",
+    "Nombredelproyecto": "Ampliación del acceso a los servicios de salud y asistencia social orientados a la detección temprana de enfermedades en población vulnerable.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Incorporación de equipamiento especializado para el fortalecimiento de los servicios de detección temprana de enfermedades que requieren atención como: cáncer de próstata, cervicouterino, de mama, infecciones y otros padecimientos que pueden ser identificados oportunamente, a fin de favorecer su atención en etapas iniciales.",
+    "Estados": ["Sin específicar"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo mayor"
+  },
+
+
+  {
+    "id": "p25_EUA",
+    "Nombredelproyecto": "Fortalecimiento en el cuidado y calidad de vida de personas con discapacidad en el hogar",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Fortalecimiento del cuidado y la movilidad en el hogar para personas con discapacidad, mediante el acceso a apoyos funcionales que faciliten su autonomía y contribuyan a reducir la carga de cuidado en sus familias.",
+    "Estados": ["Estado de México", "Chiapas", "Oaxaca"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo menor"
+  },
+
+
+  {
+    "id": "p26_EUA",
+    "Nombredelproyecto": "Protección de la salud de personas vulnerables ante bajas temperaturas en zonas serranas del país.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Fortalecimiento de acciones preventivas, facilitando el acceso a insumos básicos de abrigo como colchonetas y cobijas, que mejoren las condiciones de resguardo de la población durante la temporada invernal.",
+    "Estados": ["Sin específicar"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo menor"
+  },
+
+
+  {
+    "id": "p27_EUA",
+    "Nombredelproyecto": "Acceso oportuno a servicios y apoyos para personas con discapacidad",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Provisión de 5 kits de insumos para la emisión de la Credencial Nacional para Personas con Discapacidad, para el fortalecimiento del proceso de credencialización, permitiendo que más personas con discapacidad obtengan su credencial de manera ágil, reduciendo los tiempos de espera en obtenerla y accedan oportunamente a servicios y apoyos fundamentales para su inclusión y calidad de vida.",
+    "Estados": ["Ciudad de México"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo menor"
+  },
+
+
+  {
+    "id": "p28_EUA",
+    "Nombredelproyecto": "Recuperación de bienes esenciales para personas afectadas por desastres naturales.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Provisión de insumos tales como herramientas manuales y eléctricas, así como accesorios y cosumibles para el fortalecimiento de acciones comunitarias orientadas a la rehabilitación y adecuación de bienes esenciales del hogar, aprovechando recursos disponibles y promoviendo la participación de la comunidad en el proceso de recuperación.",
+    "Estados": ["Sin específicar"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo menor"
+  },
+
+
+  {
+    "id": "p29_EUA",
+    "Nombredelproyecto": "Restablecimiento de condiciones básicas de vivienda para personas afectadas por desastres naturales.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Provisión de herramientas y equipo para el fortalecimiento de acciones comunitarias que faciliten la limpieza, rehabilitación básica y adecuación de viviendas afectadas, apoyando así el retorno seguro de las personas a sus hogares.",
+    "Estados": ["Sin específicar"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo menor"
+  },
+
+
+  {
+    "id": "p30_EUA",
+    "Nombredelproyecto": "Acceso a servicios de diagnóstico auditivo para personas en contexto de vulnerabilidad.",
+    "Continente": "América del Norte",
+    "Pais": "Estados Unidos",
+    "Sector": "Asistencia Humanitaria",
+    "Fechadeinicio": "2027-tentativo",
+    "Fechadetermino": "2027-tentativo",
+    "status": "Planeación",
+    "Objetivo": "Provisión de equipos de audiometría e instalación de una sala de audiometría con un equipo Audiómetro, para el f.ortalecimiento de los servicios de diagnóstico auditivo, favoreciendo la detección temprana en Centros y Unidades Básicas de Rehabilitación, facilitando que más personas puedan acceder a una evaluación oportuna y, a partir de ello, a servicios de atención, rehabilitación y apoyos adecuados a sus necesidades que contribuyan a mejorar la calidad de vida, la comunicación y la inclusión social.",
+    "Estados": ["Sin específicar"],
+    "notas": "Comando Norte-SNDIF. Proyecto de costo menor"
+  },
+
   
     {
     "id": "p1_Japón",
