@@ -970,8 +970,7 @@
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
     "status": "Finalizado",
-    "Objetivo": "Mediante el proceso Haber Bosch, la producción del amoniaco a nivel global genera un 1.4% de CO2 y consume el 1% de la energía mundial.
-El objetivo de este proyecto es incrementar la producción de amoniaco, electrificando el proceso mediante tecnología de microondas; en específico, modelar y simular a partir de datos de laboratorio el reactor fluidizado, calentado por microondas, permitiendo el uso de la electricidad como fuente de energía. Las emisiones de gases de efecto invernadero serían menores y el proceso consumiría menos energía en comparación con el proceso Haber-Bosch, resultando en un proceso más selectivo y a presión ambiente.",
+    "Objetivo": "Mediante el proceso Haber Bosch, la producción del amoniaco a nivel global genera un 1.4% de CO2 y consume el 1% de la energía mundial. El objetivo de este proyecto es incrementar la producción de amoniaco, electrificando el proceso mediante tecnología de microondas; en específico, modelar y simular a partir de datos de laboratorio el reactor fluidizado, calentado por microondas, permitiendo el uso de la electricidad como fuente de energía. Las emisiones de gases de efecto invernadero serían menores y el proceso consumiría menos energía en comparación con el proceso Haber-Bosch, resultando en un proceso más selectivo y a presión ambiente.",
     "Estados": ["N/A"],
     "notas": "Intituciones: Instituto de Ciencias Aplicadas y Tecnología de la UNAM, Escuela Politécnica de Montreal "
 
@@ -1051,7 +1050,7 @@ El objetivo de este proyecto es incrementar la producción de amoniaco, electrif
     "status": "Planeación",
     "Objetivo": "Mejorar las condiciones físicas y educativas del plantel para ampliar las oportunidades de desarrollo de su comunidad estudiantil y fomentar la participación social.",
     "Estados": ["Guerrero"],
-    "notas": "Comando Norte-SEGOB-AMEXCID. Proyecto de costo mayor, aprobado dentro del proyecto "Mejoramiento de la infraestructura educativa de escuelas de educación básica en zonas rurales del norte y sureste de México" del INIFED. En espera de asignación de recursos para su ejecución."
+    "notas": "Comando Norte-SEGOB-AMEXCID. Proyecto de costo mayor, aprobado dentro del proyecto --- Mejoramiento de la infraestructura educativa de escuelas de educación básica en zonas rurales del norte y sureste de México --- del INIFED. En espera de asignación de recursos para su ejecución."
   },
 
 
@@ -1132,14 +1131,14 @@ El objetivo de este proyecto es incrementar la producción de amoniaco, electrif
 
   {
     "id": "p8_EUA",
-    "Nombredelproyecto": "Rehabilitación del drenaje pluvial de la escuela primaria "René Juárez Cisneros" en Acapulco, Guerrero.",
+    "Nombredelproyecto": "Rehabilitación del drenaje pluvial de la escuela primaria ---René Juárez Cisneros--- en Acapulco, Guerrero.",
     "Continente": "América del Norte",
     "Pais": "Estados Unidos",
     "Sector": "Asistencia Humanitaria",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2026-tentativo",
     "status": "Planeación",
-    "Objetivo": "Rehabilitación del drenaje pluvial de la escuela primaria "René Juárez Cisneros" en Acapulco, Guerrero.",
+    "Objetivo": "Rehabilitación del drenaje pluvial de la escuela primaria ---René Juárez Cisneros--- en Acapulco, Guerrero.",
     "Estados": ["Guerrero"],
     "notas": "Comando Norte-AMEXCID. Proyecto de costo menor en espera de dictamen de Comando Norte."
   },
@@ -1147,14 +1146,14 @@ El objetivo de este proyecto es incrementar la producción de amoniaco, electrif
 
   {
     "id": "p9_EUA",
-    "Nombredelproyecto": "Proyecto conjunto para la restauración de la escuela primaria "René Juárez Cisneros" en Acapulco.",
+    "Nombredelproyecto": "Proyecto conjunto para la restauración de la escuela primaria ---René Juárez Cisneros--- en Acapulco.",
     "Continente": "América del Norte",
     "Pais": "Estados Unidos",
     "Sector": "Asistencia Humanitaria",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2026-tentativo",
     "status": "Planeación",
-    "Objetivo": "Proyecto conjunto para la restauración de la escuela primaria "René Juárez Cisneros" en Acapulco.",
+    "Objetivo": "Proyecto conjunto para la restauración de la escuela primaria ---René Juárez Cisneros--- en Acapulco.",
     "Estados": ["Guerrero"],
     "notas": "Comando Norte-AMEXCID. Proyecto de costo menor en espera de dictamen de Comando Norte."
   },
@@ -1192,8 +1191,7 @@ El objetivo de este proyecto es incrementar la producción de amoniaco, electrif
 
   {
     "id": "p12_EUA",
-    "Nombredelproyecto": "Fortalecimiento de los servicios ofrecidos en materia de rehabilitación a personas con discapacidad en los Centros de Rehabilitación del Sistema Nacional DIF, mediante el equipamiento para nuevas terapias y el
-reforzamiento de las existentes.",
+    "Nombredelproyecto": "Fortalecimiento de los servicios ofrecidos en materia de rehabilitación a personas con discapacidad en los Centros de Rehabilitación del Sistema Nacional DIF, mediante el equipamiento para nuevas terapias y el reforzamiento de las existentes.",
     "Continente": "América del Norte",
     "Pais": "Estados Unidos",
     "Sector": "Asistencia Humanitaria",
