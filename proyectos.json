@@ -1176,7 +1176,7 @@
 
   {
     "id": "p11_EUA",
-     "Nombredelproyecto": "Ampliación del proyecto para el "Fortalecimiento de los servicios de rehabilitación no hospitalaria para personas con discapacidad que viven en zonas de alta y muy alta marginación social y zonas de difícil acceso, mediante el acondicionamiento y equipamiento de 15 Unidades Básicas de Rehabilitación",
+    "Nombredelproyecto": "Ampliación del proyecto para el --- Fortalecimiento de los servicios de rehabilitación no hospitalaria para personas con discapacidad que viven en zonas de alta y muy alta marginación social y zonas de difícil acceso, mediante el acondicionamiento y equipamiento de 15 Unidades Básicas de Rehabilitación",
     "Continente": "América del Norte",
     "Pais": "Estados Unidos",
     "Sector": "Asistencia Humanitaria",
@@ -1221,8 +1221,7 @@
 
   {
     "id": "p14_EUA",
-    "Nombredelproyecto": "Fortalecimiento de los servicios del CNMAICDC Tlazocihualpilli para brindar actividades de superación personal como alternativas de vida, dirigidas a niñas, niños, adolescentes, jóvenes y población en general
-para hacer frente al contexto de violencia.",
+    "Nombredelproyecto": "Fortalecimiento de los servicios del CNMAICDC Tlazocihualpilli para brindar actividades de superación personal como alternativas de vida, dirigidas a niñas, niños, adolescentes, jóvenes y población en general para hacer frente al contexto de violencia.",
     "Continente": "América del Norte",
     "Pais": "Estados Unidos",
     "Sector": "Asistencia Humanitaria",
