@@ -11,7 +11,7 @@
     "Fechadetermino": "2026",
     "status": "Ejecución",
     "Objetivo": "Restaurar integralmente una obra patrimonio histórico cultural chileno de origen mexicano. Una aportación del arquitecto y muralista Juan O´Gorman.",
-    "Estados": [""],
+    "Estados": ["N/A"],
     "notas": "México: Instituto Nacional de Bellas Artes y Literatura (INBAL) - Chile: Parque Metropolitano de Santiago"
   },
 
@@ -24,7 +24,7 @@
     "Sector": "Salud, Protección social, Salud",
     "Fechadeinicio": "2024",
     "Fechadetermino": "2026",
-    "status": "Ejecución",
+    "status": "Finalizado",
     "Objetivo": "Contribuir a mejorar la calidad de la dieta de los hogares en situación de vulnerabilidad, a través del conocimiento, actitudes, compra y consumo de frutas y verduras en hogares en situación de vulnerabilidad incrementado",
     "Estados": ["Morelos"],
     "notas": "México: Instituto Nacional de Salud Pública de México - Chile: Programa Elige Vivir Sano del Ministerio de Desarrollo Social y Familia de Chile" 
@@ -39,7 +39,7 @@
     "Sector": "Protección Ambiental",
     "Fechadeinicio": "2024",
     "Fechadetermino": "2026",
-    "status": "Ejecución",
+    "status": "Finalizado",
     "Objetivo": "Contribuir a la valorización de los ecosistemas estuarinos de la macrozona sur de Chile y la región del Delta del río Colorado de Baja California, México, para avanzar en el desarrollo local sostenible, y en la resiliencia al cambio climático de las comunidades costeras que lo habitan",
     "Estados": ["Baja California"],
     "notas": "Chile: Ministerio del Medio Ambiente y Secretaría Regional Ministerial del Medio Ambiente Región La Araucanía - México: Secretaría de Medio Ambiente y Desarrollo  Sustentable  de Baja California"
@@ -56,28 +56,28 @@
     "Fechadetermino": "2025",
     "status": "Ejecución",
     "Objetivo": "Impulsar los derechos y la participación de las mujeres con especial énfasis en una perspectiva feminista de la Cooperación Internacional para el Desarrollo (CID), que incluya a América Latina y el Caribe.",
-    "Estados": [""],
+    "Estados": ["N/A"],
     "notas": "México: Agencia Mexicana de Cooperación Internacional para el Desarrollo, AMEXCID - Chile: Agencia Chilena de Cooperación Internacional para el Desarrollo, AGCID"
   },
 
   {
     "id": "p5_Chile",
-    "Nombredelproyecto": "25 aniversario de la suscripción del TDLC Chile - México",
+    "Nombredelproyecto": "25 aniversario de la suscripción del TLC Chile - México",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
     "Tipo de proyecto": "En ejecución",
     "Sector": "Asuntos Económicos, Comerciales, Laborales, Política de Gobierno, Género",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
-    "status": "Ejecución",
+    "status": "Finalizado",
     "Objetivo": "Contribuir a la eventual modernización del Tratado bilateral entre ambos países, con un foco particular en Comercio Inclusivo.",
-    "Estados": [""],
+    "Estados": ["N/A"],
     "notas": "México: Secretaría de Economía - Chile: Subsecretaría de Relaciones Económicas Internacionales SUBREI"
   },
 
   {
     "id": "p6_Chile",
-    "Nombredelproyecto": "Manejo integrado de mosquitos vectores de arbovirosis a través de la vigilancia entomo-virológica en México y Chile, un abordaje comunitario, con perspectiva de género y pertinencia cultural",
+    "Nombredelproyecto": "Manejo integrado de mosquitos vectores de arbovirosis a través de la vigilancia entono-virológica en México y Chile, un abordaje comunitario, con perspectiva de género y pertinencia cultural",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
     "Tipo de proyecto": "En ejecución",
@@ -101,7 +101,7 @@
     "Fechadetermino": "2026",
     "status": "Ejecución",
     "Objetivo": "Fortalecer las capacidades de análisis de secuencias de A. baumannii y otras bacterias multirresistentes de importancia clínica en Chile y México.",
-    "Estados": [""],
+    "Estados": ["N/A"],
     "notas": "México: Instituto Nacional de Medicina Genómica - Chile: Universidad de Santiago,USACH"
   },
 
@@ -129,7 +129,7 @@
     "Sector": "Protección social, Género",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2025",
-    "status": "Ejecución",
+    "status": "Finalizado",
     "Objetivo": "Esta iniciativa está en cierre y fue parte de los proyectos ganadores de la Convocatoria 2022 del Fondo Conjunto de Cooperación, cuyo objetivo fue construir una estrategia de acción para ampliar la participación política de las mujeres indígenas, desde los propios contextos y prácticas culturales.",
     "Estados": ["Chiapas"],
     "notas": "México: Universidad Autónoma de Chipas (UNACH)  -  Chile:  Universidad de la Frontera (UFRO)"
@@ -144,9 +144,9 @@
     "Sector": "Ciencia Tecnología e Innovación, Política de Gobierno, Otros Servicios Generales de Gobierno",
     "Fechadeinicio": "2023",
     "Fechadetermino": "2026",
-    "status": "Ejecución",
+    "status": "Finalizado",
     "Objetivo": "Mejorar el aprovechamiento de los productos de las oficinas de estadística de México y Chile, de manera integrada,estandarizada y eficiente, a partir de la colaboración bilateral entre INEGI, e INE.",
-    "Estados": [""],
+    "Estados": ["N/A"],
     "notas": "México: Instituto Nacional de Estadística y Geografía, INEGI - Chile: Instituto Nacional de Estadísticas, INE"
   },
 
@@ -161,7 +161,7 @@
     "Fechadetermino": "2025",
     "status": "Ejecución",
     "Objetivo": "Desarrollar una estrategia binacional de formación de recursos humanos en migración y salud tomando como referencia los enfoques (derechos humanos, determinantes sociales de la salud, género, interculturalidad, curso de vida y territorial) y lineamiento de desarrollo de un sistema sensible a las personas migrantes establecidos en la Política de Salud de Migrantes Internacionales para Chile y México.",
-    "Estados": [""],
+    "Estados": ["Chiapas", "Baja California Norte"],
     "notas": "México: Instituto Nacional de Salud Pública - Chile: Ministerio de Salud"
   },
 
@@ -176,7 +176,7 @@
     "Fechadetermino": "2025",
     "status": "Ejecución",
     "Objetivo": "Hoja de ruta formulada y acordada para preservar y revitalizar las lenguas indígenas de Chile y México en torno a dos ejes: la participación de los pueblos indígenas y la corresponsabilidad y coordinación interinstitucional.",
-    "Estados": ["Baja California","Sonora"],
+    "Estados": ["Zacatecas","Sonora"],
     "notas": "INSTITUCIONES PARTICIPANTES: Por México: Instituto Nacional de Lenguas Indígenas  -  Chile: Unidad Cooordinadora de Asuntos Indígenas"
   },
 
@@ -191,7 +191,7 @@
     "Fechadetermino": "2025",
     "status": "Ejecución",
     "Objetivo": "Implementar herramientas innovadoras en los sistemas de compra pública que ayuden a fortalecer la transparencia y eficiencia de los procesos, así como contribuir a una mayor inclusión, en los sistemas y procesos de compras de Chile y México (Nuevo León y Puebla).",
-    "Estados": ["Nuevo León", "Puebla"],
+    "Estados": ["Monterrey"],
     "notas": "México: Secretaría General de Administración del Estado de Puebla Dirección General de Compras Públicas del Estado de Nuevo León - Chile: Chile Compras"
   },
 
@@ -204,7 +204,7 @@
     "Sector": "Política de Gobierno, Género",
     "Fechadeinicio": "2024",
     "Fechadetermino": "2026",
-    "status": "Ejecución",
+    "status": "Finalizado",
     "Objetivo": "Atender las barreras de capacidades que limitan y las barreras estructurales que excluyen a las mujeres de los espacios públicos, en especial aquellos de toma de decisión",
     "Estados": ["Puebla"],
     "notas": "México: Ayuntamiento de Calpan - Chile: Municipalidad de Santa Juana"
@@ -221,7 +221,7 @@
     "Fechadetermino": "2026",
     "status": "Ejecución",
     "Objetivo": "Fortalecer y promover las capacidades instrumentales, humanas y el alcance de programas de monitoreo de micotoxinas en productos de alto consumo en Chile y México",
-    "Estados": ["Sinaloa"],
+    "Estados": ["N/A"],
     "notas": "México: Centro de Investigación en Alimentación y Desarrollo A.C. (CIAD) - Chile: Secretaría Regional Ministerial de Salud, Región Metropolitana "
   },
 
@@ -257,21 +257,6 @@
 
   {
     "id": "p18_Chile",
-    "Nombredelproyecto": "Salud, embarazo y género. Avanzando hacia servicios de salud amigables para adolescentes en el marco de la implementación del Plan Estratégico para la Prevención del Embarazo en Adolescentes de Centroamérica y República Dominicana",
-    "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
-    "Pais": "Chile",
-    "Tipo de proyecto": "En ejecución",
-    "Sector": "Salud, Protección social",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "2025",
-    "status": "Ejecución",
-    "Objetivo": "Contribuir a la prevención del embarazo en adolescentes por medio de implementación de acciones intersectoriales en la región SICA, en el marco del Plan Estratégico de Prevención de Embarazo en Adolescentes en Centroamérica y República Dominicana",
-    "Estados": [""],
-    "notas": "Chile: AGCID - México: AMEXCID, SICA: Secretaría Ejecutiva del Consejo de Ministros de Salud de Centroamérica y República Dominicana (SE- COMISCA)"
-  },
-
-  {
-    "id": "p19_Chile",
     "Nombredelproyecto": "El Fondo que Queremos: Fortalecimiento Fondo México - Chile",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -281,12 +266,12 @@
     "Fechadetermino": "2026",
     "status": "Ejecución",
     "Objetivo": "Mejorar el funcionamiento del Fondo Conjunto de Cooperación Chile - México de acuerdo a las prioridades político-técnicas establecidas por ambos países, a partir de la revisión de las fortalezas y debilidades detectadas en el estudio externo de evaluación 2007-2017.",
-    "Estados": [""],
+    "Estados": ["N/A"],
     "notas": "México: Agencia Mexicana de Cooperación Internacional para el Desarrollo, AMEXCID - Chile: Agencia Chilena de Cooperación Internacional para el Desarrollo, AGCID"
   },
 
   {
-    "id": "p20_Chile",
+    "id": "p19_Chile",
     "Nombredelproyecto": "Preparación, Respuestas y Aprendizajes Frente a la Pandemia: Una Mirada Comparada Chile-México a Través de las Experiencias Territoriales",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -294,29 +279,15 @@
     "Sector": "Salud, Protección social",
     "Fechadeinicio": "2024",
     "Fechadetermino": "2026",
-    "status": "Ejecución",
+    "status": "Finalizado",
     "Objetivo": "Pendiente",
-    "Estados": [""],
+    "Estados": ["N/A"],
     "notas": "Pendiente"
   },
 
-  {
-    "id": "p21_Chile",
-    "Nombredelproyecto": "Optimizando la atención, protección y reintegración de poblaciones en movilidad humana en El Salvador, Guatemala y Honduras",
-    "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
-    "Pais": "Chile",
-    "Tipo de proyecto": "En ejecución",
-    "Sector": "Migración, Movilidad Humana",
-    "Fechadeinicio": "2024",
-    "Fechadetermino": "2026",
-    "status": "Ejecución",
-    "Objetivo": "Optimizar mecanismos institucionales para la gestión, protección y reintegración, de poblaciones en movilidad en El Salvador, Guatemala y Honduras, a fin de contribuir a una movilidad humana segura, ordenada y regular con perspectiva de Derechos Humanos, a través de la asistencia técnica de instituciones públicas de Chile y México.",
-    "Estados": [""],
-    "notas": "Chile: MINREL-División de Migraciones - México: AMEXCID, INM, COMAR, CONOCER - El Salvador: Viceministerio de Diáspora y Movilidad Humana y la Agencia de El Salvador para la Cooperación Internacional - Guatemala: Secretaría de Planificación y Programación de la Presidencia, el Instituto Guatemalteco de Migración y el Ministerio del Trabajo - Honduras: Subsecretaría de Asuntos Consulares y Migratorios de la Secretaría de Relaciones Exteriores y Cooperación internacional."
-  },
 
   {
-    "id": "p22_Chile",
+    "id": "p20_Chile",
     "Nombredelproyecto": "Fortalecimiento de capacidades para el co-manejo pesquero y acuícola en pesquerías de pequeña escala como un aporte a las políticas públicas de México y Chile",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -331,7 +302,7 @@
   },
 
   {
-    "id": "p23_Chile",
+    "id": "p21_Chile",
     "Nombredelproyecto": "Apoyar al empoderamiento de grupos de mujeres de la Agricultura Familiar Campesina (AFC), apicultura, pesca artesanal y procesamiento primario de alimentos en la implementación de estándares de inocuidad alimentaria como un factor en su desarrollo económico y social",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -339,14 +310,14 @@
     "Sector": "Protección Ambiental, Agropecuario, Silvicultura, Pesca",
     "Fechadeinicio": "2024",
     "Fechadetermino": "2026",
-    "status": "Ejecución",
+    "status": "Finalizado",
     "Objetivo": "Fortalecer modelos sustentables de Agricultura Familiar Campesina (AFC), de actividades conexas a la pesca artesanal, apicultura y procesamiento primario de alimentos para lograr estándares de inocuidad alimentaria a través de la gestión de sus riesgos en la producción agroalimentaria",
     "Estados": ["Jalisco"],
     "notas": "México: Agencia de Sanidad Inocuidad y Calidad Agroalimentaria de Jalisco (ASICA) - Chile: la Agencia Chilena para la Inocuidad y la Calidad Alimentaria (ACHIPIA)"
   },
 
   {
-    "id": "p24_Chile",
+    "id": "p22_Chile",
     "Nombredelproyecto": "Efectos del Cambio Climático en los caudales de ríos y su impacto en los ecosistemas costeros y en la socioeconomía de las comunidades de pescadores de la costa de Nayarit-México y la región del Bío Bío-Chile",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -361,7 +332,7 @@
   },
 
   {
-    "id": "p25_Chile_1",
+    "id": "p23_Chile_C2025_1",
     "Nombredelproyecto": "Entornos Escolares Seguros",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -371,12 +342,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Reducir significativamente las muertes y lesiones graves en entornos escolares de Chile y México mediante la implementación conjunta de soluciones tecnológicas, urbanas, participativas y replicables en seguridad vial.",
-    "Estados": [""],
+    "Estados": ["Yucatán"],
     "notas": "18 meses."
   },
 
 {
-    "id": "p26_Chile_2",
+    "id": "p24_Chile_C2025_2",
     "Nombredelproyecto": "Fortalecimiento de Capacidades y Transferencia de Conocimientos para la Detección y Monitoreo de Toxinas Marinas en México y Chile: Una Alianza entre Investigadores, Instituciones Públicas y Pescadores Artesanales.",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -386,12 +357,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Fortalecer las capacidades técnicas y científicas en detección y monitoreo de toxinas marinas en México y Chile, mediante procesos de mejoramiento técnico y de gestión a personas funcionarias públicas, personas dedicadas a la investigación y personas pescadoras artesanales.",
-    "Estados": [""],
+    "Estados": ["Ciudad de México", "Oaxaca"],
     "notas": "24 meses."
   },
 
 {
-    "id": "p27_Chile_3",
+    "id": "p25_Chile_C2025_3",
     "Nombredelproyecto": "Fortalecimiento de la gobernanza ambiental local a través de la educación ambiental, con la participación ciudadana, desde un enfoque de derechos humanos, territorial y pertinencia socioambiental, para enfrentar la actual crisis",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -401,12 +372,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Contribuir al fortalecimiento de una ciudadanía ambiental activa, informada y corresponsable en Chile y México, mediante el impulso de modelos participativos de gobernanza socioambiental y procesos educativos con enfoque de derechos humanos, equidad de género, pertinencia cultural y sostenibilidad, que promuevan la justicia ambiental, la inclusión social y la participación efectiva.",
-    "Estados": [""],
+    "Estados": ["Estado de México", "Hidalgo", "Jalisco"],
     "notas": "24 meses."
   },
 
 {
-    "id": "p28_Chile_4",
+    "id": "p26_Chile_C2025_4",
     "Nombredelproyecto": "Plan integrado de protección de derechos de niñas, niños y adolescentes frente a riesgos en ambientes digitales",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -416,12 +387,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Garantizar el ejercicio pleno de los derechos de las niñas, niños y adolescentes en entornos digitales, fortaleciendo las capacidades de los gobiernos locales para prevenir y responder ante situaciones de ciberviolencias.",
-    "Estados": [""],
+    "Estados": ["Estado de México"],
     "notas": "24 meses."
   },
 
 {
-    "id": "p29_Chile_5",
+    "id": "p27_Chile_C2025_5",
     "Nombredelproyecto": "Autonomía y dignidad en la vejez: Cooperación Chile-México por cuidados, participación y acceso a la justicia con enfoque de derechos humanos",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -431,12 +402,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Favorecer el ejercicio de los derechos humanos de las personas mayores en Chile y México, a través de políticas públicas inclusivas, de cuidados, participación y  acceso a la justicia.",
-    "Estados": [""],
+    "Estados": ["N/A"],
     "notas": "24 meses."
   },
 
 {
-    "id": "p30_Chile_6",
+    "id": "p28_Chile_C2025_6",
     "Nombredelproyecto": "Educa Social-Mente: avanzando juntos en el cuidado y bienestar de nuestras niñas, niños y adolescentes.",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -446,12 +417,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Contribuir al bienestar y salud mental de niñas, niños y adolescentes, mediante un modelo basado en la alfabetización en salud mental de los agentes educativos, reproducible y escalable",
-    "Estados": [""],
+    "Estados": ["Estado de México"],
     "notas": "24 meses."
   },
 
 {
-    "id": "p31_Chile_7",
+    "id": "p29_Chile_C2025_7",
     "Nombredelproyecto": "Robustecimiento de las estadísticas sobre uso del tiempo y el trabajo no remunerado para la visibilización de las mujeres rurales en México y Chile.",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -461,11 +432,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Robustecimiento de las estadísticas sobre uso del tiempo y el trabajo no remunerado de las mujeres en las zonas rurales de México y Chile.",
+    "Estados": ["N/A"],
     "notas": "24 meses."
   },
 
 {
-    "id": "p32_Chile_8",
+    "id": "p30_Chile_C2025_8",
     "Nombredelproyecto": "ChatBot para la gestión de casos y atención a víctimas con medidas de protección a través del Plan de Atención Victimal con enfoque de género",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -475,11 +447,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Reforzar los canales de comunicación entre las instituciones, víctimas con medidas de protección, optimizando el proceso de canalización de casos y disminuyendo la revictimización.",
+    "Estados": ["Monterrey"],
     "notas": "15 meses."
   },
 
 {
-    "id": "p33_Chile_9",
+    "id": "p31_Chile_C2025_9",
     "Nombredelproyecto": "Tejiendo Economías para la Igualdad. Laboratorio Intercultural de Proyectos de Economía Social Solidaria (ESS).",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -489,11 +462,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Contribuir al fortalecimiento de la economía social solidaria en contextos interculturales mediante el desarrollo de capacidades comunitarias para la autogestión de iniciativas económicas sostenibles, inclusivas y con perspectiva de género en México y Chile.",
+    "Estados": ["Aguascalientes"],
     "notas": "24 meses."
   },
 
 {
-    "id": "p34_Chile_10",
+    "id": "p32_Chile_C2025_10",
     "Nombredelproyecto": "Alianza estratégica para el intercambio de experiencias y buenas prácticas en materia de modernización, digitalización e implementación de inteligencia artificial en procesos internos, que incidan en una mejora de la experiencia usuaria: codiseño de piloto escalable.",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -503,11 +477,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Diseñar un piloto de implementación en el cual se identifiquen procesos y espacios de oportunidad específica para mejorar la eficiencia, eficacia y efectividad de los procesos internos, mediante lógicas de modernización, digitalización e inteligencia artificial que mejoren la atención a las y los usuarios de los servicios a la ciudadanía.",
+    "Estados": ["Yucatán"],
     "notas": "18 meses."
   },
 
 {
-    "id": "p35_Chile_11",
+    "id": "p33_Chile_C2025_11",
     "Nombredelproyecto": "Fortalecimiento de la acuicultura sostenible de moluscos bivalvos mediante la cooperación Chile-México en la Región de Los Lagos y Baja California",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -517,11 +492,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Contribuir al fortalecimiento sostenible y equitativo de la acuicultura de pequeña escala mediante la mejora tecnológica, organizativa y social del cultivo de Magallana gigas, con enfoque de género, en la Región de Los Lagos (Chile) y San Quintín, Baja California (México).",
+    "Estados": ["Baja California"],
     "notas": "24 meses."
   },
 
 {
-    "id": "p36_Chile_12",
+    "id": "p34_Chile_C2025_12",
     "Nombredelproyecto": "Fortalecimiento de capacidades para la cuantificación, mitigación y seguimiento de las emisiones de Carbono Negro, en apoyo al cumplimiento de los compromisos internacionales de reducción de este forzante climático, en el marco de las NDC 2025 de Chile y de México.",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -531,11 +507,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Contribuir al fortalecimiento de las capacidades institucionales a nivel nacional y regional, incluyendo organismos públicos, instituciones académicas y organizaciones de la sociedad civil, para mejorar la gestión de acciones orientadas al cumplimiento de las metas de mitigación del Carbono Negro establecidas en las metas nacionales de Chile y de México.",
+    "Estados": ["Puebla"],
     "notas": "24 meses."
   },
 
 {
-    "id": "p37_Chile_13",
+    "id": "p35_Chile_C2025_13",
     "Nombredelproyecto": "Estudio y saneamiento de efluentes de agua hospitalarios mediante la transformación de contaminantes emergentes: uso de bio-nanocatalizadores auto-ensamblables.",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -545,11 +522,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Desarrollar un modelo integral para el estudio, tratamiento y saneamiento de efluentes hospitalarios, mediante la identificación y transformación de contaminantes emergentes a través del uso de bio-nanocatalizadores autoensamblables, con el fin de reducir su impacto ambiental.",
+    "Estados": ["Baja California"],
     "notas": "24 meses."
   },
 
   {
-    "id": "p38_Chile_AD_1",
+    "id": "p36_Chile_AD_1",
     "Nombredelproyecto": "Cooperación técnica para la transferencia de conocimientos en edición universitaria con enfoque de género y los derechos humanos",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -564,7 +542,7 @@
   },
 
     {
-    "id": "p38_Chile_AD_2",
+    "id": "p37_Chile_AD_2",
     "Nombredelproyecto": "Intercambio de buenas prácticas para prevenir y combatir la explotación sexual de niñas, niños y adolescentes de Chile y México",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -574,11 +552,12 @@
     "Fechadetermino": "2027",
     "status": "Planeación",
     "Objetivo": "Fortalecer las capacidades institucionales y de protección de derechos de niñas, niños y adolescentes, al evaluar el Programa Estatal para la Prevención, Combate y Sanción de los Delitos en Materia de Trata de Personas y el Plan de Acción en contra de la Explotación Sexual y Comercial de Niñas, Niños y Adolescentes desarrollados en el Estado de Quintana Roo, así como las acciones y programas implementados en el Estado de Tlaxcala para la restitución de derechos y la atención especializada de niñas, niños y adolescentes, en coordinación con la Procuraduría Estatal y las 60 Procuradurías Municipales de Protección.",
+    "Estados": ["Quintana Roo", "Tlaxcala"],
     "notas": "Instituciones: Sistema Nacional de Protección Integral de los Derechos de Niñas, Niños y Adolescentes (SIPINNA), Gobierno del Estado de Quintana Roo y DIF Tlaxcala "
   },
 
       {
-    "id": "p38_Chile_AD_3",
+    "id": "p38_Chile_ADT_1",
     "Nombredelproyecto": "Fortalecimiento de Capacidades en Maricultura de peces y bivalvos en la costa Pacífica de Costa Rica para un Desarrollo Sostenible con base a Economía Circular y con Equidad de Género",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -586,9 +565,39 @@
     "Sector": "Desarrollo productivo, Medio Ambiente, Género",
     "Fechadeinicio": "2025",
     "Fechadetermino": "2027",
-    "status": "Planeación",
+    "status": "Ejecución",
     "Objetivo": "México en alianza con Chile, apoyará a Costa Rica en sus esquemas de fortalecimiento de capacidades técnicas, productivas y organizativas en el ámbito de la maricultura artesanal sostenible (siembra de peces y moluscos marinos), con énfasis en cinco comunidades de su costa del Pacífico.",
+    "Estados": ["Baja California Norte"],
     "notas": "Instituciones: Universidad Autónoma de Baja California (UABC) por México, la Universidad Católica del Norte de Chile y con la coordinación nacional del Parque Marino del Pacífico (PMP), de la Universidad Nacional (UNA) y del Ministerio de Medio Ambiente y Energía (MINAE) de Costa Rica."
+  },
+
+    {
+    "id": "p39_Chile_ADT_2",
+    "Nombredelproyecto": "Salud, embarazo y género. Avanzando hacia servicios de salud amigables para adolescentes en el marco de la implementación del Plan Estratégico para la Prevención del Embarazo en Adolescentes de Centroamérica y República Dominicana",
+    "Continente": "Sudamérica",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Asignación Directa - Triangular",
+    "Sector": "Salud, Protección social",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2025",
+    "status": "Ejecución",
+    "Objetivo": "Contribuir a la prevención del embarazo en adolescentes por medio de implementación de acciones intersectoriales en la región SICA, en el marco del Plan Estratégico de Prevención de Embarazo en Adolescentes en Centroamérica y República Dominicana",
+    "Estados": ["N/A"],
+    "notas": "Chile: AGCID - México: AMEXCID, SICA: Secretaría Ejecutiva del Consejo de Ministros de Salud de Centroamérica y República Dominicana (SE- COMISCA)"
+  },
+    {
+    "id": "p40_Chile_ADT_3",
+    "Nombredelproyecto": "Optimizando la atención, protección y reintegración de poblaciones en movilidad humana en El Salvador, Guatemala y Honduras",
+    "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Asignación Directa - Triangular",
+    "Sector": "Migración, Movilidad Humana",
+    "Fechadeinicio": "2024",
+    "Fechadetermino": "2026",
+    "status": "Ejecución",
+    "Objetivo": "Optimizar mecanismos institucionales para la gestión, protección y reintegración, de poblaciones en movilidad en El Salvador, Guatemala y Honduras, a fin de contribuir a una movilidad humana segura, ordenada y regular con perspectiva de Derechos Humanos, a través de la asistencia técnica de instituciones públicas de Chile y México.",
+    "Estados": ["N/A"],
+    "notas": "Chile: MINREL-División de Migraciones - México: AMEXCID, INM, COMAR, CONOCER - El Salvador: Viceministerio de Diáspora y Movilidad Humana y la Agencia de El Salvador para la Cooperación Internacional - Guatemala: Secretaría de Planificación y Programación de la Presidencia, el Instituto Guatemalteco de Migración y el Ministerio del Trabajo - Honduras: Subsecretaría de Asuntos Consulares y Migratorios de la Secretaría de Relaciones Exteriores y Cooperación internacional."
   },
 
     {
