@@ -89,40 +89,62 @@
   </nav>
 
   <script>
-    // Datos de países para las fichas técnicas (puedes expandirlo con más países)
+    // ============================================================
+    // DATOS DE LAS TARJETAS INFORMATIVAS (PDFs alojados en GitHub)
+    // ============================================================
+    // IMPORTANTE: Reemplaza las URLs de los PDFs con las tuyas
+    // y añade más países según necesites
     const paisesFichas = [
       {
         nombre: "Reino de Tailandia",
-        imagen: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcBh-aVNaK-8q60uEtYTcoRVK4RWDJIJI1Dc7ZhIdRCzqnf1pTYEYvxkYsfIK4i7D6niGJHEErTUODB0j4UzsSNxwNSDny1nJ-LWs015IynYbCOgaBwNyBqA1LV3n-_EsxeI2jgJloY1zK65FUzQA-xeg42rFAc0HjNb3-srhn0YoFSliqyyW3HIRCjPMPC0kSt-d4lCYiZR5mmOQlaMCg-of4lv2XAYlomFQ_jB5aqpSAdAVJJ_enSGTXCfCHUyGHyLnI4Onyc2Y",
-        descripcion: "Tarjeta informativa de Cooperación con el Reino de Tailandia 260626",
-        tags: ["Tarjeta informativa", "junio 2026"]
+        // URL de la imagen que aparece en la tarjeta (puede ser la bandera o un preview)
+        imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/2560px-Flag_of_Thailand.svg.png",
+        descripcion: "Tarjeta informativa de Cooperación con el Reino de Tailandia - Junio 2026",
+        tags: ["Tarjeta informativa", "junio 2026"],
+        // URL del archivo PDF en tu repositorio de GitHub
+        pdfUrl: "https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/fichas/tailandia.pdf"
       },
       {
         nombre: "Japón",
-        imagen: "https://lh3.googleusercontent.com/aida-public/AB6AXuDEOGw2fN6JD0LhzWeRIq1wMLisbMRxwCNeyZbETLYBFijetD2kXdCoKWYqRLvKDJ9pFzg_eY5Z_RPHx3GxF7JnHz1msZHaQpn4Nx4rWDYcArEDgZXrn1heQx5zMKz-rvMMu3Jc5L1AHEeaRpvOVgy4EuYfD5fBJz8TwRBo4JiDYTABYwKJHCQLfKIkGKZ9a7Fm08OlpaiOuof300TgABzZrtJeDMyHYTPmLB3rT5klLq0jvrQGuI0pusjoxAWpSD6zDXfk_grSdLA",
-        descripcion: "Metodologías Kaizen aplicadas al desarrollo corporativo. Optimización de procesos técnicos de alta precisión.",
-        tags: ["CAPACITACIÓN 2024"]
+        imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/2560px-Flag_of_Japan.svg.png",
+        descripcion: "Tarjeta informativa de Cooperación con Japón - Metodologías Kaizen",
+        tags: ["Tarjeta informativa", "mayo 2026"],
+        pdfUrl: "https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/fichas/japon.pdf"
       },
       {
         nombre: "China",
-        imagen: "https://lh3.googleusercontent.com/aida-public/AB6AXuCS3RW5eJIDL3Sgk_wkjmKhqzZM8lt-4O7MgUKQccZgsKcEVCZR2Jkt02M0jUJ048seuk-IS290sVFsBVvF5zj6zCZjaesSBWo8Ge3Otyoo2Xf9-vk4KtF7jYyjvVli4Q15oihIXvM31SEU93Zc5kLYAASV3W9y1Mwiq3Iv1F2Tqww-Xf7GLdUIyIkMbDuXiOcVHEVnm_tkSKdp2wDpBnr0a6qAGXm1XrImxKD3KdzqLJN55mUcBEOQybTNbjqRpjsFkHt8_c1CGdg",
-        descripcion: "Estrategias de escalabilidad masiva y manufactura avanzada. Especialización en infraestructura tecnológica.",
-        tags: ["CAPACITACIÓN 2024"]
+        imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/2560px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+        descripcion: "Tarjeta informativa de Cooperación con China - Estrategias de escalabilidad",
+        tags: ["Tarjeta informativa", "abril 2026"],
+        pdfUrl: "https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/fichas/china.pdf"
       },
       {
         nombre: "Corea del Sur",
-        imagen: "https://lh3.googleusercontent.com/aida-public/AB6AXuC_poH8z6R2tctzEck94CwCTlkqIMr_XbNfTMZvpD4k4aN7IMB0Vjiiko3IK7mBvbRud_-eQ_XU9sWNeufQXzgHLl4e4aDOCjhj9tlu6PR8zUpUd7l4bmk1-HqiRdJrSSaIfEn0xamjOdjw_0uigSv56ebk6zhATV3763yH8MYXiyRcXOdgXVbVq8rwsta7sBNlt8e2Hr7fx3oZbvIDHYFirQ1pOcpuNoC-0mHRS9HHDerUIN6mdixflfQNNPKfhRQRZQ1yf8X2h08",
-        descripcion: "Innovación digital y ecosistemas inteligentes. Guía técnica de desarrollo de software y hardware.",
-        tags: ["CAPACITACIÓN 2024"]
+        imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/2560px-Flag_of_South_Korea.svg.png",
+        descripcion: "Tarjeta informativa de Cooperación con Corea del Sur - Innovación digital",
+        tags: ["Tarjeta informativa", "marzo 2026"],
+        pdfUrl: "https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/fichas/corea.pdf"
       },
       {
         nombre: "Singapur",
-        imagen: "https://lh3.googleusercontent.com/aida-public/AB6AXuCrjKV8XxlcNMp5O4Wo7G6sYsrqgg5_Tx0wAaR3Ttmdi-p25-zQV0sGfIqkzK9naMG_kwl5LolLBhmL6wKuzb686NfvPZ_jfTb0Q95cGI7Z83igSf7qLZowMHtim_X3ctwm5oKxGo5Dnh2MC1f1ZhorTy9SLF3xAc_FlES9SlF1vOmVFKp_Ch0_U9fmy2n-uNIZCdeRaGgrnkWut2JpZiDhiqxm1YHFn7hX0yuU8l-JHzsTSQR-uefbkilbfQoLuEuXK-oAM5XRc1g",
-        descripcion: "Hub logístico y finanzas globales. Certificación técnica en estándares internacionales de comercio.",
-        tags: ["CAPACITACIÓN 2024", "Nuevo"]
+        imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/2560px-Flag_of_Singapore.svg.png",
+        descripcion: "Tarjeta informativa de Cooperación con Singapur - Hub logístico global",
+        tags: ["Tarjeta informativa", "febrero 2026", "Nuevo"],
+        pdfUrl: "https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/fichas/singapur.pdf"
+      },
+      // Añade más países aquí siguiendo la misma estructura
+      {
+        nombre: "México",
+        imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/2560px-Flag_of_Mexico.svg.png",
+        descripcion: "Tarjeta informativa de Cooperación con México - Proyectos bilaterales",
+        tags: ["Tarjeta informativa", "enero 2026"],
+        pdfUrl: "https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/fichas/mexico.pdf"
       }
     ];
 
+    // ============================================================
+    // FUNCIÓN PARA RENDERIZAR LAS TARJETAS
+    // ============================================================
     function renderFichas() {
       const container = document.getElementById("fichasGrid");
       if (!container) return;
@@ -150,17 +172,19 @@
             </div>
             <p class="text-gray-600 text-sm">${pais.descripcion}</p>
           </div>
-          <button class="mt-4 w-full bg-indigo-600 text-white text-sm font-semibold py-3 rounded-lg flex items-center justify-center gap-2 shadow-md hover:bg-indigo-700 transition-all active:scale-95">
+          <button class="mt-4 w-full bg-indigo-600 text-white text-sm font-semibold py-3 rounded-lg flex items-center justify-center gap-2 shadow-md hover:bg-indigo-700 transition-all active:scale-95 btn-descargar" data-pdf="${pais.pdfUrl}" data-nombre="${pais.nombre}">
             <span class="material-symbols-outlined text-base">download</span>
             Descargar Ficha PDF
           </button>
         `;
         
         // Agregar evento al botón de descarga
-        const btnDescargar = card.querySelector('button');
+        const btnDescargar = card.querySelector('.btn-descargar');
         if (btnDescargar) {
-          btnDescargar.addEventListener('click', () => {
-            alert(`📄 Descargando ficha técnica de ${pais.nombre}\n\nPróximamente: Generación de PDF personalizado.`);
+          btnDescargar.addEventListener('click', function() {
+            const pdfUrl = this.dataset.pdf;
+            const nombre = this.dataset.nombre;
+            descargarPDF(pdfUrl, nombre);
           });
         }
         
@@ -168,7 +192,51 @@
       });
     }
 
-    // Navegación
+    // ============================================================
+    // FUNCIÓN PARA DESCARGAR EL PDF
+    // ============================================================
+    function descargarPDF(url, nombre) {
+      // Mostrar indicador de carga
+      const btn = document.querySelector(`.btn-descargar[data-nombre="${nombre}"]`);
+      if (btn) {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = `<span class="material-symbols-outlined text-base animate-spin">refresh</span> Descargando...`;
+        btn.disabled = true;
+        
+        // Usar fetch para obtener el PDF y descargarlo
+        fetch(url)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Error al descargar: ${response.status}`);
+            }
+            return response.blob();
+          })
+          .then(blob => {
+            // Crear un enlace de descarga
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `ficha_${nombre.toLowerCase().replace(/\s+/g, '_')}.pdf`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(link.href);
+            
+            // Restaurar botón
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            alert(`❌ No se pudo descargar la ficha de ${nombre}. Verifica que el archivo exista en la ruta: ${url}`);
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+          });
+      }
+    }
+
+    // ============================================================
+    // NAVEGACIÓN Y MENÚ
+    // ============================================================
     function setupNavigation() {
       const btnInicio = document.getElementById("btnInicio");
       if (btnInicio) {
@@ -178,7 +246,6 @@
       }
     }
 
-    // Configurar menú desplegable
     function setupMenu() {
       const btnMenu = document.getElementById("btnMenu");
       const menuPanel = document.getElementById("menuPanel");
@@ -202,7 +269,7 @@
         });
       }
       
-            const menuFichas = document.getElementById("menuFichasTecnicas");
+      const menuFichas = document.getElementById("menuFichasTecnicas");
       if (menuFichas) {
         menuFichas.addEventListener("click", () => {
           menuPanel.classList.add("hidden");
@@ -211,9 +278,12 @@
       }
     }
 
-    // Inicializar
+    // ============================================================
+    // INICIALIZACIÓN
+    // ============================================================
     document.addEventListener('DOMContentLoaded', () => {
-      console.log("🚀 Iniciando página de fichas técnicas...");
+      console.log("🚀 Iniciando catálogo de tarjetas informativas...");
+      console.log(`📄 ${paisesFichas.length} fichas disponibles`);
       renderFichas();
       setupMenu();
       setupNavigation();
