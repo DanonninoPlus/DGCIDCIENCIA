@@ -557,7 +557,22 @@
   },
 
       {
-    "id": "p38_Chile_ADT_1",
+    "id": "p38_Chile_AD_3",
+    "Nombredelproyecto": "Reconstrucción de la Escuela Primaria René Juárez Cisneros",
+    "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
+    "Pais": "Chile",
+    "Tipo de proyecto": "Asignación Directa",
+    "Sector": "Educación",
+    "Fechadeinicio": "2026",
+    "Fechadetermino": "2027",
+    "status": "Planeación",
+    "Objetivo": "contribuir en el proceso de reconstrucción y rehabilitación de la Escuela Primaria “René Juárez Cisneros” ubicada en Acapulco, Guerrero y detonar un proceso de cohesión social y educación para la paz  en las comunidades de su alrededor.",
+    "Estados": ["Guerrero"],
+    "notas": "Presupuesto; 250,000 USD"
+  },
+
+      {
+    "id": "p39_Chile_ADT_1",
     "Nombredelproyecto": "Fortalecimiento de Capacidades en Maricultura de peces y bivalvos en la costa Pacífica de Costa Rica para un Desarrollo Sostenible con base a Economía Circular y con Equidad de Género",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -572,7 +587,7 @@
   },
 
     {
-    "id": "p39_Chile_ADT_2",
+    "id": "p40_Chile_ADT_2",
     "Nombredelproyecto": "Salud, embarazo y género. Avanzando hacia servicios de salud amigables para adolescentes en el marco de la implementación del Plan Estratégico para la Prevención del Embarazo en Adolescentes de Centroamérica y República Dominicana",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
@@ -586,7 +601,7 @@
     "notas": "Chile: AGCID - México: AMEXCID, SICA: Secretaría Ejecutiva del Consejo de Ministros de Salud de Centroamérica y República Dominicana (SE- COMISCA)"
   },
     {
-    "id": "p40_Chile_ADT_3",
+    "id": "p41_Chile_ADT_3",
     "Nombredelproyecto": "Optimizando la atención, protección y reintegración de poblaciones en movilidad humana en El Salvador, Guatemala y Honduras",
     "Continente": "Fondos Conjuntos de Cooperación Sur-Sur",
     "Pais": "Chile",
